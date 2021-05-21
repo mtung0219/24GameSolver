@@ -138,3 +138,15 @@ body {
  #target_num{
      width:100px;
  }
+
+.your-cards{
+    display:grid;
+    gap:10px;
+ }
+ .your-cards-1{
+     grid-column: 1/2;
+ }
+
+ .your-cards-2{
+     grid-column: 1;
+ }

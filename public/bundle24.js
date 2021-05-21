@@ -1,4 +1,7 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+module.exports = require("regenerator-runtime");
+
+},{"regenerator-runtime":53}],2:[function(require,module,exports){
 /*!
  * body-parser
  * Copyright(c) 2014-2015 Douglas Christopher Wilson
@@ -157,7 +160,7 @@ function loadParser (parserName) {
   return (parsers[parserName] = parser)
 }
 
-},{"./lib/types/json":3,"./lib/types/raw":4,"./lib/types/text":5,"./lib/types/urlencoded":6,"depd":11}],2:[function(require,module,exports){
+},{"./lib/types/json":4,"./lib/types/raw":5,"./lib/types/text":6,"./lib/types/urlencoded":7,"depd":12}],3:[function(require,module,exports){
 /*!
  * body-parser
  * Copyright(c) 2014-2015 Douglas Christopher Wilson
@@ -340,7 +343,7 @@ function contentstream (req, debug, inflate) {
   return stream
 }
 
-},{"http-errors":13,"iconv-lite":32,"on-finished":39,"raw-body":45,"zlib":71}],3:[function(require,module,exports){
+},{"http-errors":14,"iconv-lite":33,"on-finished":46,"raw-body":52,"zlib":71}],4:[function(require,module,exports){
 /*!
  * body-parser
  * Copyright(c) 2014 Jonathan Ong
@@ -572,7 +575,7 @@ function typeChecker (type) {
   }
 }
 
-},{"../read":2,"bytes":7,"content-type":8,"debug":9,"http-errors":13,"type-is":51}],4:[function(require,module,exports){
+},{"../read":3,"bytes":8,"content-type":9,"debug":10,"http-errors":14,"type-is":59}],5:[function(require,module,exports){
 /*!
  * body-parser
  * Copyright(c) 2014-2015 Douglas Christopher Wilson
@@ -675,7 +678,7 @@ function typeChecker (type) {
   }
 }
 
-},{"../read":2,"bytes":7,"debug":9,"type-is":51}],5:[function(require,module,exports){
+},{"../read":3,"bytes":8,"debug":10,"type-is":59}],6:[function(require,module,exports){
 /*!
  * body-parser
  * Copyright(c) 2014-2015 Douglas Christopher Wilson
@@ -798,7 +801,7 @@ function typeChecker (type) {
   }
 }
 
-},{"../read":2,"bytes":7,"content-type":8,"debug":9,"type-is":51}],6:[function(require,module,exports){
+},{"../read":3,"bytes":8,"content-type":9,"debug":10,"type-is":59}],7:[function(require,module,exports){
 /*!
  * body-parser
  * Copyright(c) 2014 Jonathan Ong
@@ -1084,7 +1087,7 @@ function typeChecker (type) {
   }
 }
 
-},{"../read":2,"bytes":7,"content-type":8,"debug":9,"depd":11,"http-errors":13,"qs":41,"querystring":105,"type-is":51}],7:[function(require,module,exports){
+},{"../read":3,"bytes":8,"content-type":9,"debug":10,"depd":12,"http-errors":14,"qs":48,"querystring":105,"type-is":59}],8:[function(require,module,exports){
 /*!
  * bytes
  * Copyright(c) 2012-2014 TJ Holowaychuk
@@ -1248,7 +1251,7 @@ function parse(val) {
   return Math.floor(map[unit] * floatValue);
 }
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 /*!
  * content-type
  * Copyright(c) 2015 Douglas Christopher Wilson
@@ -1472,7 +1475,7 @@ function ContentType (type) {
   this.type = type
 }
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 (function (process){(function (){
 /**
  * This is the web browser implementation of `debug()`.
@@ -1661,7 +1664,7 @@ function localstorage() {
 }
 
 }).call(this)}).call(this,require('_process'))
-},{"./debug":10,"_process":102}],10:[function(require,module,exports){
+},{"./debug":11,"_process":102}],11:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -1865,7 +1868,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":38}],11:[function(require,module,exports){
+},{"ms":45}],12:[function(require,module,exports){
 /*!
  * depd
  * Copyright(c) 2015 Douglas Christopher Wilson
@@ -1944,7 +1947,7 @@ function wrapproperty (obj, prop, message) {
   }
 }
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /*!
  * ee-first
  * Copyright(c) 2014 Jonathan Ong
@@ -2041,7 +2044,7 @@ function listener(event, done) {
   }
 }
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 /*!
  * http-errors
  * Copyright(c) 2014 Jonathan Ong
@@ -2309,7 +2312,7 @@ function populateConstructorExports (exports, codes, HttpError) {
     '"I\'mateapot"; use "ImATeapot" instead')
 }
 
-},{"depd":11,"inherits":33,"setprototypeof":47,"statuses":49,"toidentifier":50}],14:[function(require,module,exports){
+},{"depd":12,"inherits":34,"setprototypeof":55,"statuses":57,"toidentifier":58}],15:[function(require,module,exports){
 "use strict";
 var Buffer = require("safer-buffer").Buffer;
 
@@ -2866,7 +2869,7 @@ function findIdx(table, val) {
 }
 
 
-},{"safer-buffer":46}],15:[function(require,module,exports){
+},{"safer-buffer":54}],16:[function(require,module,exports){
 "use strict";
 
 // Description of supported double byte encodings and aliases.
@@ -3044,7 +3047,7 @@ module.exports = {
     'xxbig5': 'big5hkscs',
 };
 
-},{"./tables/big5-added.json":21,"./tables/cp936.json":22,"./tables/cp949.json":23,"./tables/cp950.json":24,"./tables/eucjp.json":25,"./tables/gb18030-ranges.json":26,"./tables/gbk-added.json":27,"./tables/shiftjis.json":28}],16:[function(require,module,exports){
+},{"./tables/big5-added.json":22,"./tables/cp936.json":23,"./tables/cp949.json":24,"./tables/cp950.json":25,"./tables/eucjp.json":26,"./tables/gb18030-ranges.json":27,"./tables/gbk-added.json":28,"./tables/shiftjis.json":29}],17:[function(require,module,exports){
 "use strict";
 
 // Update this array if you add/rename/remove files in this directory.
@@ -3068,7 +3071,7 @@ for (var i = 0; i < modules.length; i++) {
             exports[enc] = module[enc];
 }
 
-},{"./dbcs-codec":14,"./dbcs-data":15,"./internal":17,"./sbcs-codec":18,"./sbcs-data":20,"./sbcs-data-generated":19,"./utf16":29,"./utf7":30}],17:[function(require,module,exports){
+},{"./dbcs-codec":15,"./dbcs-data":16,"./internal":18,"./sbcs-codec":19,"./sbcs-data":21,"./sbcs-data-generated":20,"./utf16":30,"./utf7":31}],18:[function(require,module,exports){
 "use strict";
 var Buffer = require("safer-buffer").Buffer;
 
@@ -3258,7 +3261,7 @@ InternalDecoderCesu8.prototype.end = function() {
     return res;
 }
 
-},{"safer-buffer":46,"string_decoder":122}],18:[function(require,module,exports){
+},{"safer-buffer":54,"string_decoder":122}],19:[function(require,module,exports){
 "use strict";
 var Buffer = require("safer-buffer").Buffer;
 
@@ -3332,7 +3335,7 @@ SBCSDecoder.prototype.write = function(buf) {
 SBCSDecoder.prototype.end = function() {
 }
 
-},{"safer-buffer":46}],19:[function(require,module,exports){
+},{"safer-buffer":54}],20:[function(require,module,exports){
 "use strict";
 
 // Generated data for sbcs codec. Don't edit manually. Regenerate using generation/gen-sbcs.js script.
@@ -3784,7 +3787,7 @@ module.exports = {
     "chars": "���������������������������������กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลฦวศษสหฬอฮฯะัาำิีึืฺุู����฿เแโใไๅๆ็่้๊๋์ํ๎๏๐๑๒๓๔๕๖๗๘๙๚๛����"
   }
 }
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 "use strict";
 
 // Manually added data to be used by sbcs codec in addition to generated one.
@@ -3960,7 +3963,7 @@ module.exports = {
 };
 
 
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 module.exports=[
 ["8740","䏰䰲䘃䖦䕸𧉧䵷䖳𧲱䳢𧳅㮕䜶䝄䱇䱀𤊿𣘗𧍒𦺋𧃒䱗𪍑䝏䗚䲅𧱬䴇䪤䚡𦬣爥𥩔𡩣𣸆𣽡晍囻"],
 ["8767","綕夝𨮹㷴霴𧯯寛𡵞媤㘥𩺰嫑宷峼杮薓𩥅瑡璝㡵𡵓𣚞𦀡㻬"],
@@ -4084,7 +4087,7 @@ module.exports=[
 ["fea1","𤅟𤩹𨮏孆𨰃𡢞瓈𡦈甎瓩甞𨻙𡩋寗𨺬鎅畍畊畧畮𤾂㼄𤴓疎瑝疞疴瘂瘬癑癏癯癶𦏵皐臯㟸𦤑𦤎皡皥皷盌𦾟葢𥂝𥅽𡸜眞眦着撯𥈠睘𣊬瞯𨥤𨥨𡛁矴砉𡍶𤨒棊碯磇磓隥礮𥗠磗礴碱𧘌辸袄𨬫𦂃𢘜禆褀椂禀𥡗禝𧬹礼禩渪𧄦㺨秆𩄍秔"]
 ]
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 module.exports=[
 ["0","\u0000",127,"€"],
 ["8140","丂丄丅丆丏丒丗丟丠両丣並丩丮丯丱丳丵丷丼乀乁乂乄乆乊乑乕乗乚乛乢乣乤乥乧乨乪",5,"乲乴",9,"乿",6,"亇亊"],
@@ -4350,7 +4353,7 @@ module.exports=[
 ["fe40","兀嗀﨎﨏﨑﨓﨔礼﨟蘒﨡﨣﨤﨧﨨﨩"]
 ]
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 module.exports=[
 ["0","\u0000",127],
 ["8141","갂갃갅갆갋",4,"갘갞갟갡갢갣갥",6,"갮갲갳갴"],
@@ -4625,7 +4628,7 @@ module.exports=[
 ["fda1","爻肴酵驍侯候厚后吼喉嗅帿後朽煦珝逅勛勳塤壎焄熏燻薰訓暈薨喧暄煊萱卉喙毁彙徽揮暉煇諱輝麾休携烋畦虧恤譎鷸兇凶匈洶胸黑昕欣炘痕吃屹紇訖欠欽歆吸恰洽翕興僖凞喜噫囍姬嬉希憙憘戱晞曦熙熹熺犧禧稀羲詰"]
 ]
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 module.exports=[
 ["0","\u0000",127],
 ["a140","　，、。．‧；：？！︰…‥﹐﹑﹒·﹔﹕﹖﹗｜–︱—︳╴︴﹏（）︵︶｛｝︷︸〔〕︹︺【】︻︼《》︽︾〈〉︿﹀「」﹁﹂『』﹃﹄﹙﹚"],
@@ -4804,7 +4807,7 @@ module.exports=[
 ["f9a1","龤灨灥糷虪蠾蠽蠿讞貜躩軉靋顳顴飌饡馫驤驦驧鬤鸕鸗齈戇欞爧虌躨钂钀钁驩驨鬮鸙爩虋讟钃鱹麷癵驫鱺鸝灩灪麤齾齉龘碁銹裏墻恒粧嫺╔╦╗╠╬╣╚╩╝╒╤╕╞╪╡╘╧╛╓╥╖╟╫╢╙╨╜║═╭╮╰╯▓"]
 ]
 
-},{}],25:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 module.exports=[
 ["0","\u0000",127],
 ["8ea1","｡",62],
@@ -4988,9 +4991,9 @@ module.exports=[
 ["8feda1","黸黿鼂鼃鼉鼏鼐鼑鼒鼔鼖鼗鼙鼚鼛鼟鼢鼦鼪鼫鼯鼱鼲鼴鼷鼹鼺鼼鼽鼿齁齃",4,"齓齕齖齗齘齚齝齞齨齩齭",4,"齳齵齺齽龏龐龑龒龔龖龗龞龡龢龣龥"]
 ]
 
-},{}],26:[function(require,module,exports){
-module.exports={"uChars":[128,165,169,178,184,216,226,235,238,244,248,251,253,258,276,284,300,325,329,334,364,463,465,467,469,471,473,475,477,506,594,610,712,716,730,930,938,962,970,1026,1104,1106,8209,8215,8218,8222,8231,8241,8244,8246,8252,8365,8452,8454,8458,8471,8482,8556,8570,8596,8602,8713,8720,8722,8726,8731,8737,8740,8742,8748,8751,8760,8766,8777,8781,8787,8802,8808,8816,8854,8858,8870,8896,8979,9322,9372,9548,9588,9616,9622,9634,9652,9662,9672,9676,9680,9702,9735,9738,9793,9795,11906,11909,11913,11917,11928,11944,11947,11951,11956,11960,11964,11979,12284,12292,12312,12319,12330,12351,12436,12447,12535,12543,12586,12842,12850,12964,13200,13215,13218,13253,13263,13267,13270,13384,13428,13727,13839,13851,14617,14703,14801,14816,14964,15183,15471,15585,16471,16736,17208,17325,17330,17374,17623,17997,18018,18212,18218,18301,18318,18760,18811,18814,18820,18823,18844,18848,18872,19576,19620,19738,19887,40870,59244,59336,59367,59413,59417,59423,59431,59437,59443,59452,59460,59478,59493,63789,63866,63894,63976,63986,64016,64018,64021,64025,64034,64037,64042,65074,65093,65107,65112,65127,65132,65375,65510,65536],"gbChars":[0,36,38,45,50,81,89,95,96,100,103,104,105,109,126,133,148,172,175,179,208,306,307,308,309,310,311,312,313,341,428,443,544,545,558,741,742,749,750,805,819,820,7922,7924,7925,7927,7934,7943,7944,7945,7950,8062,8148,8149,8152,8164,8174,8236,8240,8262,8264,8374,8380,8381,8384,8388,8390,8392,8393,8394,8396,8401,8406,8416,8419,8424,8437,8439,8445,8482,8485,8496,8521,8603,8936,8946,9046,9050,9063,9066,9076,9092,9100,9108,9111,9113,9131,9162,9164,9218,9219,11329,11331,11334,11336,11346,11361,11363,11366,11370,11372,11375,11389,11682,11686,11687,11692,11694,11714,11716,11723,11725,11730,11736,11982,11989,12102,12336,12348,12350,12384,12393,12395,12397,12510,12553,12851,12962,12973,13738,13823,13919,13933,14080,14298,14585,14698,15583,15847,16318,16434,16438,16481,16729,17102,17122,17315,17320,17402,17418,17859,17909,17911,17915,17916,17936,17939,17961,18664,18703,18814,18962,19043,33469,33470,33471,33484,33485,33490,33497,33501,33505,33513,33520,33536,33550,37845,37921,37948,38029,38038,38064,38065,38066,38069,38075,38076,38078,39108,39109,39113,39114,39115,39116,39265,39394,189000]}
 },{}],27:[function(require,module,exports){
+module.exports={"uChars":[128,165,169,178,184,216,226,235,238,244,248,251,253,258,276,284,300,325,329,334,364,463,465,467,469,471,473,475,477,506,594,610,712,716,730,930,938,962,970,1026,1104,1106,8209,8215,8218,8222,8231,8241,8244,8246,8252,8365,8452,8454,8458,8471,8482,8556,8570,8596,8602,8713,8720,8722,8726,8731,8737,8740,8742,8748,8751,8760,8766,8777,8781,8787,8802,8808,8816,8854,8858,8870,8896,8979,9322,9372,9548,9588,9616,9622,9634,9652,9662,9672,9676,9680,9702,9735,9738,9793,9795,11906,11909,11913,11917,11928,11944,11947,11951,11956,11960,11964,11979,12284,12292,12312,12319,12330,12351,12436,12447,12535,12543,12586,12842,12850,12964,13200,13215,13218,13253,13263,13267,13270,13384,13428,13727,13839,13851,14617,14703,14801,14816,14964,15183,15471,15585,16471,16736,17208,17325,17330,17374,17623,17997,18018,18212,18218,18301,18318,18760,18811,18814,18820,18823,18844,18848,18872,19576,19620,19738,19887,40870,59244,59336,59367,59413,59417,59423,59431,59437,59443,59452,59460,59478,59493,63789,63866,63894,63976,63986,64016,64018,64021,64025,64034,64037,64042,65074,65093,65107,65112,65127,65132,65375,65510,65536],"gbChars":[0,36,38,45,50,81,89,95,96,100,103,104,105,109,126,133,148,172,175,179,208,306,307,308,309,310,311,312,313,341,428,443,544,545,558,741,742,749,750,805,819,820,7922,7924,7925,7927,7934,7943,7944,7945,7950,8062,8148,8149,8152,8164,8174,8236,8240,8262,8264,8374,8380,8381,8384,8388,8390,8392,8393,8394,8396,8401,8406,8416,8419,8424,8437,8439,8445,8482,8485,8496,8521,8603,8936,8946,9046,9050,9063,9066,9076,9092,9100,9108,9111,9113,9131,9162,9164,9218,9219,11329,11331,11334,11336,11346,11361,11363,11366,11370,11372,11375,11389,11682,11686,11687,11692,11694,11714,11716,11723,11725,11730,11736,11982,11989,12102,12336,12348,12350,12384,12393,12395,12397,12510,12553,12851,12962,12973,13738,13823,13919,13933,14080,14298,14585,14698,15583,15847,16318,16434,16438,16481,16729,17102,17122,17315,17320,17402,17418,17859,17909,17911,17915,17916,17936,17939,17961,18664,18703,18814,18962,19043,33469,33470,33471,33484,33485,33490,33497,33501,33505,33513,33520,33536,33550,37845,37921,37948,38029,38038,38064,38065,38066,38069,38075,38076,38078,39108,39109,39113,39114,39115,39116,39265,39394,189000]}
+},{}],28:[function(require,module,exports){
 module.exports=[
 ["a140","",62],
 ["a180","",32],
@@ -5047,7 +5050,7 @@ module.exports=[
 ["fe80","䜣䜩䝼䞍⻊䥇䥺䥽䦂䦃䦅䦆䦟䦛䦷䦶䲣䲟䲠䲡䱷䲢䴓",6,"䶮",93]
 ]
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 module.exports=[
 ["0","\u0000",128],
 ["a1","｡",62],
@@ -5174,7 +5177,7 @@ module.exports=[
 ["fc40","髜魵魲鮏鮱鮻鰀鵰鵫鶴鸙黑"]
 ]
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 "use strict";
 var Buffer = require("safer-buffer").Buffer;
 
@@ -5353,7 +5356,7 @@ function detectEncoding(buf, defaultEncoding) {
 
 
 
-},{"safer-buffer":46}],30:[function(require,module,exports){
+},{"safer-buffer":54}],31:[function(require,module,exports){
 "use strict";
 var Buffer = require("safer-buffer").Buffer;
 
@@ -5645,7 +5648,7 @@ Utf7IMAPDecoder.prototype.end = function() {
 
 
 
-},{"safer-buffer":46}],31:[function(require,module,exports){
+},{"safer-buffer":54}],32:[function(require,module,exports){
 "use strict";
 
 var BOMChar = '\uFEFF';
@@ -5699,7 +5702,7 @@ StripBOMWrapper.prototype.end = function() {
 }
 
 
-},{}],32:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 (function (process){(function (){
 "use strict";
 
@@ -5856,7 +5859,7 @@ if ("Ā" != "\u0100") {
 }
 
 }).call(this)}).call(this,require('_process'))
-},{"../encodings":16,"./bom-handling":31,"./extend-node":69,"./streams":69,"_process":102,"safer-buffer":46}],33:[function(require,module,exports){
+},{"../encodings":17,"./bom-handling":32,"./extend-node":69,"./streams":69,"_process":102,"safer-buffer":54}],34:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -5881,7 +5884,3051 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],34:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.all = all;
+exports.any = any;
+exports.contains = contains;
+exports.enumerate = enumerate;
+exports.filter = filter;
+exports.iter = iter;
+exports.map = map;
+exports.max = max;
+exports.min = min;
+exports.range = range;
+exports.reduce = reduce;
+exports.reduce_ = reduce_;
+exports.sorted = sorted;
+exports.sum = sum;
+exports.zip = zip;
+exports.zip3 = zip3;
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _custom = require("./custom");
+
+var _itertools = require("./itertools");
+
+var _utils = require("./utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var _marked = /*#__PURE__*/_regenerator["default"].mark(enumerate);
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+/**
+ * Returns true when all of the items in iterable are truthy.  An optional key
+ * function can be used to define what truthiness means for this specific
+ * collection.
+ *
+ * Examples:
+ *
+ *     all([])                           // => true
+ *     all([0])                          // => false
+ *     all([0, 1, 2])                    // => false
+ *     all([1, 2, 3])                    // => true
+ *
+ * Examples with using a key function:
+ *
+ *     all([2, 4, 6], n => n % 2 === 0)  // => true
+ *     all([2, 4, 5], n => n % 2 === 0)  // => false
+ *
+ */
+function all(iterable) {
+  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.identityPredicate;
+
+  var _iterator = _createForOfIteratorHelper(iterable),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var item = _step.value;
+
+      if (!keyFn(item)) {
+        return false;
+      }
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  return true;
+}
+/**
+ * Returns true when any of the items in iterable are truthy.  An optional key
+ * function can be used to define what truthiness means for this specific
+ * collection.
+ *
+ * Examples:
+ *
+ *     any([])                           // => false
+ *     any([0])                          // => false
+ *     any([0, 1, null, undefined])      // => true
+ *
+ * Examples with using a key function:
+ *
+ *     any([1, 4, 5], n => n % 2 === 0)  // => true
+ *     any([{name: 'Bob'}, {name: 'Alice'}], person => person.name.startsWith('C'))  // => false
+ *
+ */
+
+
+function any(iterable) {
+  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.identityPredicate;
+
+  var _iterator2 = _createForOfIteratorHelper(iterable),
+      _step2;
+
+  try {
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+      var item = _step2.value;
+
+      if (keyFn(item)) {
+        return true;
+      }
+    }
+  } catch (err) {
+    _iterator2.e(err);
+  } finally {
+    _iterator2.f();
+  }
+
+  return false;
+}
+/**
+ * Returns true when any of the items in the iterable are equal to the target object.
+ *
+ * Examples:
+ *
+ *     contains([], 'whatever')         // => false
+ *     contains([3], 42)                // => false
+ *     contains([3], 3)                 // => true
+ *     contains([0, 1, 2], 2)           // => true
+ *
+ */
+
+
+function contains(haystack, needle) {
+  return any(haystack, function (x) {
+    return x === needle;
+  });
+}
+/**
+ * Returns an iterable of enumeration pairs.  Iterable must be a sequence, an
+ * iterator, or some other object which supports iteration.  The elements
+ * produced by returns a tuple containing a counter value (starting from 0 by
+ * default) and the values obtained from iterating over given iterable.
+ *
+ * Example:
+ *
+ *     import { enumerate } from 'itertools';
+ *
+ *     console.log([...enumerate(['hello', 'world'])]);
+ *     // [0, 'hello'], [1, 'world']]
+ */
+
+
+function enumerate(iterable) {
+  var start,
+      index,
+      _iterator3,
+      _step3,
+      value,
+      _args = arguments;
+
+  return _regenerator["default"].wrap(function enumerate$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          start = _args.length > 1 && _args[1] !== undefined ? _args[1] : 0;
+          index = start;
+          _iterator3 = _createForOfIteratorHelper(iterable);
+          _context.prev = 3;
+
+          _iterator3.s();
+
+        case 5:
+          if ((_step3 = _iterator3.n()).done) {
+            _context.next = 11;
+            break;
+          }
+
+          value = _step3.value;
+          _context.next = 9;
+          return [index++, value];
+
+        case 9:
+          _context.next = 5;
+          break;
+
+        case 11:
+          _context.next = 16;
+          break;
+
+        case 13:
+          _context.prev = 13;
+          _context.t0 = _context["catch"](3);
+
+          _iterator3.e(_context.t0);
+
+        case 16:
+          _context.prev = 16;
+
+          _iterator3.f();
+
+          return _context.finish(16);
+
+        case 19:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked, null, [[3, 13, 16, 19]]);
+}
+/**
+ * Non-lazy version of ifilter().
+ */
+
+
+function filter(iterable, predicate) {
+  return Array.from((0, _itertools.ifilter)(iterable, predicate));
+}
+/**
+ * Returns an iterator object for the given iterable.  This can be used to
+ * manually get an iterator for any iterable datastructure.  The purpose and
+ * main use case of this function is to get a single iterator (a thing with
+ * state, think of it as a "cursor") which can only be consumed once.
+ */
+
+
+function iter(iterable) {
+  // TODO: Not sure why Flow choked on this expression below, but at least we lock down the
+  // type transformation in the function signature this way.
+  // $FlowFixMe[incompatible-use]
+  return iterable[Symbol.iterator]();
+}
+/**
+ * Non-lazy version of imap().
+ */
+
+
+function map(iterable, mapper) {
+  return Array.from((0, _itertools.imap)(iterable, mapper));
+}
+/**
+ * Return the largest item in an iterable.  Only works for numbers, as ordering
+ * is pretty poorly defined on any other data type in JS.  The optional `keyFn`
+ * argument specifies a one-argument ordering function like that used for
+ * sorted().
+ *
+ * If the iterable is empty, `undefined` is returned.
+ *
+ * If multiple items are maximal, the function returns either one of them, but
+ * which one is not defined.
+ */
+
+
+function max(iterable) {
+  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.numberIdentity;
+  return reduce_(iterable, function (x, y) {
+    return keyFn(x) > keyFn(y) ? x : y;
+  });
+}
+/**
+ * Return the smallest item in an iterable.  Only works for numbers, as
+ * ordering is pretty poorly defined on any other data type in JS.  The
+ * optional `keyFn` argument specifies a one-argument ordering function like
+ * that used for sorted().
+ *
+ * If the iterable is empty, `undefined` is returned.
+ *
+ * If multiple items are minimal, the function returns either one of them, but
+ * which one is not defined.
+ */
+
+
+function min(iterable) {
+  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.numberIdentity;
+  return reduce_(iterable, function (x, y) {
+    return keyFn(x) < keyFn(y) ? x : y;
+  });
+}
+/**
+ * Internal helper for the range function
+ */
+
+
+function _range(start, stop, step) {
+  var counter = (0, _itertools.count)(start, step);
+  var pred = step >= 0 ? function (n) {
+    return n < stop;
+  } : function (n) {
+    return n > stop;
+  };
+  return (0, _itertools.takewhile)(counter, pred);
+}
+/**
+ * Returns an iterator producing all the numbers in the given range one by one,
+ * starting from `start` (default 0), as long as `i < stop`, in increments of
+ * `step` (default 1).
+ *
+ * `range(a)` is a convenient shorthand for `range(0, a)`.
+ *
+ * Various valid invocations:
+ *
+ *     range(5)           // [0, 1, 2, 3, 4]
+ *     range(2, 5)        // [2, 3, 4]
+ *     range(0, 5, 2)     // [0, 2, 4]
+ *     range(5, 0, -1)    // [5, 4, 3, 2, 1]
+ *     range(-3)          // []
+ *
+ * For a positive `step`, the iterator will keep producing values `n` as long
+ * as the stop condition `n < stop` is satisfied.
+ *
+ * For a negative `step`, the iterator will keep producing values `n` as long
+ * as the stop condition `n > stop` is satisfied.
+ *
+ * The produced range will be empty if the first value to produce already does
+ * not meet the value constraint.
+ */
+
+
+function range(a) {
+  for (var _len = arguments.length, rest = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    rest[_key - 1] = arguments[_key];
+  }
+
+  var args = [a].concat(rest); // "a" was only used by Flow to make at least one value mandatory
+
+  switch (args.length) {
+    case 1:
+      return _range(0, args[0], 1);
+
+    case 2:
+      return _range(args[0], args[1], 1);
+
+    case 3:
+      return _range(args[0], args[1], args[2]);
+
+    /* istanbul ignore next */
+
+    default:
+      throw new Error('invalid number of arguments');
+  }
+}
+/**
+ * Apply function of two arguments cumulatively to the items of sequence, from
+ * left to right, so as to reduce the sequence to a single value.  For example:
+ *
+ *     reduce([1, 2, 3, 4, 5], (x, y) => x + y, 0)
+ *
+ * calculates
+ *
+ *     (((((0+1)+2)+3)+4)+5)
+ *
+ * The left argument, `x`, is the accumulated value and the right argument,
+ * `y`, is the update value from the sequence.
+ *
+ * **Difference between `reduce()` and `reduce\_()`**:  `reduce()` requires an
+ * explicit initializer, whereas `reduce_()` will automatically use the first
+ * item in the given iterable as the initializer.  When using `reduce()`, the
+ * initializer value is placed before the items of the sequence in the
+ * calculation, and serves as a default when the sequence is empty.  When using
+ * `reduce_()`, and the given iterable is empty, then no default value can be
+ * derived and `undefined` will be returned.
+ */
+
+
+function reduce(iterable, reducer, start) {
+  var it = iter(iterable);
+  var output = start;
+
+  var _iterator4 = _createForOfIteratorHelper(enumerate(it)),
+      _step4;
+
+  try {
+    for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+      var _step4$value = _slicedToArray(_step4.value, 2),
+          index = _step4$value[0],
+          item = _step4$value[1];
+
+      output = reducer(output, item, index);
+    }
+  } catch (err) {
+    _iterator4.e(err);
+  } finally {
+    _iterator4.f();
+  }
+
+  return output;
+}
+/**
+ * See reduce().
+ */
+
+
+function reduce_(iterable, reducer) {
+  var it = iter(iterable);
+  var start = (0, _custom.first)(it);
+
+  if (start === undefined) {
+    return undefined;
+  } else {
+    return reduce(it, reducer, start);
+  }
+}
+/**
+ * Return a new sorted list from the items in iterable.
+ *
+ * Has two optional arguments:
+ *
+ * * `keyFn` specifies a function of one argument providing a primitive
+ *   identity for each element in the iterable.  that will be used to compare.
+ *   The default value is to use a default identity function that is only
+ *   defined for primitive types.
+ *
+ * * `reverse` is a boolean value.  If `true`, then the list elements are
+ *   sorted as if each comparison were reversed.
+ */
+
+
+function sorted(iterable) {
+  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.primitiveIdentity;
+  var reverse = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  var result = Array.from(iterable);
+  result.sort((0, _utils.keyToCmp)(keyFn)); // sort in-place
+
+  if (reverse) {
+    result.reverse(); // reverse in-place
+  }
+
+  return result;
+}
+/**
+ * Sums the items of an iterable from left to right and returns the total.  The
+ * sum will defaults to 0 if the iterable is empty.
+ */
+
+
+function sum(iterable) {
+  return reduce(iterable, function (x, y) {
+    return x + y;
+  }, 0);
+}
+/**
+ * See izip.
+ */
+
+
+function zip(xs, ys) {
+  return Array.from((0, _itertools.izip)(xs, ys));
+}
+/**
+ * See izip3.
+ */
+
+
+function zip3(xs, ys, zs) {
+  return Array.from((0, _itertools.izip3)(xs, ys, zs));
+}
+},{"./custom":36,"./itertools":38,"./utils":40,"@babel/runtime/regenerator":1}],36:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.icompact = icompact;
+exports.compact = compact;
+exports.compactObject = compactObject;
+exports.first = first;
+exports.flatmap = flatmap;
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _itertools = require("./itertools");
+
+var _moreItertools = require("./more-itertools");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var _marked = /*#__PURE__*/_regenerator["default"].mark(icompact);
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function isDefined(x) {
+  return x !== undefined;
+}
+/**
+ * Returns an iterable, filtering out any `undefined` values from the input
+ * iterable.  This function is useful to convert a list of `Maybe<T>`'s to
+ * a list of `T`'s, discarding all the undefined values:
+ *
+ *     >>> compact([1, 2, undefined, 3])
+ *     [1, 2, 3]
+ */
+
+
+function icompact(iterable) {
+  var _iterator, _step, item;
+
+  return _regenerator["default"].wrap(function icompact$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _iterator = _createForOfIteratorHelper(iterable);
+          _context.prev = 1;
+
+          _iterator.s();
+
+        case 3:
+          if ((_step = _iterator.n()).done) {
+            _context.next = 10;
+            break;
+          }
+
+          item = _step.value;
+
+          if (!(typeof item !== 'undefined')) {
+            _context.next = 8;
+            break;
+          }
+
+          _context.next = 8;
+          return item;
+
+        case 8:
+          _context.next = 3;
+          break;
+
+        case 10:
+          _context.next = 15;
+          break;
+
+        case 12:
+          _context.prev = 12;
+          _context.t0 = _context["catch"](1);
+
+          _iterator.e(_context.t0);
+
+        case 15:
+          _context.prev = 15;
+
+          _iterator.f();
+
+          return _context.finish(15);
+
+        case 18:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked, null, [[1, 12, 15, 18]]);
+}
+/**
+ * See icompact().
+ */
+
+
+function compact(iterable) {
+  return Array.from(icompact(iterable));
+}
+/**
+ * Removes all undefined values from the given object.  Returns a new object.
+ *
+ *     >>> compactObject({ a: 1, b: undefined, c: 0 })
+ *     { a: 1, c: 0 }
+ *
+ */
+
+
+function compactObject(obj) {
+  var result = {};
+
+  for (var _i = 0, _Object$entries = Object.entries(obj); _i < _Object$entries.length; _i++) {
+    var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
+        _key = _Object$entries$_i[0],
+        value = _Object$entries$_i[1];
+
+    if (typeof value !== 'undefined') {
+      result[_key] = value;
+    }
+  }
+
+  return result;
+}
+/**
+ * Returns the first item in the iterable for which the predicate holds, if
+ * any.  If no such item exists, `undefined` is returned.  The default
+ * predicate is any defined value.
+ */
+
+
+function first(iterable, keyFn) {
+  var fn = keyFn || isDefined;
+
+  var _iterator2 = _createForOfIteratorHelper(iterable),
+      _step2;
+
+  try {
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+      var value = _step2.value;
+
+      if (fn(value)) {
+        return value;
+      }
+    }
+  } catch (err) {
+    _iterator2.e(err);
+  } finally {
+    _iterator2.f();
+  }
+
+  return undefined;
+}
+/**
+ * Returns 0 or more values for every value in the given iterable.
+ * Technically, it's just calling map(), followed by flatten(), but it's a very
+ * useful operation if you want to map over a structure, but not have a 1:1
+ * input-output mapping.  Instead, if you want to potentially return 0 or more
+ * values per input element, use flatmap():
+ *
+ * For example, to return all numbers `n` in the input iterable `n` times:
+ *
+ *     >>> const repeatN = n => repeat(n, n);
+ *     >>> [...flatmap([0, 1, 2, 3, 4], repeatN)]
+ *     [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]  // note: no 0
+ *
+ */
+
+
+function flatmap(iterable, mapper) {
+  return (0, _moreItertools.flatten)((0, _itertools.imap)(iterable, mapper));
+}
+},{"./itertools":38,"./more-itertools":39,"@babel/runtime/regenerator":1}],37:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "all", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.all;
+  }
+});
+Object.defineProperty(exports, "any", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.any;
+  }
+});
+Object.defineProperty(exports, "contains", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.contains;
+  }
+});
+Object.defineProperty(exports, "enumerate", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.enumerate;
+  }
+});
+Object.defineProperty(exports, "filter", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.filter;
+  }
+});
+Object.defineProperty(exports, "iter", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.iter;
+  }
+});
+Object.defineProperty(exports, "map", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.map;
+  }
+});
+Object.defineProperty(exports, "max", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.max;
+  }
+});
+Object.defineProperty(exports, "min", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.min;
+  }
+});
+Object.defineProperty(exports, "range", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.range;
+  }
+});
+Object.defineProperty(exports, "reduce", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.reduce;
+  }
+});
+Object.defineProperty(exports, "sorted", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.sorted;
+  }
+});
+Object.defineProperty(exports, "sum", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.sum;
+  }
+});
+Object.defineProperty(exports, "zip", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.zip;
+  }
+});
+Object.defineProperty(exports, "zip3", {
+  enumerable: true,
+  get: function get() {
+    return _builtins.zip3;
+  }
+});
+Object.defineProperty(exports, "chain", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.chain;
+  }
+});
+Object.defineProperty(exports, "compress", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.compress;
+  }
+});
+Object.defineProperty(exports, "count", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.count;
+  }
+});
+Object.defineProperty(exports, "cycle", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.cycle;
+  }
+});
+Object.defineProperty(exports, "dropwhile", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.dropwhile;
+  }
+});
+Object.defineProperty(exports, "groupby", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.groupby;
+  }
+});
+Object.defineProperty(exports, "icompress", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.icompress;
+  }
+});
+Object.defineProperty(exports, "ifilter", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.ifilter;
+  }
+});
+Object.defineProperty(exports, "imap", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.imap;
+  }
+});
+Object.defineProperty(exports, "izip", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.izip;
+  }
+});
+Object.defineProperty(exports, "izip2", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.izip2;
+  }
+});
+Object.defineProperty(exports, "izip3", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.izip3;
+  }
+});
+Object.defineProperty(exports, "izipMany", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.izipMany;
+  }
+});
+Object.defineProperty(exports, "izipLongest", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.izipLongest;
+  }
+});
+Object.defineProperty(exports, "permutations", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.permutations;
+  }
+});
+Object.defineProperty(exports, "takewhile", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.takewhile;
+  }
+});
+Object.defineProperty(exports, "zipLongest", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.zipLongest;
+  }
+});
+Object.defineProperty(exports, "zipMany", {
+  enumerable: true,
+  get: function get() {
+    return _itertools.zipMany;
+  }
+});
+Object.defineProperty(exports, "chunked", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.chunked;
+  }
+});
+Object.defineProperty(exports, "flatten", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.flatten;
+  }
+});
+Object.defineProperty(exports, "heads", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.heads;
+  }
+});
+Object.defineProperty(exports, "itake", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.itake;
+  }
+});
+Object.defineProperty(exports, "pairwise", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.pairwise;
+  }
+});
+Object.defineProperty(exports, "partition", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.partition;
+  }
+});
+Object.defineProperty(exports, "roundrobin", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.roundrobin;
+  }
+});
+Object.defineProperty(exports, "take", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.take;
+  }
+});
+Object.defineProperty(exports, "uniqueEverseen", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.uniqueEverseen;
+  }
+});
+Object.defineProperty(exports, "uniqueJustseen", {
+  enumerable: true,
+  get: function get() {
+    return _moreItertools.uniqueJustseen;
+  }
+});
+Object.defineProperty(exports, "compact", {
+  enumerable: true,
+  get: function get() {
+    return _custom.compact;
+  }
+});
+Object.defineProperty(exports, "compactObject", {
+  enumerable: true,
+  get: function get() {
+    return _custom.compactObject;
+  }
+});
+Object.defineProperty(exports, "first", {
+  enumerable: true,
+  get: function get() {
+    return _custom.first;
+  }
+});
+Object.defineProperty(exports, "flatmap", {
+  enumerable: true,
+  get: function get() {
+    return _custom.flatmap;
+  }
+});
+Object.defineProperty(exports, "icompact", {
+  enumerable: true,
+  get: function get() {
+    return _custom.icompact;
+  }
+});
+
+var _builtins = require("./builtins");
+
+var _itertools = require("./itertools");
+
+var _moreItertools = require("./more-itertools");
+
+var _custom = require("./custom");
+},{"./builtins":35,"./custom":36,"./itertools":38,"./more-itertools":39}],38:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.chain = chain;
+exports.count = count;
+exports.compress = compress;
+exports.cycle = cycle;
+exports.dropwhile = dropwhile;
+exports.groupby = groupby;
+exports.icompress = icompress;
+exports.ifilter = ifilter;
+exports.imap = imap;
+exports.islice = islice;
+exports.izip2 = izip2;
+exports.izip3 = izip3;
+exports.izipLongest2 = izipLongest2;
+exports.izipLongest3 = izipLongest3;
+exports.izipMany = izipMany;
+exports.permutations = permutations;
+exports.repeat = repeat;
+exports.takewhile = takewhile;
+exports.zipLongest2 = zipLongest2;
+exports.zipLongest3 = zipLongest3;
+exports.zipMany = zipMany;
+exports.zipLongest = exports.izipLongest = exports.izip = void 0;
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _builtins = require("./builtins");
+
+var _moreItertools = require("./more-itertools");
+
+var _utils = require("./utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+var _marked = /*#__PURE__*/_regenerator["default"].mark(count),
+    _marked2 = /*#__PURE__*/_regenerator["default"].mark(cycle),
+    _marked3 = /*#__PURE__*/_regenerator["default"].mark(dropwhile),
+    _marked4 = /*#__PURE__*/_regenerator["default"].mark(groupby),
+    _marked5 = /*#__PURE__*/_regenerator["default"].mark(icompress),
+    _marked6 = /*#__PURE__*/_regenerator["default"].mark(ifilter),
+    _marked7 = /*#__PURE__*/_regenerator["default"].mark(imap),
+    _marked8 = /*#__PURE__*/_regenerator["default"].mark(islice),
+    _marked9 = /*#__PURE__*/_regenerator["default"].mark(izip2),
+    _marked10 = /*#__PURE__*/_regenerator["default"].mark(izip3),
+    _marked11 = /*#__PURE__*/_regenerator["default"].mark(izipLongest2),
+    _marked12 = /*#__PURE__*/_regenerator["default"].mark(izipLongest3),
+    _marked13 = /*#__PURE__*/_regenerator["default"].mark(izipMany),
+    _marked14 = /*#__PURE__*/_regenerator["default"].mark(permutations),
+    _marked15 = /*#__PURE__*/_regenerator["default"].mark(repeat),
+    _marked16 = /*#__PURE__*/_regenerator["default"].mark(takewhile);
+
+var SENTINEL = Symbol();
+
+function composeAnd(f1, f2) {
+  return function (n) {
+    return f1(n) && f2(n);
+  };
+}
+
+function slicePredicate(start, stop, step) {
+  // If stop is not provided (= undefined), then interpret the start value as the stop value
+  var _start = start,
+      _stop = stop,
+      _step = step;
+
+  if (_stop === undefined) {
+    var _ref = [0, _start];
+    _start = _ref[0];
+    _stop = _ref[1];
+  }
+
+  var pred = function pred(n) {
+    return n >= _start;
+  };
+
+  if (_stop !== null) {
+    var stopNotNull = _stop;
+    pred = composeAnd(pred, function (n) {
+      return n < stopNotNull;
+    });
+  }
+
+  if (_step > 1) {
+    pred = composeAnd(pred, function (n) {
+      return (n - _start) % _step === 0;
+    });
+  }
+
+  return pred;
+}
+/**
+ * Returns an iterator that returns elements from the first iterable until it
+ * is exhausted, then proceeds to the next iterable, until all of the iterables
+ * are exhausted.  Used for treating consecutive sequences as a single
+ * sequence.
+ */
+
+
+function chain() {
+  for (var _len = arguments.length, iterables = new Array(_len), _key = 0; _key < _len; _key++) {
+    iterables[_key] = arguments[_key];
+  }
+
+  return (0, _moreItertools.flatten)(iterables);
+}
+/**
+ * Returns an iterator that counts up values starting with number `start`
+ * (default 0), incrementing by `step`.  To decrement, use a negative step
+ * number.
+ */
+
+
+function count() {
+  var start,
+      step,
+      n,
+      _args = arguments;
+  return _regenerator["default"].wrap(function count$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          start = _args.length > 0 && _args[0] !== undefined ? _args[0] : 0;
+          step = _args.length > 1 && _args[1] !== undefined ? _args[1] : 1;
+          n = start;
+
+        case 3:
+          _context.next = 5;
+          return n;
+
+        case 5:
+          n += step;
+
+        case 6:
+          _context.next = 3;
+          break;
+
+        case 8:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked);
+}
+/**
+ * Non-lazy version of icompress().
+ */
+
+
+function compress(data, selectors) {
+  return Array.from(icompress(data, selectors));
+}
+/**
+ * Returns an iterator producing elements from the iterable and saving a copy
+ * of each.  When the iterable is exhausted, return elements from the saved
+ * copy.  Repeats indefinitely.
+ */
+
+
+function cycle(iterable) {
+  var saved, _iterator, _step2, _element, _iterator2, _step3, element;
+
+  return _regenerator["default"].wrap(function cycle$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          saved = [];
+          _iterator = _createForOfIteratorHelper(iterable);
+          _context2.prev = 2;
+
+          _iterator.s();
+
+        case 4:
+          if ((_step2 = _iterator.n()).done) {
+            _context2.next = 11;
+            break;
+          }
+
+          _element = _step2.value;
+          _context2.next = 8;
+          return _element;
+
+        case 8:
+          saved.push(_element);
+
+        case 9:
+          _context2.next = 4;
+          break;
+
+        case 11:
+          _context2.next = 16;
+          break;
+
+        case 13:
+          _context2.prev = 13;
+          _context2.t0 = _context2["catch"](2);
+
+          _iterator.e(_context2.t0);
+
+        case 16:
+          _context2.prev = 16;
+
+          _iterator.f();
+
+          return _context2.finish(16);
+
+        case 19:
+          if (!(saved.length > 0)) {
+            _context2.next = 39;
+            break;
+          }
+
+          _iterator2 = _createForOfIteratorHelper(saved);
+          _context2.prev = 21;
+
+          _iterator2.s();
+
+        case 23:
+          if ((_step3 = _iterator2.n()).done) {
+            _context2.next = 29;
+            break;
+          }
+
+          element = _step3.value;
+          _context2.next = 27;
+          return element;
+
+        case 27:
+          _context2.next = 23;
+          break;
+
+        case 29:
+          _context2.next = 34;
+          break;
+
+        case 31:
+          _context2.prev = 31;
+          _context2.t1 = _context2["catch"](21);
+
+          _iterator2.e(_context2.t1);
+
+        case 34:
+          _context2.prev = 34;
+
+          _iterator2.f();
+
+          return _context2.finish(34);
+
+        case 37:
+          _context2.next = 19;
+          break;
+
+        case 39:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  }, _marked2, null, [[2, 13, 16, 19], [21, 31, 34, 37]]);
+}
+/**
+ * Returns an iterator that drops elements from the iterable as long as the
+ * predicate is true; afterwards, returns every remaining element.  Note, the
+ * iterator does not produce any output until the predicate first becomes
+ * false.
+ */
+
+
+function dropwhile(iterable, predicate) {
+  var it, _iterator3, _step4, value, _iterator4, _step5, _value;
+
+  return _regenerator["default"].wrap(function dropwhile$(_context3) {
+    while (1) {
+      switch (_context3.prev = _context3.next) {
+        case 0:
+          it = (0, _builtins.iter)(iterable);
+          _iterator3 = _createForOfIteratorHelper(it);
+          _context3.prev = 2;
+
+          _iterator3.s();
+
+        case 4:
+          if ((_step4 = _iterator3.n()).done) {
+            _context3.next = 12;
+            break;
+          }
+
+          value = _step4.value;
+
+          if (predicate(value)) {
+            _context3.next = 10;
+            break;
+          }
+
+          _context3.next = 9;
+          return value;
+
+        case 9:
+          return _context3.abrupt("break", 12);
+
+        case 10:
+          _context3.next = 4;
+          break;
+
+        case 12:
+          _context3.next = 17;
+          break;
+
+        case 14:
+          _context3.prev = 14;
+          _context3.t0 = _context3["catch"](2);
+
+          _iterator3.e(_context3.t0);
+
+        case 17:
+          _context3.prev = 17;
+
+          _iterator3.f();
+
+          return _context3.finish(17);
+
+        case 20:
+          _iterator4 = _createForOfIteratorHelper(it);
+          _context3.prev = 21;
+
+          _iterator4.s();
+
+        case 23:
+          if ((_step5 = _iterator4.n()).done) {
+            _context3.next = 29;
+            break;
+          }
+
+          _value = _step5.value;
+          _context3.next = 27;
+          return _value;
+
+        case 27:
+          _context3.next = 23;
+          break;
+
+        case 29:
+          _context3.next = 34;
+          break;
+
+        case 31:
+          _context3.prev = 31;
+          _context3.t1 = _context3["catch"](21);
+
+          _iterator4.e(_context3.t1);
+
+        case 34:
+          _context3.prev = 34;
+
+          _iterator4.f();
+
+          return _context3.finish(34);
+
+        case 37:
+        case "end":
+          return _context3.stop();
+      }
+    }
+  }, _marked3, null, [[2, 14, 17, 20], [21, 31, 34, 37]]);
+}
+
+function groupby(iterable) {
+  var keyFn,
+      it,
+      currentValue,
+      currentKey,
+      targetKey,
+      grouper,
+      nextVal,
+      _args5 = arguments;
+  return _regenerator["default"].wrap(function groupby$(_context5) {
+    while (1) {
+      switch (_context5.prev = _context5.next) {
+        case 0:
+          keyFn = _args5.length > 1 && _args5[1] !== undefined ? _args5[1] : _utils.primitiveIdentity;
+          it = (0, _builtins.iter)(iterable);
+          // $FlowFixMe[incompatible-type] - deliberate use of the SENTINEL symbol
+          currentKey = SENTINEL;
+          targetKey = currentKey;
+          grouper = /*#__PURE__*/_regenerator["default"].mark(function grouper(tgtKey) {
+            var nextVal;
+            return _regenerator["default"].wrap(function grouper$(_context4) {
+              while (1) {
+                switch (_context4.prev = _context4.next) {
+                  case 0:
+                    if (!(currentKey === tgtKey)) {
+                      _context4.next = 10;
+                      break;
+                    }
+
+                    _context4.next = 3;
+                    return currentValue;
+
+                  case 3:
+                    nextVal = it.next();
+
+                    if (!nextVal.done) {
+                      _context4.next = 6;
+                      break;
+                    }
+
+                    return _context4.abrupt("return");
+
+                  case 6:
+                    currentValue = nextVal.value;
+                    currentKey = keyFn(currentValue);
+                    _context4.next = 0;
+                    break;
+
+                  case 10:
+                  case "end":
+                    return _context4.stop();
+                }
+              }
+            }, grouper);
+          });
+
+        case 5:
+          if (!(currentKey === targetKey)) {
+            _context5.next = 14;
+            break;
+          }
+
+          nextVal = it.next();
+
+          if (!nextVal.done) {
+            _context5.next = 10;
+            break;
+          }
+
+          // $FlowFixMe[incompatible-type] - deliberate use of the SENTINEL symbol
+          currentKey = SENTINEL;
+          return _context5.abrupt("return");
+
+        case 10:
+          currentValue = nextVal.value;
+          currentKey = keyFn(currentValue);
+          _context5.next = 5;
+          break;
+
+        case 14:
+          targetKey = currentKey;
+          _context5.next = 17;
+          return [currentKey, grouper(targetKey)];
+
+        case 17:
+          _context5.next = 5;
+          break;
+
+        case 19:
+        case "end":
+          return _context5.stop();
+      }
+    }
+  }, _marked4);
+}
+/**
+ * Returns an iterator that filters elements from data returning only those
+ * that have a corresponding element in selectors that evaluates to `true`.
+ * Stops when either the data or selectors iterables has been exhausted.
+ */
+
+
+function icompress(data, selectors) {
+  var _iterator5, _step6, _step6$value, d, s;
+
+  return _regenerator["default"].wrap(function icompress$(_context6) {
+    while (1) {
+      switch (_context6.prev = _context6.next) {
+        case 0:
+          _iterator5 = _createForOfIteratorHelper(izip(data, selectors));
+          _context6.prev = 1;
+
+          _iterator5.s();
+
+        case 3:
+          if ((_step6 = _iterator5.n()).done) {
+            _context6.next = 10;
+            break;
+          }
+
+          _step6$value = _slicedToArray(_step6.value, 2), d = _step6$value[0], s = _step6$value[1];
+
+          if (!s) {
+            _context6.next = 8;
+            break;
+          }
+
+          _context6.next = 8;
+          return d;
+
+        case 8:
+          _context6.next = 3;
+          break;
+
+        case 10:
+          _context6.next = 15;
+          break;
+
+        case 12:
+          _context6.prev = 12;
+          _context6.t0 = _context6["catch"](1);
+
+          _iterator5.e(_context6.t0);
+
+        case 15:
+          _context6.prev = 15;
+
+          _iterator5.f();
+
+          return _context6.finish(15);
+
+        case 18:
+        case "end":
+          return _context6.stop();
+      }
+    }
+  }, _marked5, null, [[1, 12, 15, 18]]);
+}
+/**
+ * Returns an iterator that filters elements from iterable returning only those
+ * for which the predicate is true.
+ */
+
+
+function ifilter(iterable, predicate) {
+  var _iterator6, _step7, value;
+
+  return _regenerator["default"].wrap(function ifilter$(_context7) {
+    while (1) {
+      switch (_context7.prev = _context7.next) {
+        case 0:
+          _iterator6 = _createForOfIteratorHelper(iterable);
+          _context7.prev = 1;
+
+          _iterator6.s();
+
+        case 3:
+          if ((_step7 = _iterator6.n()).done) {
+            _context7.next = 10;
+            break;
+          }
+
+          value = _step7.value;
+
+          if (!predicate(value)) {
+            _context7.next = 8;
+            break;
+          }
+
+          _context7.next = 8;
+          return value;
+
+        case 8:
+          _context7.next = 3;
+          break;
+
+        case 10:
+          _context7.next = 15;
+          break;
+
+        case 12:
+          _context7.prev = 12;
+          _context7.t0 = _context7["catch"](1);
+
+          _iterator6.e(_context7.t0);
+
+        case 15:
+          _context7.prev = 15;
+
+          _iterator6.f();
+
+          return _context7.finish(15);
+
+        case 18:
+        case "end":
+          return _context7.stop();
+      }
+    }
+  }, _marked6, null, [[1, 12, 15, 18]]);
+}
+/**
+ * Returns an iterator that computes the given mapper function using arguments
+ * from each of the iterables.
+ */
+
+
+function imap(iterable, mapper) {
+  var _iterator7, _step8, value;
+
+  return _regenerator["default"].wrap(function imap$(_context8) {
+    while (1) {
+      switch (_context8.prev = _context8.next) {
+        case 0:
+          _iterator7 = _createForOfIteratorHelper(iterable);
+          _context8.prev = 1;
+
+          _iterator7.s();
+
+        case 3:
+          if ((_step8 = _iterator7.n()).done) {
+            _context8.next = 9;
+            break;
+          }
+
+          value = _step8.value;
+          _context8.next = 7;
+          return mapper(value);
+
+        case 7:
+          _context8.next = 3;
+          break;
+
+        case 9:
+          _context8.next = 14;
+          break;
+
+        case 11:
+          _context8.prev = 11;
+          _context8.t0 = _context8["catch"](1);
+
+          _iterator7.e(_context8.t0);
+
+        case 14:
+          _context8.prev = 14;
+
+          _iterator7.f();
+
+          return _context8.finish(14);
+
+        case 17:
+        case "end":
+          return _context8.stop();
+      }
+    }
+  }, _marked7, null, [[1, 11, 14, 17]]);
+}
+/**
+ * Returns an iterator that returns selected elements from the iterable.  If
+ * `start` is non-zero, then elements from the iterable are skipped until start
+ * is reached.  Then, elements are returned by making steps of `step` (defaults
+ * to 1).  If set to higher than 1, items will be skipped.  If `stop` is
+ * provided, then iteration continues until the iterator reached that index,
+ * otherwise, the iterable will be fully exhausted.  `islice()` does not
+ * support negative values for `start`, `stop`, or `step`.
+ */
+
+
+function islice(iterable, start, stop) {
+  var step,
+      pred,
+      _iterator8,
+      _step9,
+      _step9$value,
+      i,
+      value,
+      _args9 = arguments;
+
+  return _regenerator["default"].wrap(function islice$(_context9) {
+    while (1) {
+      switch (_context9.prev = _context9.next) {
+        case 0:
+          step = _args9.length > 3 && _args9[3] !== undefined ? _args9[3] : 1;
+
+          if (!(start < 0)) {
+            _context9.next = 3;
+            break;
+          }
+
+          throw new Error('start cannot be negative');
+
+        case 3:
+          if (!(typeof stop === 'number' && stop < 0)) {
+            _context9.next = 5;
+            break;
+          }
+
+          throw new Error('stop cannot be negative');
+
+        case 5:
+          if (!(step < 0)) {
+            _context9.next = 7;
+            break;
+          }
+
+          throw new Error('step cannot be negative');
+
+        case 7:
+          pred = slicePredicate(start, stop, step);
+          _iterator8 = _createForOfIteratorHelper((0, _builtins.enumerate)(iterable));
+          _context9.prev = 9;
+
+          _iterator8.s();
+
+        case 11:
+          if ((_step9 = _iterator8.n()).done) {
+            _context9.next = 18;
+            break;
+          }
+
+          _step9$value = _slicedToArray(_step9.value, 2), i = _step9$value[0], value = _step9$value[1];
+
+          if (!pred(i)) {
+            _context9.next = 16;
+            break;
+          }
+
+          _context9.next = 16;
+          return value;
+
+        case 16:
+          _context9.next = 11;
+          break;
+
+        case 18:
+          _context9.next = 23;
+          break;
+
+        case 20:
+          _context9.prev = 20;
+          _context9.t0 = _context9["catch"](9);
+
+          _iterator8.e(_context9.t0);
+
+        case 23:
+          _context9.prev = 23;
+
+          _iterator8.f();
+
+          return _context9.finish(23);
+
+        case 26:
+        case "end":
+          return _context9.stop();
+      }
+    }
+  }, _marked8, null, [[9, 20, 23, 26]]);
+}
+/**
+ * Returns an iterator that aggregates elements from each of the iterables.
+ * Used for lock-step iteration over several iterables at a time.  When
+ * iterating over two iterables, use `izip2`.  When iterating over three
+ * iterables, use `izip3`, etc.  `izip` is an alias for `izip2`.
+ */
+
+
+function izip2(xs, ys) {
+  var ixs, iys, x, y;
+  return _regenerator["default"].wrap(function izip2$(_context10) {
+    while (1) {
+      switch (_context10.prev = _context10.next) {
+        case 0:
+          ixs = (0, _builtins.iter)(xs);
+          iys = (0, _builtins.iter)(ys);
+
+        case 2:
+          x = ixs.next();
+          y = iys.next();
+
+          if (!(!x.done && !y.done)) {
+            _context10.next = 9;
+            break;
+          }
+
+          _context10.next = 7;
+          return [x.value, y.value];
+
+        case 7:
+          _context10.next = 10;
+          break;
+
+        case 9:
+          return _context10.abrupt("return");
+
+        case 10:
+          _context10.next = 2;
+          break;
+
+        case 12:
+        case "end":
+          return _context10.stop();
+      }
+    }
+  }, _marked9);
+}
+/**
+ * Like izip2, but for three input iterables.
+ */
+
+
+function izip3(xs, ys, zs) {
+  var ixs, iys, izs, x, y, z;
+  return _regenerator["default"].wrap(function izip3$(_context11) {
+    while (1) {
+      switch (_context11.prev = _context11.next) {
+        case 0:
+          ixs = (0, _builtins.iter)(xs);
+          iys = (0, _builtins.iter)(ys);
+          izs = (0, _builtins.iter)(zs);
+
+        case 3:
+          x = ixs.next();
+          y = iys.next();
+          z = izs.next();
+
+          if (!(!x.done && !y.done && !z.done)) {
+            _context11.next = 11;
+            break;
+          }
+
+          _context11.next = 9;
+          return [x.value, y.value, z.value];
+
+        case 9:
+          _context11.next = 12;
+          break;
+
+        case 11:
+          return _context11.abrupt("return");
+
+        case 12:
+          _context11.next = 3;
+          break;
+
+        case 14:
+        case "end":
+          return _context11.stop();
+      }
+    }
+  }, _marked10);
+}
+
+var izip = izip2;
+/**
+ * Returns an iterator that aggregates elements from each of the iterables.  If
+ * the iterables are of uneven length, missing values are filled-in with
+ * fillvalue.  Iteration continues until the longest iterable is exhausted.
+ */
+
+exports.izip = izip;
+
+function izipLongest2(xs, ys) {
+  var filler,
+      ixs,
+      iys,
+      x,
+      y,
+      _args12 = arguments;
+  return _regenerator["default"].wrap(function izipLongest2$(_context12) {
+    while (1) {
+      switch (_context12.prev = _context12.next) {
+        case 0:
+          filler = _args12.length > 2 && _args12[2] !== undefined ? _args12[2] : undefined;
+          ixs = (0, _builtins.iter)(xs);
+          iys = (0, _builtins.iter)(ys);
+
+        case 3:
+          x = ixs.next();
+          y = iys.next();
+
+          if (!(x.done && y.done)) {
+            _context12.next = 9;
+            break;
+          }
+
+          return _context12.abrupt("return");
+
+        case 9:
+          _context12.next = 11;
+          return [!x.done ? x.value : filler, !y.done ? y.value : filler];
+
+        case 11:
+          _context12.next = 3;
+          break;
+
+        case 13:
+        case "end":
+          return _context12.stop();
+      }
+    }
+  }, _marked11);
+}
+/**
+ * See izipLongest2, but for three.
+ */
+
+
+function izipLongest3(xs, ys, zs) {
+  var filler,
+      ixs,
+      iys,
+      izs,
+      x,
+      y,
+      z,
+      _args13 = arguments;
+  return _regenerator["default"].wrap(function izipLongest3$(_context13) {
+    while (1) {
+      switch (_context13.prev = _context13.next) {
+        case 0:
+          filler = _args13.length > 3 && _args13[3] !== undefined ? _args13[3] : undefined;
+          ixs = (0, _builtins.iter)(xs);
+          iys = (0, _builtins.iter)(ys);
+          izs = (0, _builtins.iter)(zs);
+
+        case 4:
+          x = ixs.next();
+          y = iys.next();
+          z = izs.next();
+
+          if (!(x.done && y.done && z.done)) {
+            _context13.next = 11;
+            break;
+          }
+
+          return _context13.abrupt("return");
+
+        case 11:
+          _context13.next = 13;
+          return [!x.done ? x.value : filler, !y.done ? y.value : filler, !z.done ? z.value : filler];
+
+        case 13:
+          _context13.next = 4;
+          break;
+
+        case 15:
+        case "end":
+          return _context13.stop();
+      }
+    }
+  }, _marked12);
+}
+/**
+ * Like the other izips (`izip`, `izip3`, etc), but generalized to take an
+ * unlimited amount of input iterables.  Think `izip(*iterables)` in Python.
+ *
+ * **Note:** Due to Flow type system limitations, you can only "generially" zip
+ * iterables with homogeneous types, so you cannot mix types like <A, B> like
+ * you can with izip2().
+ */
+
+
+function izipMany() {
+  var _len2,
+      iters,
+      _key2,
+      iterables,
+      heads,
+      _args14 = arguments;
+
+  return _regenerator["default"].wrap(function izipMany$(_context14) {
+    while (1) {
+      switch (_context14.prev = _context14.next) {
+        case 0:
+          for (_len2 = _args14.length, iters = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+            iters[_key2] = _args14[_key2];
+          }
+
+          // Make them all iterables
+          iterables = iters.map(_builtins.iter);
+
+        case 2:
+          heads = iterables.map(function (xs) {
+            return xs.next();
+          });
+
+          if (!(0, _builtins.all)(heads, function (h) {
+            return !h.done;
+          })) {
+            _context14.next = 8;
+            break;
+          }
+
+          _context14.next = 6;
+          return heads.map(function (h) {
+            return h.value;
+          });
+
+        case 6:
+          _context14.next = 9;
+          break;
+
+        case 8:
+          return _context14.abrupt("return");
+
+        case 9:
+          _context14.next = 2;
+          break;
+
+        case 11:
+        case "end":
+          return _context14.stop();
+      }
+    }
+  }, _marked13);
+}
+/**
+ * Return successive `r`-length permutations of elements in the iterable.
+ *
+ * If `r` is not specified, then `r` defaults to the length of the iterable and
+ * all possible full-length permutations are generated.
+ *
+ * Permutations are emitted in lexicographic sort order.  So, if the input
+ * iterable is sorted, the permutation tuples will be produced in sorted order.
+ *
+ * Elements are treated as unique based on their position, not on their value.
+ * So if the input elements are unique, there will be no repeat values in each
+ * permutation.
+ */
+
+
+function permutations(iterable, r) {
+  var pool, n, x, indices, cycles, poolgetter, cleanExit, _iterator9, _step10, i, j, _ref2, p, q;
+
+  return _regenerator["default"].wrap(function permutations$(_context15) {
+    while (1) {
+      switch (_context15.prev = _context15.next) {
+        case 0:
+          pool = Array.from(iterable);
+          n = pool.length;
+          x = r === undefined ? n : r;
+
+          if (!(x > n)) {
+            _context15.next = 5;
+            break;
+          }
+
+          return _context15.abrupt("return");
+
+        case 5:
+          indices = Array.from((0, _builtins.range)(n));
+          cycles = Array.from((0, _builtins.range)(n, n - x, -1));
+
+          poolgetter = function poolgetter(i) {
+            return pool[i];
+          };
+
+          _context15.next = 10;
+          return indices.slice(0, x).map(poolgetter);
+
+        case 10:
+          if (!(n > 0)) {
+            _context15.next = 45;
+            break;
+          }
+
+          cleanExit = true;
+          _iterator9 = _createForOfIteratorHelper((0, _builtins.range)(x - 1, -1, -1));
+          _context15.prev = 13;
+
+          _iterator9.s();
+
+        case 15:
+          if ((_step10 = _iterator9.n()).done) {
+            _context15.next = 33;
+            break;
+          }
+
+          i = _step10.value;
+          cycles[i] -= 1;
+
+          if (!(cycles[i] === 0)) {
+            _context15.next = 23;
+            break;
+          }
+
+          indices = indices.slice(0, i).concat(indices.slice(i + 1)).concat(indices.slice(i, i + 1));
+          cycles[i] = n - i;
+          _context15.next = 31;
+          break;
+
+        case 23:
+          j = cycles[i];
+          _ref2 = [indices[indices.length - j], indices[i]], p = _ref2[0], q = _ref2[1];
+          indices[i] = p;
+          indices[indices.length - j] = q;
+          _context15.next = 29;
+          return indices.slice(0, x).map(poolgetter);
+
+        case 29:
+          cleanExit = false;
+          return _context15.abrupt("break", 33);
+
+        case 31:
+          _context15.next = 15;
+          break;
+
+        case 33:
+          _context15.next = 38;
+          break;
+
+        case 35:
+          _context15.prev = 35;
+          _context15.t0 = _context15["catch"](13);
+
+          _iterator9.e(_context15.t0);
+
+        case 38:
+          _context15.prev = 38;
+
+          _iterator9.f();
+
+          return _context15.finish(38);
+
+        case 41:
+          if (!cleanExit) {
+            _context15.next = 43;
+            break;
+          }
+
+          return _context15.abrupt("return");
+
+        case 43:
+          _context15.next = 10;
+          break;
+
+        case 45:
+        case "end":
+          return _context15.stop();
+      }
+    }
+  }, _marked14, null, [[13, 35, 38, 41]]);
+}
+/**
+ * Returns an iterator that produces values over and over again.  Runs
+ * indefinitely unless the times argument is specified.
+ */
+
+
+function repeat(thing, times) {
+  var _iterator10, _step11, i;
+
+  return _regenerator["default"].wrap(function repeat$(_context16) {
+    while (1) {
+      switch (_context16.prev = _context16.next) {
+        case 0:
+          if (!(times === undefined)) {
+            _context16.next = 7;
+            break;
+          }
+
+        case 1:
+          _context16.next = 3;
+          return thing;
+
+        case 3:
+          _context16.next = 1;
+          break;
+
+        case 5:
+          _context16.next = 24;
+          break;
+
+        case 7:
+          // eslint-disable-next-line no-unused-vars
+          _iterator10 = _createForOfIteratorHelper((0, _builtins.range)(times));
+          _context16.prev = 8;
+
+          _iterator10.s();
+
+        case 10:
+          if ((_step11 = _iterator10.n()).done) {
+            _context16.next = 16;
+            break;
+          }
+
+          i = _step11.value;
+          _context16.next = 14;
+          return thing;
+
+        case 14:
+          _context16.next = 10;
+          break;
+
+        case 16:
+          _context16.next = 21;
+          break;
+
+        case 18:
+          _context16.prev = 18;
+          _context16.t0 = _context16["catch"](8);
+
+          _iterator10.e(_context16.t0);
+
+        case 21:
+          _context16.prev = 21;
+
+          _iterator10.f();
+
+          return _context16.finish(21);
+
+        case 24:
+        case "end":
+          return _context16.stop();
+      }
+    }
+  }, _marked15, null, [[8, 18, 21, 24]]);
+}
+/**
+ * Returns an iterator that produces elements from the iterable as long as the
+ * predicate is true.
+ */
+
+
+function takewhile(iterable, predicate) {
+  var _iterator11, _step12, value;
+
+  return _regenerator["default"].wrap(function takewhile$(_context17) {
+    while (1) {
+      switch (_context17.prev = _context17.next) {
+        case 0:
+          _iterator11 = _createForOfIteratorHelper(iterable);
+          _context17.prev = 1;
+
+          _iterator11.s();
+
+        case 3:
+          if ((_step12 = _iterator11.n()).done) {
+            _context17.next = 11;
+            break;
+          }
+
+          value = _step12.value;
+
+          if (predicate(value)) {
+            _context17.next = 7;
+            break;
+          }
+
+          return _context17.abrupt("return");
+
+        case 7:
+          _context17.next = 9;
+          return value;
+
+        case 9:
+          _context17.next = 3;
+          break;
+
+        case 11:
+          _context17.next = 16;
+          break;
+
+        case 13:
+          _context17.prev = 13;
+          _context17.t0 = _context17["catch"](1);
+
+          _iterator11.e(_context17.t0);
+
+        case 16:
+          _context17.prev = 16;
+
+          _iterator11.f();
+
+          return _context17.finish(16);
+
+        case 19:
+        case "end":
+          return _context17.stop();
+      }
+    }
+  }, _marked16, null, [[1, 13, 16, 19]]);
+}
+
+function zipLongest2(xs, ys) {
+  var filler = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : undefined;
+  return Array.from(izipLongest2(xs, ys, filler));
+}
+
+function zipLongest3(xs, ys, zs) {
+  var filler = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : undefined;
+  return Array.from(izipLongest3(xs, ys, zs, filler));
+}
+
+var izipLongest = izipLongest2;
+exports.izipLongest = izipLongest;
+var zipLongest = zipLongest2;
+exports.zipLongest = zipLongest;
+
+function zipMany() {
+  return Array.from(izipMany.apply(void 0, arguments));
+}
+},{"./builtins":35,"./more-itertools":39,"./utils":40,"@babel/runtime/regenerator":1}],39:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.chunked = chunked;
+exports.flatten = flatten;
+exports.intersperse = intersperse;
+exports.itake = itake;
+exports.pairwise = pairwise;
+exports.partition = partition;
+exports.roundrobin = roundrobin;
+exports.heads = heads;
+exports.take = take;
+exports.uniqueEverseen = uniqueEverseen;
+exports.uniqueJustseen = uniqueJustseen;
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _builtins = require("./builtins");
+
+var _itertools = require("./itertools");
+
+var _utils = require("./utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var _marked = /*#__PURE__*/_regenerator["default"].mark(chunked),
+    _marked2 = /*#__PURE__*/_regenerator["default"].mark(flatten),
+    _marked3 = /*#__PURE__*/_regenerator["default"].mark(itake),
+    _marked4 = /*#__PURE__*/_regenerator["default"].mark(pairwise),
+    _marked5 = /*#__PURE__*/_regenerator["default"].mark(roundrobin),
+    _marked6 = /*#__PURE__*/_regenerator["default"].mark(heads),
+    _marked7 = /*#__PURE__*/_regenerator["default"].mark(uniqueEverseen),
+    _marked8 = /*#__PURE__*/_regenerator["default"].mark(uniqueJustseen);
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+/**
+ * Break iterable into lists of length `size`:
+ *
+ *     [...chunked([1, 2, 3, 4, 5, 6], 3)]
+ *     // [[1, 2, 3], [4, 5, 6]]
+ *
+ * If the length of iterable is not evenly divisible by `size`, the last returned
+ * list will be shorter:
+ *
+ *     [...chunked([1, 2, 3, 4, 5, 6, 7, 8], 3)]
+ *     // [[1, 2, 3], [4, 5, 6], [7, 8]]
+ */
+function chunked(iterable, size) {
+  var it, r1, chunk, _iterator, _step, item;
+
+  return _regenerator["default"].wrap(function chunked$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          it = (0, _builtins.iter)(iterable);
+          r1 = it.next();
+
+          if (!r1.done) {
+            _context.next = 4;
+            break;
+          }
+
+          return _context.abrupt("return");
+
+        case 4:
+          chunk = [r1.value];
+          _iterator = _createForOfIteratorHelper(it);
+          _context.prev = 6;
+
+          _iterator.s();
+
+        case 8:
+          if ((_step = _iterator.n()).done) {
+            _context.next = 17;
+            break;
+          }
+
+          item = _step.value;
+          chunk.push(item);
+
+          if (!(chunk.length === size)) {
+            _context.next = 15;
+            break;
+          }
+
+          _context.next = 14;
+          return chunk;
+
+        case 14:
+          chunk = [];
+
+        case 15:
+          _context.next = 8;
+          break;
+
+        case 17:
+          _context.next = 22;
+          break;
+
+        case 19:
+          _context.prev = 19;
+          _context.t0 = _context["catch"](6);
+
+          _iterator.e(_context.t0);
+
+        case 22:
+          _context.prev = 22;
+
+          _iterator.f();
+
+          return _context.finish(22);
+
+        case 25:
+          if (!(chunk.length > 0)) {
+            _context.next = 28;
+            break;
+          }
+
+          _context.next = 28;
+          return chunk;
+
+        case 28:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked, null, [[6, 19, 22, 25]]);
+}
+/**
+ * Return an iterator flattening one level of nesting in a list of lists:
+ *
+ *     [...flatten([[0, 1], [2, 3]])]
+ *     // [0, 1, 2, 3]
+ *
+ */
+
+
+function flatten(iterableOfIterables) {
+  var _iterator2, _step2, iterable, _iterator3, _step3, item;
+
+  return _regenerator["default"].wrap(function flatten$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          _iterator2 = _createForOfIteratorHelper(iterableOfIterables);
+          _context2.prev = 1;
+
+          _iterator2.s();
+
+        case 3:
+          if ((_step2 = _iterator2.n()).done) {
+            _context2.next = 24;
+            break;
+          }
+
+          iterable = _step2.value;
+          _iterator3 = _createForOfIteratorHelper(iterable);
+          _context2.prev = 6;
+
+          _iterator3.s();
+
+        case 8:
+          if ((_step3 = _iterator3.n()).done) {
+            _context2.next = 14;
+            break;
+          }
+
+          item = _step3.value;
+          _context2.next = 12;
+          return item;
+
+        case 12:
+          _context2.next = 8;
+          break;
+
+        case 14:
+          _context2.next = 19;
+          break;
+
+        case 16:
+          _context2.prev = 16;
+          _context2.t0 = _context2["catch"](6);
+
+          _iterator3.e(_context2.t0);
+
+        case 19:
+          _context2.prev = 19;
+
+          _iterator3.f();
+
+          return _context2.finish(19);
+
+        case 22:
+          _context2.next = 3;
+          break;
+
+        case 24:
+          _context2.next = 29;
+          break;
+
+        case 26:
+          _context2.prev = 26;
+          _context2.t1 = _context2["catch"](1);
+
+          _iterator2.e(_context2.t1);
+
+        case 29:
+          _context2.prev = 29;
+
+          _iterator2.f();
+
+          return _context2.finish(29);
+
+        case 32:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  }, _marked2, null, [[1, 26, 29, 32], [6, 16, 19, 22]]);
+}
+/**
+ * Intersperse filler element `value` among the items in `iterable`.
+ *
+ *     >>> [...intersperse(-1, range(1, 5))]
+ *     [1, -1, 2, -1, 3, -1, 4]
+ *
+ */
+
+
+function intersperse(value, iterable) {
+  var stream = flatten((0, _itertools.izip)((0, _itertools.repeat)(value), iterable));
+  take(1, stream); // eat away and discard the first value from the output
+
+  return stream;
+}
+/**
+ * Returns an iterable containing only the first `n` elements of the given
+ * iterable.
+ */
+
+
+function itake(n, iterable) {
+  var it, count, s;
+  return _regenerator["default"].wrap(function itake$(_context3) {
+    while (1) {
+      switch (_context3.prev = _context3.next) {
+        case 0:
+          it = (0, _builtins.iter)(iterable);
+          count = n;
+
+        case 2:
+          if (!(count-- > 0)) {
+            _context3.next = 12;
+            break;
+          }
+
+          s = it.next();
+
+          if (s.done) {
+            _context3.next = 9;
+            break;
+          }
+
+          _context3.next = 7;
+          return s.value;
+
+        case 7:
+          _context3.next = 10;
+          break;
+
+        case 9:
+          return _context3.abrupt("return");
+
+        case 10:
+          _context3.next = 2;
+          break;
+
+        case 12:
+        case "end":
+          return _context3.stop();
+      }
+    }
+  }, _marked3);
+}
+/**
+ * Returns an iterator of paired items, overlapping, from the original.  When
+ * the input iterable has a finite number of items `n`, the outputted iterable
+ * will have `n - 1` items.
+ *
+ *     >>> pairwise([8, 2, 0, 7])
+ *     [(8, 2), (2, 0), (0, 7)]
+ *
+ */
+
+
+function pairwise(iterable) {
+  var it, r1, _iterator4, _step4, r2;
+
+  return _regenerator["default"].wrap(function pairwise$(_context4) {
+    while (1) {
+      switch (_context4.prev = _context4.next) {
+        case 0:
+          it = (0, _builtins.iter)(iterable);
+          r1 = it.next();
+
+          if (!r1.done) {
+            _context4.next = 4;
+            break;
+          }
+
+          return _context4.abrupt("return");
+
+        case 4:
+          r1 = r1.value;
+          _iterator4 = _createForOfIteratorHelper(it);
+          _context4.prev = 6;
+
+          _iterator4.s();
+
+        case 8:
+          if ((_step4 = _iterator4.n()).done) {
+            _context4.next = 15;
+            break;
+          }
+
+          r2 = _step4.value;
+          _context4.next = 12;
+          return [r1, r2];
+
+        case 12:
+          r1 = r2;
+
+        case 13:
+          _context4.next = 8;
+          break;
+
+        case 15:
+          _context4.next = 20;
+          break;
+
+        case 17:
+          _context4.prev = 17;
+          _context4.t0 = _context4["catch"](6);
+
+          _iterator4.e(_context4.t0);
+
+        case 20:
+          _context4.prev = 20;
+
+          _iterator4.f();
+
+          return _context4.finish(20);
+
+        case 23:
+        case "end":
+          return _context4.stop();
+      }
+    }
+  }, _marked4, null, [[6, 17, 20, 23]]);
+}
+/**
+ * Returns a 2-tuple of arrays.  Splits the elements in the input iterable into
+ * either of the two arrays.  Will fully exhaust the input iterable.  The first
+ * array contains all items that match the predicate, the second the rest:
+ *
+ *     >>> const isOdd = x => x % 2 !== 0;
+ *     >>> const iterable = range(10);
+ *     >>> const [odds, evens] = partition(iterable, isOdd);
+ *     >>> odds
+ *     [1, 3, 5, 7, 9]
+ *     >>> evens
+ *     [0, 2, 4, 6, 8]
+ *
+ */
+
+
+function partition(iterable, predicate) {
+  var good = [];
+  var bad = [];
+
+  var _iterator5 = _createForOfIteratorHelper(iterable),
+      _step5;
+
+  try {
+    for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+      var item = _step5.value;
+
+      if (predicate(item)) {
+        good.push(item);
+      } else {
+        bad.push(item);
+      }
+    }
+  } catch (err) {
+    _iterator5.e(err);
+  } finally {
+    _iterator5.f();
+  }
+
+  return [good, bad];
+}
+/**
+ * Yields the next item from each iterable in turn, alternating between them.
+ * Continues until all items are exhausted.
+ *
+ *     >>> [...roundrobin([1, 2, 3], [4], [5, 6, 7, 8])]
+ *     [1, 4, 5, 2, 6, 3, 7, 8]
+ */
+
+
+function roundrobin() {
+  var _len,
+      iters,
+      _key,
+      iterables,
+      index,
+      it,
+      result,
+      _args5 = arguments;
+
+  return _regenerator["default"].wrap(function roundrobin$(_context5) {
+    while (1) {
+      switch (_context5.prev = _context5.next) {
+        case 0:
+          for (_len = _args5.length, iters = new Array(_len), _key = 0; _key < _len; _key++) {
+            iters[_key] = _args5[_key];
+          }
+
+          // We'll only keep lazy versions of the input iterables in here that we'll
+          // slowly going to exhaust.  Once an iterable is exhausted, it will be
+          // removed from this list.  Once the entire list is empty, this algorithm
+          // ends.
+          iterables = (0, _builtins.map)(iters, _builtins.iter);
+
+        case 2:
+          if (!(iterables.length > 0)) {
+            _context5.next = 18;
+            break;
+          }
+
+          index = 0;
+
+        case 4:
+          if (!(index < iterables.length)) {
+            _context5.next = 16;
+            break;
+          }
+
+          it = iterables[index];
+          result = it.next();
+
+          if (result.done) {
+            _context5.next = 13;
+            break;
+          }
+
+          _context5.next = 10;
+          return result.value;
+
+        case 10:
+          index++;
+          _context5.next = 14;
+          break;
+
+        case 13:
+          // This iterable is exhausted, make sure to remove it from the
+          // list of iterables.  We'll splice the array from under our
+          // feet, and NOT advancing the index counter.
+          iterables.splice(index, 1); // intentional side-effect!
+
+        case 14:
+          _context5.next = 4;
+          break;
+
+        case 16:
+          _context5.next = 2;
+          break;
+
+        case 18:
+        case "end":
+          return _context5.stop();
+      }
+    }
+  }, _marked5);
+}
+/**
+ * Yields the heads of all of the given iterables.  This is almost like
+ * `roundrobin()`, except that the yielded outputs are grouped in to the
+ * "rounds":
+ *
+ *     >>> [...heads([1, 2, 3], [4], [5, 6, 7, 8])]
+ *     [[1, 4, 5], [2, 6], [3, 7], [8]]
+ *
+ * This is also different from `zipLongest()`, since the number of items in
+ * each round can decrease over time, rather than being filled with a filler.
+ */
+
+
+function heads() {
+  var _len2,
+      iters,
+      _key2,
+      iterables,
+      index,
+      round,
+      it,
+      result,
+      _args6 = arguments;
+
+  return _regenerator["default"].wrap(function heads$(_context6) {
+    while (1) {
+      switch (_context6.prev = _context6.next) {
+        case 0:
+          for (_len2 = _args6.length, iters = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+            iters[_key2] = _args6[_key2];
+          }
+
+          // We'll only keep lazy versions of the input iterables in here that we'll
+          // slowly going to exhaust.  Once an iterable is exhausted, it will be
+          // removed from this list.  Once the entire list is empty, this algorithm
+          // ends.
+          iterables = (0, _builtins.map)(iters, _builtins.iter);
+
+        case 2:
+          if (!(iterables.length > 0)) {
+            _context6.next = 11;
+            break;
+          }
+
+          index = 0;
+          round = [];
+
+          while (index < iterables.length) {
+            it = iterables[index];
+            result = it.next();
+
+            if (!result.done) {
+              round.push(result.value);
+              index++;
+            } else {
+              // This iterable is exhausted, make sure to remove it from the
+              // list of iterables.  We'll splice the array from under our
+              // feet, and NOT advancing the index counter.
+              iterables.splice(index, 1); // intentional side-effect!
+            }
+          }
+
+          if (!(round.length > 0)) {
+            _context6.next = 9;
+            break;
+          }
+
+          _context6.next = 9;
+          return round;
+
+        case 9:
+          _context6.next = 2;
+          break;
+
+        case 11:
+        case "end":
+          return _context6.stop();
+      }
+    }
+  }, _marked6);
+}
+/**
+ * Non-lazy version of itake().
+ */
+
+
+function take(n, iterable) {
+  return Array.from(itake(n, iterable));
+}
+/**
+ * Yield unique elements, preserving order.
+ *
+ *     >>> [...uniqueEverseen('AAAABBBCCDAABBB')]
+ *     ['A', 'B', 'C', 'D']
+ *     >>> [...uniqueEverseen('AbBCcAB', s => s.toLowerCase())]
+ *     ['A', 'b', 'C']
+ *
+ */
+
+
+function uniqueEverseen(iterable) {
+  var keyFn,
+      seen,
+      _iterator6,
+      _step6,
+      item,
+      key,
+      _args7 = arguments;
+
+  return _regenerator["default"].wrap(function uniqueEverseen$(_context7) {
+    while (1) {
+      switch (_context7.prev = _context7.next) {
+        case 0:
+          keyFn = _args7.length > 1 && _args7[1] !== undefined ? _args7[1] : _utils.primitiveIdentity;
+          seen = new Set();
+          _iterator6 = _createForOfIteratorHelper(iterable);
+          _context7.prev = 3;
+
+          _iterator6.s();
+
+        case 5:
+          if ((_step6 = _iterator6.n()).done) {
+            _context7.next = 14;
+            break;
+          }
+
+          item = _step6.value;
+          key = keyFn(item);
+
+          if (seen.has(key)) {
+            _context7.next = 12;
+            break;
+          }
+
+          seen.add(key);
+          _context7.next = 12;
+          return item;
+
+        case 12:
+          _context7.next = 5;
+          break;
+
+        case 14:
+          _context7.next = 19;
+          break;
+
+        case 16:
+          _context7.prev = 16;
+          _context7.t0 = _context7["catch"](3);
+
+          _iterator6.e(_context7.t0);
+
+        case 19:
+          _context7.prev = 19;
+
+          _iterator6.f();
+
+          return _context7.finish(19);
+
+        case 22:
+        case "end":
+          return _context7.stop();
+      }
+    }
+  }, _marked7, null, [[3, 16, 19, 22]]);
+}
+/**
+ * Yields elements in order, ignoring serial duplicates.
+ *
+ *     >>> [...uniqueJustseen('AAAABBBCCDAABBB')]
+ *     ['A', 'B', 'C', 'D', 'A', 'B']
+ *     >>> [...uniqueJustseen('AbBCcAB', s => s.toLowerCase())]
+ *     ['A', 'b', 'C', 'A', 'B']
+ *
+ */
+
+
+function uniqueJustseen(iterable) {
+  var keyFn,
+      last,
+      _iterator7,
+      _step7,
+      item,
+      key,
+      _args8 = arguments;
+
+  return _regenerator["default"].wrap(function uniqueJustseen$(_context8) {
+    while (1) {
+      switch (_context8.prev = _context8.next) {
+        case 0:
+          keyFn = _args8.length > 1 && _args8[1] !== undefined ? _args8[1] : _utils.primitiveIdentity;
+          last = undefined;
+          _iterator7 = _createForOfIteratorHelper(iterable);
+          _context8.prev = 3;
+
+          _iterator7.s();
+
+        case 5:
+          if ((_step7 = _iterator7.n()).done) {
+            _context8.next = 14;
+            break;
+          }
+
+          item = _step7.value;
+          key = keyFn(item);
+
+          if (!(key !== last)) {
+            _context8.next = 12;
+            break;
+          }
+
+          _context8.next = 11;
+          return item;
+
+        case 11:
+          last = key;
+
+        case 12:
+          _context8.next = 5;
+          break;
+
+        case 14:
+          _context8.next = 19;
+          break;
+
+        case 16:
+          _context8.prev = 16;
+          _context8.t0 = _context8["catch"](3);
+
+          _iterator7.e(_context8.t0);
+
+        case 19:
+          _context8.prev = 19;
+
+          _iterator7.f();
+
+          return _context8.finish(19);
+
+        case 22:
+        case "end":
+          return _context8.stop();
+      }
+    }
+  }, _marked8, null, [[3, 16, 19, 22]]);
+}
+},{"./builtins":35,"./itertools":38,"./utils":40,"@babel/runtime/regenerator":1}],40:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.keyToCmp = keyToCmp;
+exports.identityPredicate = identityPredicate;
+exports.numberIdentity = numberIdentity;
+exports.primitiveIdentity = primitiveIdentity;
+
+function keyToCmp(keyFn) {
+  return function (a, b) {
+    var ka = keyFn(a);
+    var kb = keyFn(b); // istanbul ignore else
+
+    if (typeof ka === 'boolean' && typeof kb === 'boolean') {
+      return ka === kb ? 0 : !ka && kb ? -1 : 1;
+    } else if (typeof ka === 'number' && typeof kb === 'number') {
+      return ka - kb;
+    } else if (typeof ka === 'string' && typeof kb === 'string') {
+      return ka === kb ? 0 : ka < kb ? -1 : 1;
+    } else {
+      return -1;
+    }
+  };
+}
+
+function identityPredicate(x) {
+  return !!x;
+}
+
+function numberIdentity(x) {
+  /* istanbul ignore if */
+  if (typeof x !== 'number') {
+    throw new Error('Inputs must be numbers');
+  }
+
+  return x;
+}
+
+function primitiveIdentity(x) {
+  /* istanbul ignore if */
+  if (typeof x !== 'string' && typeof x !== 'number' && typeof x !== 'boolean') {
+    throw new Error('Please provide a key function that can establish object identity');
+  }
+
+  return x;
+}
+},{}],41:[function(require,module,exports){
 /*!
  * media-typer
  * Copyright(c) 2014 Douglas Christopher Wilson
@@ -6153,7 +9200,7 @@ function splitType(string) {
   return obj
 }
 
-},{}],35:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 module.exports={
   "application/1d-interleaved-parityfec": {
     "source": "iana"
@@ -14478,7 +17525,7 @@ module.exports={
   }
 }
 
-},{}],36:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 /*!
  * mime-db
  * Copyright(c) 2014 Jonathan Ong
@@ -14491,7 +17538,7 @@ module.exports={
 
 module.exports = require('./db.json')
 
-},{"./db.json":35}],37:[function(require,module,exports){
+},{"./db.json":42}],44:[function(require,module,exports){
 /*!
  * mime-types
  * Copyright(c) 2014 Jonathan Ong
@@ -14681,7 +17728,7 @@ function populateMaps (extensions, types) {
   })
 }
 
-},{"mime-db":36,"path":101}],38:[function(require,module,exports){
+},{"mime-db":43,"path":101}],45:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -14835,7 +17882,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],39:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 (function (process,setImmediate){(function (){
 /*!
  * on-finished
@@ -15035,7 +18082,7 @@ function patchAssignSocket(res, callback) {
 }
 
 }).call(this)}).call(this,require('_process'),require("timers").setImmediate)
-},{"_process":102,"ee-first":12,"timers":123}],40:[function(require,module,exports){
+},{"_process":102,"ee-first":13,"timers":123}],47:[function(require,module,exports){
 'use strict';
 
 var replace = String.prototype.replace;
@@ -15055,7 +18102,7 @@ module.exports = {
     RFC3986: 'RFC3986'
 };
 
-},{}],41:[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 'use strict';
 
 var stringify = require('./stringify');
@@ -15068,7 +18115,7 @@ module.exports = {
     stringify: stringify
 };
 
-},{"./formats":40,"./parse":42,"./stringify":43}],42:[function(require,module,exports){
+},{"./formats":47,"./parse":49,"./stringify":50}],49:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -15312,7 +18359,7 @@ module.exports = function (str, opts) {
     return utils.compact(obj);
 };
 
-},{"./utils":44}],43:[function(require,module,exports){
+},{"./utils":51}],50:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -15583,7 +18630,7 @@ module.exports = function (object, opts) {
     return joined.length > 0 ? prefix + joined : '';
 };
 
-},{"./formats":40,"./utils":44}],44:[function(require,module,exports){
+},{"./formats":47,"./utils":51}],51:[function(require,module,exports){
 'use strict';
 
 var has = Object.prototype.hasOwnProperty;
@@ -15815,7 +18862,7 @@ module.exports = {
     merge: merge
 };
 
-},{}],45:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 (function (process,global,Buffer){(function (){
 /*!
  * raw-body
@@ -16105,3997 +19152,7 @@ function readStream (stream, encoding, length, limit, callback) {
 }
 
 }).call(this)}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer)
-},{"_process":102,"buffer":72,"bytes":7,"http-errors":13,"iconv-lite":32,"unpipe":52}],46:[function(require,module,exports){
-(function (process){(function (){
-/* eslint-disable node/no-deprecated-api */
-
-'use strict'
-
-var buffer = require('buffer')
-var Buffer = buffer.Buffer
-
-var safer = {}
-
-var key
-
-for (key in buffer) {
-  if (!buffer.hasOwnProperty(key)) continue
-  if (key === 'SlowBuffer' || key === 'Buffer') continue
-  safer[key] = buffer[key]
-}
-
-var Safer = safer.Buffer = {}
-for (key in Buffer) {
-  if (!Buffer.hasOwnProperty(key)) continue
-  if (key === 'allocUnsafe' || key === 'allocUnsafeSlow') continue
-  Safer[key] = Buffer[key]
-}
-
-safer.Buffer.prototype = Buffer.prototype
-
-if (!Safer.from || Safer.from === Uint8Array.from) {
-  Safer.from = function (value, encodingOrOffset, length) {
-    if (typeof value === 'number') {
-      throw new TypeError('The "value" argument must not be of type number. Received type ' + typeof value)
-    }
-    if (value && typeof value.length === 'undefined') {
-      throw new TypeError('The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type ' + typeof value)
-    }
-    return Buffer(value, encodingOrOffset, length)
-  }
-}
-
-if (!Safer.alloc) {
-  Safer.alloc = function (size, fill, encoding) {
-    if (typeof size !== 'number') {
-      throw new TypeError('The "size" argument must be of type number. Received type ' + typeof size)
-    }
-    if (size < 0 || size >= 2 * (1 << 30)) {
-      throw new RangeError('The value "' + size + '" is invalid for option "size"')
-    }
-    var buf = Buffer(size)
-    if (!fill || fill.length === 0) {
-      buf.fill(0)
-    } else if (typeof encoding === 'string') {
-      buf.fill(fill, encoding)
-    } else {
-      buf.fill(fill)
-    }
-    return buf
-  }
-}
-
-if (!safer.kStringMaxLength) {
-  try {
-    safer.kStringMaxLength = process.binding('buffer').kStringMaxLength
-  } catch (e) {
-    // we can't determine kStringMaxLength in environments where process.binding
-    // is unsupported, so let's not set it
-  }
-}
-
-if (!safer.constants) {
-  safer.constants = {
-    MAX_LENGTH: safer.kMaxLength
-  }
-  if (safer.kStringMaxLength) {
-    safer.constants.MAX_STRING_LENGTH = safer.kStringMaxLength
-  }
-}
-
-module.exports = safer
-
-}).call(this)}).call(this,require('_process'))
-},{"_process":102,"buffer":72}],47:[function(require,module,exports){
-'use strict'
-/* eslint no-proto: 0 */
-module.exports = Object.setPrototypeOf || ({ __proto__: [] } instanceof Array ? setProtoOf : mixinProperties)
-
-function setProtoOf (obj, proto) {
-  obj.__proto__ = proto
-  return obj
-}
-
-function mixinProperties (obj, proto) {
-  for (var prop in proto) {
-    if (!obj.hasOwnProperty(prop)) {
-      obj[prop] = proto[prop]
-    }
-  }
-  return obj
-}
-
-},{}],48:[function(require,module,exports){
-module.exports={
-  "100": "Continue",
-  "101": "Switching Protocols",
-  "102": "Processing",
-  "103": "Early Hints",
-  "200": "OK",
-  "201": "Created",
-  "202": "Accepted",
-  "203": "Non-Authoritative Information",
-  "204": "No Content",
-  "205": "Reset Content",
-  "206": "Partial Content",
-  "207": "Multi-Status",
-  "208": "Already Reported",
-  "226": "IM Used",
-  "300": "Multiple Choices",
-  "301": "Moved Permanently",
-  "302": "Found",
-  "303": "See Other",
-  "304": "Not Modified",
-  "305": "Use Proxy",
-  "306": "(Unused)",
-  "307": "Temporary Redirect",
-  "308": "Permanent Redirect",
-  "400": "Bad Request",
-  "401": "Unauthorized",
-  "402": "Payment Required",
-  "403": "Forbidden",
-  "404": "Not Found",
-  "405": "Method Not Allowed",
-  "406": "Not Acceptable",
-  "407": "Proxy Authentication Required",
-  "408": "Request Timeout",
-  "409": "Conflict",
-  "410": "Gone",
-  "411": "Length Required",
-  "412": "Precondition Failed",
-  "413": "Payload Too Large",
-  "414": "URI Too Long",
-  "415": "Unsupported Media Type",
-  "416": "Range Not Satisfiable",
-  "417": "Expectation Failed",
-  "418": "I'm a teapot",
-  "421": "Misdirected Request",
-  "422": "Unprocessable Entity",
-  "423": "Locked",
-  "424": "Failed Dependency",
-  "425": "Unordered Collection",
-  "426": "Upgrade Required",
-  "428": "Precondition Required",
-  "429": "Too Many Requests",
-  "431": "Request Header Fields Too Large",
-  "451": "Unavailable For Legal Reasons",
-  "500": "Internal Server Error",
-  "501": "Not Implemented",
-  "502": "Bad Gateway",
-  "503": "Service Unavailable",
-  "504": "Gateway Timeout",
-  "505": "HTTP Version Not Supported",
-  "506": "Variant Also Negotiates",
-  "507": "Insufficient Storage",
-  "508": "Loop Detected",
-  "509": "Bandwidth Limit Exceeded",
-  "510": "Not Extended",
-  "511": "Network Authentication Required"
-}
-
-},{}],49:[function(require,module,exports){
-/*!
- * statuses
- * Copyright(c) 2014 Jonathan Ong
- * Copyright(c) 2016 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-'use strict'
-
-/**
- * Module dependencies.
- * @private
- */
-
-var codes = require('./codes.json')
-
-/**
- * Module exports.
- * @public
- */
-
-module.exports = status
-
-// status code to message map
-status.STATUS_CODES = codes
-
-// array of status codes
-status.codes = populateStatusesMap(status, codes)
-
-// status codes for redirects
-status.redirect = {
-  300: true,
-  301: true,
-  302: true,
-  303: true,
-  305: true,
-  307: true,
-  308: true
-}
-
-// status codes for empty bodies
-status.empty = {
-  204: true,
-  205: true,
-  304: true
-}
-
-// status codes for when you should retry the request
-status.retry = {
-  502: true,
-  503: true,
-  504: true
-}
-
-/**
- * Populate the statuses map for given codes.
- * @private
- */
-
-function populateStatusesMap (statuses, codes) {
-  var arr = []
-
-  Object.keys(codes).forEach(function forEachCode (code) {
-    var message = codes[code]
-    var status = Number(code)
-
-    // Populate properties
-    statuses[status] = message
-    statuses[message] = status
-    statuses[message.toLowerCase()] = status
-
-    // Add to array
-    arr.push(status)
-  })
-
-  return arr
-}
-
-/**
- * Get the status code.
- *
- * Given a number, this will throw if it is not a known status
- * code, otherwise the code will be returned. Given a string,
- * the string will be parsed for a number and return the code
- * if valid, otherwise will lookup the code assuming this is
- * the status message.
- *
- * @param {string|number} code
- * @returns {number}
- * @public
- */
-
-function status (code) {
-  if (typeof code === 'number') {
-    if (!status[code]) throw new Error('invalid status code: ' + code)
-    return code
-  }
-
-  if (typeof code !== 'string') {
-    throw new TypeError('code must be a number or string')
-  }
-
-  // '403'
-  var n = parseInt(code, 10)
-  if (!isNaN(n)) {
-    if (!status[n]) throw new Error('invalid status code: ' + n)
-    return n
-  }
-
-  n = status[code.toLowerCase()]
-  if (!n) throw new Error('invalid status message: "' + code + '"')
-  return n
-}
-
-},{"./codes.json":48}],50:[function(require,module,exports){
-/*!
- * toidentifier
- * Copyright(c) 2016 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-/**
- * Module exports.
- * @public
- */
-
-module.exports = toIdentifier
-
-/**
- * Trasform the given string into a JavaScript identifier
- *
- * @param {string} str
- * @returns {string}
- * @public
- */
-
-function toIdentifier (str) {
-  return str
-    .split(' ')
-    .map(function (token) {
-      return token.slice(0, 1).toUpperCase() + token.slice(1)
-    })
-    .join('')
-    .replace(/[^ _0-9a-z]/gi, '')
-}
-
-},{}],51:[function(require,module,exports){
-/*!
- * type-is
- * Copyright(c) 2014 Jonathan Ong
- * Copyright(c) 2014-2015 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-'use strict'
-
-/**
- * Module dependencies.
- * @private
- */
-
-var typer = require('media-typer')
-var mime = require('mime-types')
-
-/**
- * Module exports.
- * @public
- */
-
-module.exports = typeofrequest
-module.exports.is = typeis
-module.exports.hasBody = hasbody
-module.exports.normalize = normalize
-module.exports.match = mimeMatch
-
-/**
- * Compare a `value` content-type with `types`.
- * Each `type` can be an extension like `html`,
- * a special shortcut like `multipart` or `urlencoded`,
- * or a mime type.
- *
- * If no types match, `false` is returned.
- * Otherwise, the first `type` that matches is returned.
- *
- * @param {String} value
- * @param {Array} types
- * @public
- */
-
-function typeis (value, types_) {
-  var i
-  var types = types_
-
-  // remove parameters and normalize
-  var val = tryNormalizeType(value)
-
-  // no type or invalid
-  if (!val) {
-    return false
-  }
-
-  // support flattened arguments
-  if (types && !Array.isArray(types)) {
-    types = new Array(arguments.length - 1)
-    for (i = 0; i < types.length; i++) {
-      types[i] = arguments[i + 1]
-    }
-  }
-
-  // no types, return the content type
-  if (!types || !types.length) {
-    return val
-  }
-
-  var type
-  for (i = 0; i < types.length; i++) {
-    if (mimeMatch(normalize(type = types[i]), val)) {
-      return type[0] === '+' || type.indexOf('*') !== -1
-        ? val
-        : type
-    }
-  }
-
-  // no matches
-  return false
-}
-
-/**
- * Check if a request has a request body.
- * A request with a body __must__ either have `transfer-encoding`
- * or `content-length` headers set.
- * http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.3
- *
- * @param {Object} request
- * @return {Boolean}
- * @public
- */
-
-function hasbody (req) {
-  return req.headers['transfer-encoding'] !== undefined ||
-    !isNaN(req.headers['content-length'])
-}
-
-/**
- * Check if the incoming request contains the "Content-Type"
- * header field, and it contains any of the give mime `type`s.
- * If there is no request body, `null` is returned.
- * If there is no content type, `false` is returned.
- * Otherwise, it returns the first `type` that matches.
- *
- * Examples:
- *
- *     // With Content-Type: text/html; charset=utf-8
- *     this.is('html'); // => 'html'
- *     this.is('text/html'); // => 'text/html'
- *     this.is('text/*', 'application/json'); // => 'text/html'
- *
- *     // When Content-Type is application/json
- *     this.is('json', 'urlencoded'); // => 'json'
- *     this.is('application/json'); // => 'application/json'
- *     this.is('html', 'application/*'); // => 'application/json'
- *
- *     this.is('html'); // => false
- *
- * @param {String|Array} types...
- * @return {String|false|null}
- * @public
- */
-
-function typeofrequest (req, types_) {
-  var types = types_
-
-  // no body
-  if (!hasbody(req)) {
-    return null
-  }
-
-  // support flattened arguments
-  if (arguments.length > 2) {
-    types = new Array(arguments.length - 1)
-    for (var i = 0; i < types.length; i++) {
-      types[i] = arguments[i + 1]
-    }
-  }
-
-  // request content type
-  var value = req.headers['content-type']
-
-  return typeis(value, types)
-}
-
-/**
- * Normalize a mime type.
- * If it's a shorthand, expand it to a valid mime type.
- *
- * In general, you probably want:
- *
- *   var type = is(req, ['urlencoded', 'json', 'multipart']);
- *
- * Then use the appropriate body parsers.
- * These three are the most common request body types
- * and are thus ensured to work.
- *
- * @param {String} type
- * @private
- */
-
-function normalize (type) {
-  if (typeof type !== 'string') {
-    // invalid type
-    return false
-  }
-
-  switch (type) {
-    case 'urlencoded':
-      return 'application/x-www-form-urlencoded'
-    case 'multipart':
-      return 'multipart/*'
-  }
-
-  if (type[0] === '+') {
-    // "+json" -> "*/*+json" expando
-    return '*/*' + type
-  }
-
-  return type.indexOf('/') === -1
-    ? mime.lookup(type)
-    : type
-}
-
-/**
- * Check if `expected` mime type
- * matches `actual` mime type with
- * wildcard and +suffix support.
- *
- * @param {String} expected
- * @param {String} actual
- * @return {Boolean}
- * @private
- */
-
-function mimeMatch (expected, actual) {
-  // invalid type
-  if (expected === false) {
-    return false
-  }
-
-  // split types
-  var actualParts = actual.split('/')
-  var expectedParts = expected.split('/')
-
-  // invalid format
-  if (actualParts.length !== 2 || expectedParts.length !== 2) {
-    return false
-  }
-
-  // validate type
-  if (expectedParts[0] !== '*' && expectedParts[0] !== actualParts[0]) {
-    return false
-  }
-
-  // validate suffix wildcard
-  if (expectedParts[1].substr(0, 2) === '*+') {
-    return expectedParts[1].length <= actualParts[1].length + 1 &&
-      expectedParts[1].substr(1) === actualParts[1].substr(1 - expectedParts[1].length)
-  }
-
-  // validate subtype
-  if (expectedParts[1] !== '*' && expectedParts[1] !== actualParts[1]) {
-    return false
-  }
-
-  return true
-}
-
-/**
- * Normalize a type and remove parameters.
- *
- * @param {string} value
- * @return {string}
- * @private
- */
-
-function normalizeType (value) {
-  // parse the type
-  var type = typer.parse(value)
-
-  // remove the parameters
-  type.parameters = undefined
-
-  // reformat it
-  return typer.format(type)
-}
-
-/**
- * Try to normalize a type and remove parameters.
- *
- * @param {string} value
- * @return {string}
- * @private
- */
-
-function tryNormalizeType (value) {
-  if (!value) {
-    return null
-  }
-
-  try {
-    return normalizeType(value)
-  } catch (err) {
-    return null
-  }
-}
-
-},{"media-typer":34,"mime-types":37}],52:[function(require,module,exports){
-/*!
- * unpipe
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-'use strict'
-
-/**
- * Module exports.
- * @public
- */
-
-module.exports = unpipe
-
-/**
- * Determine if there are Node.js pipe-like data listeners.
- * @private
- */
-
-function hasPipeDataListeners(stream) {
-  var listeners = stream.listeners('data')
-
-  for (var i = 0; i < listeners.length; i++) {
-    if (listeners[i].name === 'ondata') {
-      return true
-    }
-  }
-
-  return false
-}
-
-/**
- * Unpipe a stream from all destinations.
- *
- * @param {object} stream
- * @public
- */
-
-function unpipe(stream) {
-  if (!stream) {
-    throw new TypeError('argument stream is required')
-  }
-
-  if (typeof stream.unpipe === 'function') {
-    // new-style
-    stream.unpipe()
-    return
-  }
-
-  // Node.js 0.8 hack
-  if (!hasPipeDataListeners(stream)) {
-    return
-  }
-
-  var listener
-  var listeners = stream.listeners('close')
-
-  for (var i = 0; i < listeners.length; i++) {
-    listener = listeners[i]
-
-    if (listener.name !== 'cleanup' && listener.name !== 'onclose') {
-      continue
-    }
-
-    // invoke the listener
-    listener.call(stream)
-  }
-}
-
-},{}],53:[function(require,module,exports){
-const bodyParser = require('body-parser');
-const itertools = require('itertools');
-
-//import {permutations} from '../node_modules/itertools/itertools.js';
-
-const sub_button = document.getElementById("24submit");
-
-const cards = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-// corresponds to cards [2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A]
-
-let add = function(a, b) {
-    return a+b;
-}
-let sub = function(a, b) {
-    return a-b;
-}
-let mul = function(a, b) {
-    return a*b;
-}
-let div = function(a, b) {
-    return a/b;
-}
-
-
-const operators = [add, sub, mul, div];
-const symbols = ["+", "-", "*", "/"];
-const mapping = {"+": add, "-": sub, "*": mul, "/": div};
-const mapping1 = {add: "+", sub: "-", mul: "*", div: "/"};
-const result_ul = document.getElementById("result_ul");
-const less_than_four_msg = document.getElementById("less-than-four-cards-msg");
-const target_num_el = document.getElementById("target_num");
-let target_num = 24;
-
-document.getElementById("click2").addEventListener('click', function() {
-    updateCards(0);
-});
-document.getElementById("click3").addEventListener('click', function() {
-    updateCards(1);
-});
-document.getElementById("click4").addEventListener('click', function() {
-    updateCards(2);
-});
-document.getElementById("click5").addEventListener('click', function() {
-    updateCards(3);
-});
-document.getElementById("click6").addEventListener('click', function() {
-    updateCards(4);
-});
-document.getElementById("click7").addEventListener('click', function() {
-    updateCards(5);
-});
-document.getElementById("click8").addEventListener('click', function() {
-    updateCards(6);
-});
-document.getElementById("click9").addEventListener('click', function() {
-    updateCards(7);
-});
-document.getElementById("click10").addEventListener('click', function() {
-    updateCards(8);
-});
-document.getElementById("clickjack").addEventListener('click', function() {
-    updateCards(9);
-});
-document.getElementById("clickqueen").addEventListener('click', function() {
-    updateCards(10);
-});
-document.getElementById("clickking").addEventListener('click', function() {
-    updateCards(11);
-});
-document.getElementById("clickace").addEventListener('click', function() {
-    updateCards(12);
-});
-
-const solution_row = document.getElementById("solution_row");
-
-function updateCards(index) {
-
-    if (solution_row.childElementCount >= 4) {
-        return;
-    }
-
-    let card = document.createElement('div');
-    card.className = 'col-3 col-md-3 col-lg-2';
-    card.alt = `${index + 2}`
-
-    let card_img = document.createElement('img');
-    card_img.className = "img-fluid mx-0 my-0 cursor";
-    card_img.alt = `${index + 2}`;
-    card_img.src = `../imgs/${index + 2}_of_hearts.svg`;
-
-    cards[index]++;
-
-    card.appendChild(card_img);
-    solution_row.appendChild(card);
-
-    card.addEventListener('click', function() {
-        let index_remove = parseInt(this.alt) - 2;
-        cards[index_remove]--;
-        this.remove();
-
-        while (result_ul.firstChild) {
-            result_ul.removeChild(result_ul.lastChild);
-        }
-        less_than_four_msg.innerHTML = "Choose 4 cards above.";
-    });
-
-    if (solution_row.childElementCount == 4) {
-
-        less_than_four_msg.innerHTML = "Solutions:";
-        let four_cards = [];
-        for (let i = 0; i < cards.length; i++) {
-            let temp_num = cards[i];
-            while (temp_num > 0) {
-                if (i == cards.length - 1) { // ace
-                    four_cards.push(1);
-                } else { four_cards.push(i+2); }
-                temp_num --;
-
-            }
-        }
-        calculate(four_cards);
-    }
-    
-}
-
-const urlParams = new URLSearchParams(window.location.search);
-const card1 = urlParams.get('n1');
-const card2 = urlParams.get('n2');
-const card3 = urlParams.get('n3');
-const card4 = urlParams.get('n4');
-
-
-function calculate(c) {
-    for (let i = 0; i < c.length; i++) {
-        if (c[i] == "J") {
-            c[i] = 11;
-        } else if (c[i] == "Q") {
-            c[i] = 12;
-        } else if (c[i] == "K") {
-            c[i] = 13;
-        } else if (c[i] == "A") {
-            c[i] = 1;
-        }
-        else {
-            c[i] = parseInt(c[i]);
-        }
-    }
-
-    if (target_num_el.value == "") {
-        target_num = 24;
-    } else {
-        target_num = parseInt(target_num_el.value);
-    }
-
-    let result_set = solutions(c);
-
-    while (result_ul.firstChild) {
-        result_ul.removeChild(result_ul.lastChild);
-    }
-
-    if (result_set.size == 0) {
-        let li = document.createElement('li');
-        result_ul.appendChild(li);
-
-        li.innerHTML += "NO SOLUTIONS FOR THIS HAND!";
-        return;
-    }
-
-    for (let member of result_set) {
-        let li = document.createElement('li');
-        result_ul.appendChild(li);
-
-        li.innerHTML += member;
-    }
-}
-
-function ans(so_far, next_index, lst, op_order, op, s, component_set) {
-    if (op_order == null){
-        op_order = [];
-    }
-    if (op == "+") {
-        so_far = add(so_far, lst[next_index]);
-    } else if (op == "-") {
-        so_far = sub(so_far, lst[next_index]);
-    } else if (op == "*") {
-        so_far = mul(so_far, lst[next_index]);
-    } else {
-        so_far = div(so_far, lst[next_index]);
-    }
-    op_order.push(op);
-    if (next_index == 3 && so_far == target_num) {
-        format_helper(lst, op_order, s, component_set);
-        return true;
-    }
-    else if (next_index == 3) {
-        return false;
-    }
-    if (lst[next_index + 1] > so_far) {
-        //no subtraction or div
-        return ans(so_far, next_index + 1, lst, [...op_order], symbols[0], s, component_set) ||
-               ans(so_far, next_index + 1, lst, [...op_order], symbols[2], s, component_set);
-    }
-    // all 4 operators valid
-    return ans(so_far, next_index + 1, lst, [...op_order], symbols[0], s, component_set) ||
-           ans(so_far, next_index + 1, lst, [...op_order], symbols[1], s, component_set) ||
-           ans(so_far, next_index + 1, lst, [...op_order], symbols[2], s, component_set) ||
-           ans(so_far, next_index + 1, lst, [...op_order], symbols[3], s, component_set);
-}
-
-function format_helper(lst, op_order, s, component_set) {
-
-    result = ""
-    arr_components = [];
-    arr_components.push(...lst);
-    arr_components.push(...op_order);
-
-    // (1 + 2) * 3 + 4 format
-    if ((op_order[2] == "+" || op_order[2] == "-") && ((op_order[1] == "*" || op_order[1] == "/") &&
-                                                       (op_order[0] == "+" || op_order[0] == "-"))){
-
-        //sort lst items 0 and 1
-        arr_components.push("(");
-        arr_components.push(")");
-           result += "(" + lst[0] + " " + op_order[0] + " " + lst[1] + ")" + " " +
-                  op_order[1] + " " + lst[2] + " " + op_order[2] + " " + lst[3];                                            
-    }
-        
-    // other formats
-    else if ((op_order[2] == "/" || op_order[2] == "*") && ((op_order[1] != "*" && op_order[1] != "/") ||
-        (op_order[0] != "*" && op_order[0] != "/"))){
-
-        // (1 + 2) * 3 * 4 format
-        if (op_order[1] == "*" || op_order[1] == "/") {
-            arr_components.push("(");
-            arr_components.push(")");
-            result += "(" + lst[0] + " " + op_order[0] + " " + lst[1] + ")" + " " + op_order[1] + " " + lst[2] + " " + op_order[2] + " " + lst[3];
-        }
-        // (1 * 2 + 3) * 4 OR (1 + 2 + 3) * 4 format
-        else {
-            arr_components.push("(");
-            arr_components.push(")");
-            result += "(" + lst[0] + " " + op_order[0] + " " + lst[1] + " " + op_order[1] + " " + lst[2] + ")" + " " + op_order[2] + " " + lst[3];
-        }
-    }
-
-    // 1 + 2 + 3 + 4 format
-    else {
-
-        // sort lst and op_order
-        /*op_order.unshift("+");
-        let sorted_arrs = custom_sort(lst, op_order);
-
-        op_order = sorted_arrs[1].slice(1);
-        lst = sorted_arrs[0];*/
-
-        result += lst[0] + " " + op_order[0] + " " + lst[1] + " " + op_order[1] + " " + lst[2] + 
-        " " + op_order[2] + " " + lst[3];
-    }
-
-    arr_components.sort();
-    let arr_str = arr_components.join();
-    if (!component_set.has(arr_str)) {
-        s.add(result + ` = ${target_num}`);
-        component_set.add(arr_str);
-    }
-
-}
-
-function solutions(cards) {
-    let perms = itertools.permutations(cards);
-    let inner_count = 0;
-    let has24 = false;
-    let s = new Set();
-    let component_set = new Set();
-    for (let p of perms) {
-        for (let op of symbols) {
-            if ( ans(p[0], 1, p, null, op, s, component_set)) {
-                has24 = true;
-            }
-        }
-    }
-    if (has24) {
-        /*for (let member of s) {
-            console.log(member);
-        }*/
-    }
-    return s;
-}
-},{"body-parser":1,"itertools":57}],54:[function(require,module,exports){
-module.exports = require("regenerator-runtime");
-
-},{"regenerator-runtime":61}],55:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.all = all;
-exports.any = any;
-exports.contains = contains;
-exports.enumerate = enumerate;
-exports.filter = filter;
-exports.iter = iter;
-exports.map = map;
-exports.max = max;
-exports.min = min;
-exports.range = range;
-exports.reduce = reduce;
-exports.reduce_ = reduce_;
-exports.sorted = sorted;
-exports.sum = sum;
-exports.zip = zip;
-exports.zip3 = zip3;
-
-var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
-
-var _custom = require("./custom");
-
-var _itertools = require("./itertools");
-
-var _utils = require("./utils");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var _marked = /*#__PURE__*/_regenerator["default"].mark(enumerate);
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-/**
- * Returns true when all of the items in iterable are truthy.  An optional key
- * function can be used to define what truthiness means for this specific
- * collection.
- *
- * Examples:
- *
- *     all([])                           // => true
- *     all([0])                          // => false
- *     all([0, 1, 2])                    // => false
- *     all([1, 2, 3])                    // => true
- *
- * Examples with using a key function:
- *
- *     all([2, 4, 6], n => n % 2 === 0)  // => true
- *     all([2, 4, 5], n => n % 2 === 0)  // => false
- *
- */
-function all(iterable) {
-  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.identityPredicate;
-
-  var _iterator = _createForOfIteratorHelper(iterable),
-      _step;
-
-  try {
-    for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var item = _step.value;
-
-      if (!keyFn(item)) {
-        return false;
-      }
-    }
-  } catch (err) {
-    _iterator.e(err);
-  } finally {
-    _iterator.f();
-  }
-
-  return true;
-}
-/**
- * Returns true when any of the items in iterable are truthy.  An optional key
- * function can be used to define what truthiness means for this specific
- * collection.
- *
- * Examples:
- *
- *     any([])                           // => false
- *     any([0])                          // => false
- *     any([0, 1, null, undefined])      // => true
- *
- * Examples with using a key function:
- *
- *     any([1, 4, 5], n => n % 2 === 0)  // => true
- *     any([{name: 'Bob'}, {name: 'Alice'}], person => person.name.startsWith('C'))  // => false
- *
- */
-
-
-function any(iterable) {
-  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.identityPredicate;
-
-  var _iterator2 = _createForOfIteratorHelper(iterable),
-      _step2;
-
-  try {
-    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-      var item = _step2.value;
-
-      if (keyFn(item)) {
-        return true;
-      }
-    }
-  } catch (err) {
-    _iterator2.e(err);
-  } finally {
-    _iterator2.f();
-  }
-
-  return false;
-}
-/**
- * Returns true when any of the items in the iterable are equal to the target object.
- *
- * Examples:
- *
- *     contains([], 'whatever')         // => false
- *     contains([3], 42)                // => false
- *     contains([3], 3)                 // => true
- *     contains([0, 1, 2], 2)           // => true
- *
- */
-
-
-function contains(haystack, needle) {
-  return any(haystack, function (x) {
-    return x === needle;
-  });
-}
-/**
- * Returns an iterable of enumeration pairs.  Iterable must be a sequence, an
- * iterator, or some other object which supports iteration.  The elements
- * produced by returns a tuple containing a counter value (starting from 0 by
- * default) and the values obtained from iterating over given iterable.
- *
- * Example:
- *
- *     import { enumerate } from 'itertools';
- *
- *     console.log([...enumerate(['hello', 'world'])]);
- *     // [0, 'hello'], [1, 'world']]
- */
-
-
-function enumerate(iterable) {
-  var start,
-      index,
-      _iterator3,
-      _step3,
-      value,
-      _args = arguments;
-
-  return _regenerator["default"].wrap(function enumerate$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          start = _args.length > 1 && _args[1] !== undefined ? _args[1] : 0;
-          index = start;
-          _iterator3 = _createForOfIteratorHelper(iterable);
-          _context.prev = 3;
-
-          _iterator3.s();
-
-        case 5:
-          if ((_step3 = _iterator3.n()).done) {
-            _context.next = 11;
-            break;
-          }
-
-          value = _step3.value;
-          _context.next = 9;
-          return [index++, value];
-
-        case 9:
-          _context.next = 5;
-          break;
-
-        case 11:
-          _context.next = 16;
-          break;
-
-        case 13:
-          _context.prev = 13;
-          _context.t0 = _context["catch"](3);
-
-          _iterator3.e(_context.t0);
-
-        case 16:
-          _context.prev = 16;
-
-          _iterator3.f();
-
-          return _context.finish(16);
-
-        case 19:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, _marked, null, [[3, 13, 16, 19]]);
-}
-/**
- * Non-lazy version of ifilter().
- */
-
-
-function filter(iterable, predicate) {
-  return Array.from((0, _itertools.ifilter)(iterable, predicate));
-}
-/**
- * Returns an iterator object for the given iterable.  This can be used to
- * manually get an iterator for any iterable datastructure.  The purpose and
- * main use case of this function is to get a single iterator (a thing with
- * state, think of it as a "cursor") which can only be consumed once.
- */
-
-
-function iter(iterable) {
-  // TODO: Not sure why Flow choked on this expression below, but at least we lock down the
-  // type transformation in the function signature this way.
-  // $FlowFixMe[incompatible-use]
-  return iterable[Symbol.iterator]();
-}
-/**
- * Non-lazy version of imap().
- */
-
-
-function map(iterable, mapper) {
-  return Array.from((0, _itertools.imap)(iterable, mapper));
-}
-/**
- * Return the largest item in an iterable.  Only works for numbers, as ordering
- * is pretty poorly defined on any other data type in JS.  The optional `keyFn`
- * argument specifies a one-argument ordering function like that used for
- * sorted().
- *
- * If the iterable is empty, `undefined` is returned.
- *
- * If multiple items are maximal, the function returns either one of them, but
- * which one is not defined.
- */
-
-
-function max(iterable) {
-  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.numberIdentity;
-  return reduce_(iterable, function (x, y) {
-    return keyFn(x) > keyFn(y) ? x : y;
-  });
-}
-/**
- * Return the smallest item in an iterable.  Only works for numbers, as
- * ordering is pretty poorly defined on any other data type in JS.  The
- * optional `keyFn` argument specifies a one-argument ordering function like
- * that used for sorted().
- *
- * If the iterable is empty, `undefined` is returned.
- *
- * If multiple items are minimal, the function returns either one of them, but
- * which one is not defined.
- */
-
-
-function min(iterable) {
-  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.numberIdentity;
-  return reduce_(iterable, function (x, y) {
-    return keyFn(x) < keyFn(y) ? x : y;
-  });
-}
-/**
- * Internal helper for the range function
- */
-
-
-function _range(start, stop, step) {
-  var counter = (0, _itertools.count)(start, step);
-  var pred = step >= 0 ? function (n) {
-    return n < stop;
-  } : function (n) {
-    return n > stop;
-  };
-  return (0, _itertools.takewhile)(counter, pred);
-}
-/**
- * Returns an iterator producing all the numbers in the given range one by one,
- * starting from `start` (default 0), as long as `i < stop`, in increments of
- * `step` (default 1).
- *
- * `range(a)` is a convenient shorthand for `range(0, a)`.
- *
- * Various valid invocations:
- *
- *     range(5)           // [0, 1, 2, 3, 4]
- *     range(2, 5)        // [2, 3, 4]
- *     range(0, 5, 2)     // [0, 2, 4]
- *     range(5, 0, -1)    // [5, 4, 3, 2, 1]
- *     range(-3)          // []
- *
- * For a positive `step`, the iterator will keep producing values `n` as long
- * as the stop condition `n < stop` is satisfied.
- *
- * For a negative `step`, the iterator will keep producing values `n` as long
- * as the stop condition `n > stop` is satisfied.
- *
- * The produced range will be empty if the first value to produce already does
- * not meet the value constraint.
- */
-
-
-function range(a) {
-  for (var _len = arguments.length, rest = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    rest[_key - 1] = arguments[_key];
-  }
-
-  var args = [a].concat(rest); // "a" was only used by Flow to make at least one value mandatory
-
-  switch (args.length) {
-    case 1:
-      return _range(0, args[0], 1);
-
-    case 2:
-      return _range(args[0], args[1], 1);
-
-    case 3:
-      return _range(args[0], args[1], args[2]);
-
-    /* istanbul ignore next */
-
-    default:
-      throw new Error('invalid number of arguments');
-  }
-}
-/**
- * Apply function of two arguments cumulatively to the items of sequence, from
- * left to right, so as to reduce the sequence to a single value.  For example:
- *
- *     reduce([1, 2, 3, 4, 5], (x, y) => x + y, 0)
- *
- * calculates
- *
- *     (((((0+1)+2)+3)+4)+5)
- *
- * The left argument, `x`, is the accumulated value and the right argument,
- * `y`, is the update value from the sequence.
- *
- * **Difference between `reduce()` and `reduce\_()`**:  `reduce()` requires an
- * explicit initializer, whereas `reduce_()` will automatically use the first
- * item in the given iterable as the initializer.  When using `reduce()`, the
- * initializer value is placed before the items of the sequence in the
- * calculation, and serves as a default when the sequence is empty.  When using
- * `reduce_()`, and the given iterable is empty, then no default value can be
- * derived and `undefined` will be returned.
- */
-
-
-function reduce(iterable, reducer, start) {
-  var it = iter(iterable);
-  var output = start;
-
-  var _iterator4 = _createForOfIteratorHelper(enumerate(it)),
-      _step4;
-
-  try {
-    for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-      var _step4$value = _slicedToArray(_step4.value, 2),
-          index = _step4$value[0],
-          item = _step4$value[1];
-
-      output = reducer(output, item, index);
-    }
-  } catch (err) {
-    _iterator4.e(err);
-  } finally {
-    _iterator4.f();
-  }
-
-  return output;
-}
-/**
- * See reduce().
- */
-
-
-function reduce_(iterable, reducer) {
-  var it = iter(iterable);
-  var start = (0, _custom.first)(it);
-
-  if (start === undefined) {
-    return undefined;
-  } else {
-    return reduce(it, reducer, start);
-  }
-}
-/**
- * Return a new sorted list from the items in iterable.
- *
- * Has two optional arguments:
- *
- * * `keyFn` specifies a function of one argument providing a primitive
- *   identity for each element in the iterable.  that will be used to compare.
- *   The default value is to use a default identity function that is only
- *   defined for primitive types.
- *
- * * `reverse` is a boolean value.  If `true`, then the list elements are
- *   sorted as if each comparison were reversed.
- */
-
-
-function sorted(iterable) {
-  var keyFn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _utils.primitiveIdentity;
-  var reverse = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-  var result = Array.from(iterable);
-  result.sort((0, _utils.keyToCmp)(keyFn)); // sort in-place
-
-  if (reverse) {
-    result.reverse(); // reverse in-place
-  }
-
-  return result;
-}
-/**
- * Sums the items of an iterable from left to right and returns the total.  The
- * sum will defaults to 0 if the iterable is empty.
- */
-
-
-function sum(iterable) {
-  return reduce(iterable, function (x, y) {
-    return x + y;
-  }, 0);
-}
-/**
- * See izip.
- */
-
-
-function zip(xs, ys) {
-  return Array.from((0, _itertools.izip)(xs, ys));
-}
-/**
- * See izip3.
- */
-
-
-function zip3(xs, ys, zs) {
-  return Array.from((0, _itertools.izip3)(xs, ys, zs));
-}
-},{"./custom":56,"./itertools":58,"./utils":60,"@babel/runtime/regenerator":54}],56:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.icompact = icompact;
-exports.compact = compact;
-exports.compactObject = compactObject;
-exports.first = first;
-exports.flatmap = flatmap;
-
-var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
-
-var _itertools = require("./itertools");
-
-var _moreItertools = require("./more-itertools");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var _marked = /*#__PURE__*/_regenerator["default"].mark(icompact);
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function isDefined(x) {
-  return x !== undefined;
-}
-/**
- * Returns an iterable, filtering out any `undefined` values from the input
- * iterable.  This function is useful to convert a list of `Maybe<T>`'s to
- * a list of `T`'s, discarding all the undefined values:
- *
- *     >>> compact([1, 2, undefined, 3])
- *     [1, 2, 3]
- */
-
-
-function icompact(iterable) {
-  var _iterator, _step, item;
-
-  return _regenerator["default"].wrap(function icompact$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _iterator = _createForOfIteratorHelper(iterable);
-          _context.prev = 1;
-
-          _iterator.s();
-
-        case 3:
-          if ((_step = _iterator.n()).done) {
-            _context.next = 10;
-            break;
-          }
-
-          item = _step.value;
-
-          if (!(typeof item !== 'undefined')) {
-            _context.next = 8;
-            break;
-          }
-
-          _context.next = 8;
-          return item;
-
-        case 8:
-          _context.next = 3;
-          break;
-
-        case 10:
-          _context.next = 15;
-          break;
-
-        case 12:
-          _context.prev = 12;
-          _context.t0 = _context["catch"](1);
-
-          _iterator.e(_context.t0);
-
-        case 15:
-          _context.prev = 15;
-
-          _iterator.f();
-
-          return _context.finish(15);
-
-        case 18:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, _marked, null, [[1, 12, 15, 18]]);
-}
-/**
- * See icompact().
- */
-
-
-function compact(iterable) {
-  return Array.from(icompact(iterable));
-}
-/**
- * Removes all undefined values from the given object.  Returns a new object.
- *
- *     >>> compactObject({ a: 1, b: undefined, c: 0 })
- *     { a: 1, c: 0 }
- *
- */
-
-
-function compactObject(obj) {
-  var result = {};
-
-  for (var _i = 0, _Object$entries = Object.entries(obj); _i < _Object$entries.length; _i++) {
-    var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-        _key = _Object$entries$_i[0],
-        value = _Object$entries$_i[1];
-
-    if (typeof value !== 'undefined') {
-      result[_key] = value;
-    }
-  }
-
-  return result;
-}
-/**
- * Returns the first item in the iterable for which the predicate holds, if
- * any.  If no such item exists, `undefined` is returned.  The default
- * predicate is any defined value.
- */
-
-
-function first(iterable, keyFn) {
-  var fn = keyFn || isDefined;
-
-  var _iterator2 = _createForOfIteratorHelper(iterable),
-      _step2;
-
-  try {
-    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-      var value = _step2.value;
-
-      if (fn(value)) {
-        return value;
-      }
-    }
-  } catch (err) {
-    _iterator2.e(err);
-  } finally {
-    _iterator2.f();
-  }
-
-  return undefined;
-}
-/**
- * Returns 0 or more values for every value in the given iterable.
- * Technically, it's just calling map(), followed by flatten(), but it's a very
- * useful operation if you want to map over a structure, but not have a 1:1
- * input-output mapping.  Instead, if you want to potentially return 0 or more
- * values per input element, use flatmap():
- *
- * For example, to return all numbers `n` in the input iterable `n` times:
- *
- *     >>> const repeatN = n => repeat(n, n);
- *     >>> [...flatmap([0, 1, 2, 3, 4], repeatN)]
- *     [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]  // note: no 0
- *
- */
-
-
-function flatmap(iterable, mapper) {
-  return (0, _moreItertools.flatten)((0, _itertools.imap)(iterable, mapper));
-}
-},{"./itertools":58,"./more-itertools":59,"@babel/runtime/regenerator":54}],57:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "all", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.all;
-  }
-});
-Object.defineProperty(exports, "any", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.any;
-  }
-});
-Object.defineProperty(exports, "contains", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.contains;
-  }
-});
-Object.defineProperty(exports, "enumerate", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.enumerate;
-  }
-});
-Object.defineProperty(exports, "filter", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.filter;
-  }
-});
-Object.defineProperty(exports, "iter", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.iter;
-  }
-});
-Object.defineProperty(exports, "map", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.map;
-  }
-});
-Object.defineProperty(exports, "max", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.max;
-  }
-});
-Object.defineProperty(exports, "min", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.min;
-  }
-});
-Object.defineProperty(exports, "range", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.range;
-  }
-});
-Object.defineProperty(exports, "reduce", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.reduce;
-  }
-});
-Object.defineProperty(exports, "sorted", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.sorted;
-  }
-});
-Object.defineProperty(exports, "sum", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.sum;
-  }
-});
-Object.defineProperty(exports, "zip", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.zip;
-  }
-});
-Object.defineProperty(exports, "zip3", {
-  enumerable: true,
-  get: function get() {
-    return _builtins.zip3;
-  }
-});
-Object.defineProperty(exports, "chain", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.chain;
-  }
-});
-Object.defineProperty(exports, "compress", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.compress;
-  }
-});
-Object.defineProperty(exports, "count", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.count;
-  }
-});
-Object.defineProperty(exports, "cycle", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.cycle;
-  }
-});
-Object.defineProperty(exports, "dropwhile", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.dropwhile;
-  }
-});
-Object.defineProperty(exports, "groupby", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.groupby;
-  }
-});
-Object.defineProperty(exports, "icompress", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.icompress;
-  }
-});
-Object.defineProperty(exports, "ifilter", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.ifilter;
-  }
-});
-Object.defineProperty(exports, "imap", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.imap;
-  }
-});
-Object.defineProperty(exports, "izip", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.izip;
-  }
-});
-Object.defineProperty(exports, "izip2", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.izip2;
-  }
-});
-Object.defineProperty(exports, "izip3", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.izip3;
-  }
-});
-Object.defineProperty(exports, "izipMany", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.izipMany;
-  }
-});
-Object.defineProperty(exports, "izipLongest", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.izipLongest;
-  }
-});
-Object.defineProperty(exports, "permutations", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.permutations;
-  }
-});
-Object.defineProperty(exports, "takewhile", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.takewhile;
-  }
-});
-Object.defineProperty(exports, "zipLongest", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.zipLongest;
-  }
-});
-Object.defineProperty(exports, "zipMany", {
-  enumerable: true,
-  get: function get() {
-    return _itertools.zipMany;
-  }
-});
-Object.defineProperty(exports, "chunked", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.chunked;
-  }
-});
-Object.defineProperty(exports, "flatten", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.flatten;
-  }
-});
-Object.defineProperty(exports, "heads", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.heads;
-  }
-});
-Object.defineProperty(exports, "itake", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.itake;
-  }
-});
-Object.defineProperty(exports, "pairwise", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.pairwise;
-  }
-});
-Object.defineProperty(exports, "partition", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.partition;
-  }
-});
-Object.defineProperty(exports, "roundrobin", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.roundrobin;
-  }
-});
-Object.defineProperty(exports, "take", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.take;
-  }
-});
-Object.defineProperty(exports, "uniqueEverseen", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.uniqueEverseen;
-  }
-});
-Object.defineProperty(exports, "uniqueJustseen", {
-  enumerable: true,
-  get: function get() {
-    return _moreItertools.uniqueJustseen;
-  }
-});
-Object.defineProperty(exports, "compact", {
-  enumerable: true,
-  get: function get() {
-    return _custom.compact;
-  }
-});
-Object.defineProperty(exports, "compactObject", {
-  enumerable: true,
-  get: function get() {
-    return _custom.compactObject;
-  }
-});
-Object.defineProperty(exports, "first", {
-  enumerable: true,
-  get: function get() {
-    return _custom.first;
-  }
-});
-Object.defineProperty(exports, "flatmap", {
-  enumerable: true,
-  get: function get() {
-    return _custom.flatmap;
-  }
-});
-Object.defineProperty(exports, "icompact", {
-  enumerable: true,
-  get: function get() {
-    return _custom.icompact;
-  }
-});
-
-var _builtins = require("./builtins");
-
-var _itertools = require("./itertools");
-
-var _moreItertools = require("./more-itertools");
-
-var _custom = require("./custom");
-},{"./builtins":55,"./custom":56,"./itertools":58,"./more-itertools":59}],58:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.chain = chain;
-exports.count = count;
-exports.compress = compress;
-exports.cycle = cycle;
-exports.dropwhile = dropwhile;
-exports.groupby = groupby;
-exports.icompress = icompress;
-exports.ifilter = ifilter;
-exports.imap = imap;
-exports.islice = islice;
-exports.izip2 = izip2;
-exports.izip3 = izip3;
-exports.izipLongest2 = izipLongest2;
-exports.izipLongest3 = izipLongest3;
-exports.izipMany = izipMany;
-exports.permutations = permutations;
-exports.repeat = repeat;
-exports.takewhile = takewhile;
-exports.zipLongest2 = zipLongest2;
-exports.zipLongest3 = zipLongest3;
-exports.zipMany = zipMany;
-exports.zipLongest = exports.izipLongest = exports.izip = void 0;
-
-var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
-
-var _builtins = require("./builtins");
-
-var _moreItertools = require("./more-itertools");
-
-var _utils = require("./utils");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-var _marked = /*#__PURE__*/_regenerator["default"].mark(count),
-    _marked2 = /*#__PURE__*/_regenerator["default"].mark(cycle),
-    _marked3 = /*#__PURE__*/_regenerator["default"].mark(dropwhile),
-    _marked4 = /*#__PURE__*/_regenerator["default"].mark(groupby),
-    _marked5 = /*#__PURE__*/_regenerator["default"].mark(icompress),
-    _marked6 = /*#__PURE__*/_regenerator["default"].mark(ifilter),
-    _marked7 = /*#__PURE__*/_regenerator["default"].mark(imap),
-    _marked8 = /*#__PURE__*/_regenerator["default"].mark(islice),
-    _marked9 = /*#__PURE__*/_regenerator["default"].mark(izip2),
-    _marked10 = /*#__PURE__*/_regenerator["default"].mark(izip3),
-    _marked11 = /*#__PURE__*/_regenerator["default"].mark(izipLongest2),
-    _marked12 = /*#__PURE__*/_regenerator["default"].mark(izipLongest3),
-    _marked13 = /*#__PURE__*/_regenerator["default"].mark(izipMany),
-    _marked14 = /*#__PURE__*/_regenerator["default"].mark(permutations),
-    _marked15 = /*#__PURE__*/_regenerator["default"].mark(repeat),
-    _marked16 = /*#__PURE__*/_regenerator["default"].mark(takewhile);
-
-var SENTINEL = Symbol();
-
-function composeAnd(f1, f2) {
-  return function (n) {
-    return f1(n) && f2(n);
-  };
-}
-
-function slicePredicate(start, stop, step) {
-  // If stop is not provided (= undefined), then interpret the start value as the stop value
-  var _start = start,
-      _stop = stop,
-      _step = step;
-
-  if (_stop === undefined) {
-    var _ref = [0, _start];
-    _start = _ref[0];
-    _stop = _ref[1];
-  }
-
-  var pred = function pred(n) {
-    return n >= _start;
-  };
-
-  if (_stop !== null) {
-    var stopNotNull = _stop;
-    pred = composeAnd(pred, function (n) {
-      return n < stopNotNull;
-    });
-  }
-
-  if (_step > 1) {
-    pred = composeAnd(pred, function (n) {
-      return (n - _start) % _step === 0;
-    });
-  }
-
-  return pred;
-}
-/**
- * Returns an iterator that returns elements from the first iterable until it
- * is exhausted, then proceeds to the next iterable, until all of the iterables
- * are exhausted.  Used for treating consecutive sequences as a single
- * sequence.
- */
-
-
-function chain() {
-  for (var _len = arguments.length, iterables = new Array(_len), _key = 0; _key < _len; _key++) {
-    iterables[_key] = arguments[_key];
-  }
-
-  return (0, _moreItertools.flatten)(iterables);
-}
-/**
- * Returns an iterator that counts up values starting with number `start`
- * (default 0), incrementing by `step`.  To decrement, use a negative step
- * number.
- */
-
-
-function count() {
-  var start,
-      step,
-      n,
-      _args = arguments;
-  return _regenerator["default"].wrap(function count$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          start = _args.length > 0 && _args[0] !== undefined ? _args[0] : 0;
-          step = _args.length > 1 && _args[1] !== undefined ? _args[1] : 1;
-          n = start;
-
-        case 3:
-          _context.next = 5;
-          return n;
-
-        case 5:
-          n += step;
-
-        case 6:
-          _context.next = 3;
-          break;
-
-        case 8:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, _marked);
-}
-/**
- * Non-lazy version of icompress().
- */
-
-
-function compress(data, selectors) {
-  return Array.from(icompress(data, selectors));
-}
-/**
- * Returns an iterator producing elements from the iterable and saving a copy
- * of each.  When the iterable is exhausted, return elements from the saved
- * copy.  Repeats indefinitely.
- */
-
-
-function cycle(iterable) {
-  var saved, _iterator, _step2, _element, _iterator2, _step3, element;
-
-  return _regenerator["default"].wrap(function cycle$(_context2) {
-    while (1) {
-      switch (_context2.prev = _context2.next) {
-        case 0:
-          saved = [];
-          _iterator = _createForOfIteratorHelper(iterable);
-          _context2.prev = 2;
-
-          _iterator.s();
-
-        case 4:
-          if ((_step2 = _iterator.n()).done) {
-            _context2.next = 11;
-            break;
-          }
-
-          _element = _step2.value;
-          _context2.next = 8;
-          return _element;
-
-        case 8:
-          saved.push(_element);
-
-        case 9:
-          _context2.next = 4;
-          break;
-
-        case 11:
-          _context2.next = 16;
-          break;
-
-        case 13:
-          _context2.prev = 13;
-          _context2.t0 = _context2["catch"](2);
-
-          _iterator.e(_context2.t0);
-
-        case 16:
-          _context2.prev = 16;
-
-          _iterator.f();
-
-          return _context2.finish(16);
-
-        case 19:
-          if (!(saved.length > 0)) {
-            _context2.next = 39;
-            break;
-          }
-
-          _iterator2 = _createForOfIteratorHelper(saved);
-          _context2.prev = 21;
-
-          _iterator2.s();
-
-        case 23:
-          if ((_step3 = _iterator2.n()).done) {
-            _context2.next = 29;
-            break;
-          }
-
-          element = _step3.value;
-          _context2.next = 27;
-          return element;
-
-        case 27:
-          _context2.next = 23;
-          break;
-
-        case 29:
-          _context2.next = 34;
-          break;
-
-        case 31:
-          _context2.prev = 31;
-          _context2.t1 = _context2["catch"](21);
-
-          _iterator2.e(_context2.t1);
-
-        case 34:
-          _context2.prev = 34;
-
-          _iterator2.f();
-
-          return _context2.finish(34);
-
-        case 37:
-          _context2.next = 19;
-          break;
-
-        case 39:
-        case "end":
-          return _context2.stop();
-      }
-    }
-  }, _marked2, null, [[2, 13, 16, 19], [21, 31, 34, 37]]);
-}
-/**
- * Returns an iterator that drops elements from the iterable as long as the
- * predicate is true; afterwards, returns every remaining element.  Note, the
- * iterator does not produce any output until the predicate first becomes
- * false.
- */
-
-
-function dropwhile(iterable, predicate) {
-  var it, _iterator3, _step4, value, _iterator4, _step5, _value;
-
-  return _regenerator["default"].wrap(function dropwhile$(_context3) {
-    while (1) {
-      switch (_context3.prev = _context3.next) {
-        case 0:
-          it = (0, _builtins.iter)(iterable);
-          _iterator3 = _createForOfIteratorHelper(it);
-          _context3.prev = 2;
-
-          _iterator3.s();
-
-        case 4:
-          if ((_step4 = _iterator3.n()).done) {
-            _context3.next = 12;
-            break;
-          }
-
-          value = _step4.value;
-
-          if (predicate(value)) {
-            _context3.next = 10;
-            break;
-          }
-
-          _context3.next = 9;
-          return value;
-
-        case 9:
-          return _context3.abrupt("break", 12);
-
-        case 10:
-          _context3.next = 4;
-          break;
-
-        case 12:
-          _context3.next = 17;
-          break;
-
-        case 14:
-          _context3.prev = 14;
-          _context3.t0 = _context3["catch"](2);
-
-          _iterator3.e(_context3.t0);
-
-        case 17:
-          _context3.prev = 17;
-
-          _iterator3.f();
-
-          return _context3.finish(17);
-
-        case 20:
-          _iterator4 = _createForOfIteratorHelper(it);
-          _context3.prev = 21;
-
-          _iterator4.s();
-
-        case 23:
-          if ((_step5 = _iterator4.n()).done) {
-            _context3.next = 29;
-            break;
-          }
-
-          _value = _step5.value;
-          _context3.next = 27;
-          return _value;
-
-        case 27:
-          _context3.next = 23;
-          break;
-
-        case 29:
-          _context3.next = 34;
-          break;
-
-        case 31:
-          _context3.prev = 31;
-          _context3.t1 = _context3["catch"](21);
-
-          _iterator4.e(_context3.t1);
-
-        case 34:
-          _context3.prev = 34;
-
-          _iterator4.f();
-
-          return _context3.finish(34);
-
-        case 37:
-        case "end":
-          return _context3.stop();
-      }
-    }
-  }, _marked3, null, [[2, 14, 17, 20], [21, 31, 34, 37]]);
-}
-
-function groupby(iterable) {
-  var keyFn,
-      it,
-      currentValue,
-      currentKey,
-      targetKey,
-      grouper,
-      nextVal,
-      _args5 = arguments;
-  return _regenerator["default"].wrap(function groupby$(_context5) {
-    while (1) {
-      switch (_context5.prev = _context5.next) {
-        case 0:
-          keyFn = _args5.length > 1 && _args5[1] !== undefined ? _args5[1] : _utils.primitiveIdentity;
-          it = (0, _builtins.iter)(iterable);
-          // $FlowFixMe[incompatible-type] - deliberate use of the SENTINEL symbol
-          currentKey = SENTINEL;
-          targetKey = currentKey;
-          grouper = /*#__PURE__*/_regenerator["default"].mark(function grouper(tgtKey) {
-            var nextVal;
-            return _regenerator["default"].wrap(function grouper$(_context4) {
-              while (1) {
-                switch (_context4.prev = _context4.next) {
-                  case 0:
-                    if (!(currentKey === tgtKey)) {
-                      _context4.next = 10;
-                      break;
-                    }
-
-                    _context4.next = 3;
-                    return currentValue;
-
-                  case 3:
-                    nextVal = it.next();
-
-                    if (!nextVal.done) {
-                      _context4.next = 6;
-                      break;
-                    }
-
-                    return _context4.abrupt("return");
-
-                  case 6:
-                    currentValue = nextVal.value;
-                    currentKey = keyFn(currentValue);
-                    _context4.next = 0;
-                    break;
-
-                  case 10:
-                  case "end":
-                    return _context4.stop();
-                }
-              }
-            }, grouper);
-          });
-
-        case 5:
-          if (!(currentKey === targetKey)) {
-            _context5.next = 14;
-            break;
-          }
-
-          nextVal = it.next();
-
-          if (!nextVal.done) {
-            _context5.next = 10;
-            break;
-          }
-
-          // $FlowFixMe[incompatible-type] - deliberate use of the SENTINEL symbol
-          currentKey = SENTINEL;
-          return _context5.abrupt("return");
-
-        case 10:
-          currentValue = nextVal.value;
-          currentKey = keyFn(currentValue);
-          _context5.next = 5;
-          break;
-
-        case 14:
-          targetKey = currentKey;
-          _context5.next = 17;
-          return [currentKey, grouper(targetKey)];
-
-        case 17:
-          _context5.next = 5;
-          break;
-
-        case 19:
-        case "end":
-          return _context5.stop();
-      }
-    }
-  }, _marked4);
-}
-/**
- * Returns an iterator that filters elements from data returning only those
- * that have a corresponding element in selectors that evaluates to `true`.
- * Stops when either the data or selectors iterables has been exhausted.
- */
-
-
-function icompress(data, selectors) {
-  var _iterator5, _step6, _step6$value, d, s;
-
-  return _regenerator["default"].wrap(function icompress$(_context6) {
-    while (1) {
-      switch (_context6.prev = _context6.next) {
-        case 0:
-          _iterator5 = _createForOfIteratorHelper(izip(data, selectors));
-          _context6.prev = 1;
-
-          _iterator5.s();
-
-        case 3:
-          if ((_step6 = _iterator5.n()).done) {
-            _context6.next = 10;
-            break;
-          }
-
-          _step6$value = _slicedToArray(_step6.value, 2), d = _step6$value[0], s = _step6$value[1];
-
-          if (!s) {
-            _context6.next = 8;
-            break;
-          }
-
-          _context6.next = 8;
-          return d;
-
-        case 8:
-          _context6.next = 3;
-          break;
-
-        case 10:
-          _context6.next = 15;
-          break;
-
-        case 12:
-          _context6.prev = 12;
-          _context6.t0 = _context6["catch"](1);
-
-          _iterator5.e(_context6.t0);
-
-        case 15:
-          _context6.prev = 15;
-
-          _iterator5.f();
-
-          return _context6.finish(15);
-
-        case 18:
-        case "end":
-          return _context6.stop();
-      }
-    }
-  }, _marked5, null, [[1, 12, 15, 18]]);
-}
-/**
- * Returns an iterator that filters elements from iterable returning only those
- * for which the predicate is true.
- */
-
-
-function ifilter(iterable, predicate) {
-  var _iterator6, _step7, value;
-
-  return _regenerator["default"].wrap(function ifilter$(_context7) {
-    while (1) {
-      switch (_context7.prev = _context7.next) {
-        case 0:
-          _iterator6 = _createForOfIteratorHelper(iterable);
-          _context7.prev = 1;
-
-          _iterator6.s();
-
-        case 3:
-          if ((_step7 = _iterator6.n()).done) {
-            _context7.next = 10;
-            break;
-          }
-
-          value = _step7.value;
-
-          if (!predicate(value)) {
-            _context7.next = 8;
-            break;
-          }
-
-          _context7.next = 8;
-          return value;
-
-        case 8:
-          _context7.next = 3;
-          break;
-
-        case 10:
-          _context7.next = 15;
-          break;
-
-        case 12:
-          _context7.prev = 12;
-          _context7.t0 = _context7["catch"](1);
-
-          _iterator6.e(_context7.t0);
-
-        case 15:
-          _context7.prev = 15;
-
-          _iterator6.f();
-
-          return _context7.finish(15);
-
-        case 18:
-        case "end":
-          return _context7.stop();
-      }
-    }
-  }, _marked6, null, [[1, 12, 15, 18]]);
-}
-/**
- * Returns an iterator that computes the given mapper function using arguments
- * from each of the iterables.
- */
-
-
-function imap(iterable, mapper) {
-  var _iterator7, _step8, value;
-
-  return _regenerator["default"].wrap(function imap$(_context8) {
-    while (1) {
-      switch (_context8.prev = _context8.next) {
-        case 0:
-          _iterator7 = _createForOfIteratorHelper(iterable);
-          _context8.prev = 1;
-
-          _iterator7.s();
-
-        case 3:
-          if ((_step8 = _iterator7.n()).done) {
-            _context8.next = 9;
-            break;
-          }
-
-          value = _step8.value;
-          _context8.next = 7;
-          return mapper(value);
-
-        case 7:
-          _context8.next = 3;
-          break;
-
-        case 9:
-          _context8.next = 14;
-          break;
-
-        case 11:
-          _context8.prev = 11;
-          _context8.t0 = _context8["catch"](1);
-
-          _iterator7.e(_context8.t0);
-
-        case 14:
-          _context8.prev = 14;
-
-          _iterator7.f();
-
-          return _context8.finish(14);
-
-        case 17:
-        case "end":
-          return _context8.stop();
-      }
-    }
-  }, _marked7, null, [[1, 11, 14, 17]]);
-}
-/**
- * Returns an iterator that returns selected elements from the iterable.  If
- * `start` is non-zero, then elements from the iterable are skipped until start
- * is reached.  Then, elements are returned by making steps of `step` (defaults
- * to 1).  If set to higher than 1, items will be skipped.  If `stop` is
- * provided, then iteration continues until the iterator reached that index,
- * otherwise, the iterable will be fully exhausted.  `islice()` does not
- * support negative values for `start`, `stop`, or `step`.
- */
-
-
-function islice(iterable, start, stop) {
-  var step,
-      pred,
-      _iterator8,
-      _step9,
-      _step9$value,
-      i,
-      value,
-      _args9 = arguments;
-
-  return _regenerator["default"].wrap(function islice$(_context9) {
-    while (1) {
-      switch (_context9.prev = _context9.next) {
-        case 0:
-          step = _args9.length > 3 && _args9[3] !== undefined ? _args9[3] : 1;
-
-          if (!(start < 0)) {
-            _context9.next = 3;
-            break;
-          }
-
-          throw new Error('start cannot be negative');
-
-        case 3:
-          if (!(typeof stop === 'number' && stop < 0)) {
-            _context9.next = 5;
-            break;
-          }
-
-          throw new Error('stop cannot be negative');
-
-        case 5:
-          if (!(step < 0)) {
-            _context9.next = 7;
-            break;
-          }
-
-          throw new Error('step cannot be negative');
-
-        case 7:
-          pred = slicePredicate(start, stop, step);
-          _iterator8 = _createForOfIteratorHelper((0, _builtins.enumerate)(iterable));
-          _context9.prev = 9;
-
-          _iterator8.s();
-
-        case 11:
-          if ((_step9 = _iterator8.n()).done) {
-            _context9.next = 18;
-            break;
-          }
-
-          _step9$value = _slicedToArray(_step9.value, 2), i = _step9$value[0], value = _step9$value[1];
-
-          if (!pred(i)) {
-            _context9.next = 16;
-            break;
-          }
-
-          _context9.next = 16;
-          return value;
-
-        case 16:
-          _context9.next = 11;
-          break;
-
-        case 18:
-          _context9.next = 23;
-          break;
-
-        case 20:
-          _context9.prev = 20;
-          _context9.t0 = _context9["catch"](9);
-
-          _iterator8.e(_context9.t0);
-
-        case 23:
-          _context9.prev = 23;
-
-          _iterator8.f();
-
-          return _context9.finish(23);
-
-        case 26:
-        case "end":
-          return _context9.stop();
-      }
-    }
-  }, _marked8, null, [[9, 20, 23, 26]]);
-}
-/**
- * Returns an iterator that aggregates elements from each of the iterables.
- * Used for lock-step iteration over several iterables at a time.  When
- * iterating over two iterables, use `izip2`.  When iterating over three
- * iterables, use `izip3`, etc.  `izip` is an alias for `izip2`.
- */
-
-
-function izip2(xs, ys) {
-  var ixs, iys, x, y;
-  return _regenerator["default"].wrap(function izip2$(_context10) {
-    while (1) {
-      switch (_context10.prev = _context10.next) {
-        case 0:
-          ixs = (0, _builtins.iter)(xs);
-          iys = (0, _builtins.iter)(ys);
-
-        case 2:
-          x = ixs.next();
-          y = iys.next();
-
-          if (!(!x.done && !y.done)) {
-            _context10.next = 9;
-            break;
-          }
-
-          _context10.next = 7;
-          return [x.value, y.value];
-
-        case 7:
-          _context10.next = 10;
-          break;
-
-        case 9:
-          return _context10.abrupt("return");
-
-        case 10:
-          _context10.next = 2;
-          break;
-
-        case 12:
-        case "end":
-          return _context10.stop();
-      }
-    }
-  }, _marked9);
-}
-/**
- * Like izip2, but for three input iterables.
- */
-
-
-function izip3(xs, ys, zs) {
-  var ixs, iys, izs, x, y, z;
-  return _regenerator["default"].wrap(function izip3$(_context11) {
-    while (1) {
-      switch (_context11.prev = _context11.next) {
-        case 0:
-          ixs = (0, _builtins.iter)(xs);
-          iys = (0, _builtins.iter)(ys);
-          izs = (0, _builtins.iter)(zs);
-
-        case 3:
-          x = ixs.next();
-          y = iys.next();
-          z = izs.next();
-
-          if (!(!x.done && !y.done && !z.done)) {
-            _context11.next = 11;
-            break;
-          }
-
-          _context11.next = 9;
-          return [x.value, y.value, z.value];
-
-        case 9:
-          _context11.next = 12;
-          break;
-
-        case 11:
-          return _context11.abrupt("return");
-
-        case 12:
-          _context11.next = 3;
-          break;
-
-        case 14:
-        case "end":
-          return _context11.stop();
-      }
-    }
-  }, _marked10);
-}
-
-var izip = izip2;
-/**
- * Returns an iterator that aggregates elements from each of the iterables.  If
- * the iterables are of uneven length, missing values are filled-in with
- * fillvalue.  Iteration continues until the longest iterable is exhausted.
- */
-
-exports.izip = izip;
-
-function izipLongest2(xs, ys) {
-  var filler,
-      ixs,
-      iys,
-      x,
-      y,
-      _args12 = arguments;
-  return _regenerator["default"].wrap(function izipLongest2$(_context12) {
-    while (1) {
-      switch (_context12.prev = _context12.next) {
-        case 0:
-          filler = _args12.length > 2 && _args12[2] !== undefined ? _args12[2] : undefined;
-          ixs = (0, _builtins.iter)(xs);
-          iys = (0, _builtins.iter)(ys);
-
-        case 3:
-          x = ixs.next();
-          y = iys.next();
-
-          if (!(x.done && y.done)) {
-            _context12.next = 9;
-            break;
-          }
-
-          return _context12.abrupt("return");
-
-        case 9:
-          _context12.next = 11;
-          return [!x.done ? x.value : filler, !y.done ? y.value : filler];
-
-        case 11:
-          _context12.next = 3;
-          break;
-
-        case 13:
-        case "end":
-          return _context12.stop();
-      }
-    }
-  }, _marked11);
-}
-/**
- * See izipLongest2, but for three.
- */
-
-
-function izipLongest3(xs, ys, zs) {
-  var filler,
-      ixs,
-      iys,
-      izs,
-      x,
-      y,
-      z,
-      _args13 = arguments;
-  return _regenerator["default"].wrap(function izipLongest3$(_context13) {
-    while (1) {
-      switch (_context13.prev = _context13.next) {
-        case 0:
-          filler = _args13.length > 3 && _args13[3] !== undefined ? _args13[3] : undefined;
-          ixs = (0, _builtins.iter)(xs);
-          iys = (0, _builtins.iter)(ys);
-          izs = (0, _builtins.iter)(zs);
-
-        case 4:
-          x = ixs.next();
-          y = iys.next();
-          z = izs.next();
-
-          if (!(x.done && y.done && z.done)) {
-            _context13.next = 11;
-            break;
-          }
-
-          return _context13.abrupt("return");
-
-        case 11:
-          _context13.next = 13;
-          return [!x.done ? x.value : filler, !y.done ? y.value : filler, !z.done ? z.value : filler];
-
-        case 13:
-          _context13.next = 4;
-          break;
-
-        case 15:
-        case "end":
-          return _context13.stop();
-      }
-    }
-  }, _marked12);
-}
-/**
- * Like the other izips (`izip`, `izip3`, etc), but generalized to take an
- * unlimited amount of input iterables.  Think `izip(*iterables)` in Python.
- *
- * **Note:** Due to Flow type system limitations, you can only "generially" zip
- * iterables with homogeneous types, so you cannot mix types like <A, B> like
- * you can with izip2().
- */
-
-
-function izipMany() {
-  var _len2,
-      iters,
-      _key2,
-      iterables,
-      heads,
-      _args14 = arguments;
-
-  return _regenerator["default"].wrap(function izipMany$(_context14) {
-    while (1) {
-      switch (_context14.prev = _context14.next) {
-        case 0:
-          for (_len2 = _args14.length, iters = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-            iters[_key2] = _args14[_key2];
-          }
-
-          // Make them all iterables
-          iterables = iters.map(_builtins.iter);
-
-        case 2:
-          heads = iterables.map(function (xs) {
-            return xs.next();
-          });
-
-          if (!(0, _builtins.all)(heads, function (h) {
-            return !h.done;
-          })) {
-            _context14.next = 8;
-            break;
-          }
-
-          _context14.next = 6;
-          return heads.map(function (h) {
-            return h.value;
-          });
-
-        case 6:
-          _context14.next = 9;
-          break;
-
-        case 8:
-          return _context14.abrupt("return");
-
-        case 9:
-          _context14.next = 2;
-          break;
-
-        case 11:
-        case "end":
-          return _context14.stop();
-      }
-    }
-  }, _marked13);
-}
-/**
- * Return successive `r`-length permutations of elements in the iterable.
- *
- * If `r` is not specified, then `r` defaults to the length of the iterable and
- * all possible full-length permutations are generated.
- *
- * Permutations are emitted in lexicographic sort order.  So, if the input
- * iterable is sorted, the permutation tuples will be produced in sorted order.
- *
- * Elements are treated as unique based on their position, not on their value.
- * So if the input elements are unique, there will be no repeat values in each
- * permutation.
- */
-
-
-function permutations(iterable, r) {
-  var pool, n, x, indices, cycles, poolgetter, cleanExit, _iterator9, _step10, i, j, _ref2, p, q;
-
-  return _regenerator["default"].wrap(function permutations$(_context15) {
-    while (1) {
-      switch (_context15.prev = _context15.next) {
-        case 0:
-          pool = Array.from(iterable);
-          n = pool.length;
-          x = r === undefined ? n : r;
-
-          if (!(x > n)) {
-            _context15.next = 5;
-            break;
-          }
-
-          return _context15.abrupt("return");
-
-        case 5:
-          indices = Array.from((0, _builtins.range)(n));
-          cycles = Array.from((0, _builtins.range)(n, n - x, -1));
-
-          poolgetter = function poolgetter(i) {
-            return pool[i];
-          };
-
-          _context15.next = 10;
-          return indices.slice(0, x).map(poolgetter);
-
-        case 10:
-          if (!(n > 0)) {
-            _context15.next = 45;
-            break;
-          }
-
-          cleanExit = true;
-          _iterator9 = _createForOfIteratorHelper((0, _builtins.range)(x - 1, -1, -1));
-          _context15.prev = 13;
-
-          _iterator9.s();
-
-        case 15:
-          if ((_step10 = _iterator9.n()).done) {
-            _context15.next = 33;
-            break;
-          }
-
-          i = _step10.value;
-          cycles[i] -= 1;
-
-          if (!(cycles[i] === 0)) {
-            _context15.next = 23;
-            break;
-          }
-
-          indices = indices.slice(0, i).concat(indices.slice(i + 1)).concat(indices.slice(i, i + 1));
-          cycles[i] = n - i;
-          _context15.next = 31;
-          break;
-
-        case 23:
-          j = cycles[i];
-          _ref2 = [indices[indices.length - j], indices[i]], p = _ref2[0], q = _ref2[1];
-          indices[i] = p;
-          indices[indices.length - j] = q;
-          _context15.next = 29;
-          return indices.slice(0, x).map(poolgetter);
-
-        case 29:
-          cleanExit = false;
-          return _context15.abrupt("break", 33);
-
-        case 31:
-          _context15.next = 15;
-          break;
-
-        case 33:
-          _context15.next = 38;
-          break;
-
-        case 35:
-          _context15.prev = 35;
-          _context15.t0 = _context15["catch"](13);
-
-          _iterator9.e(_context15.t0);
-
-        case 38:
-          _context15.prev = 38;
-
-          _iterator9.f();
-
-          return _context15.finish(38);
-
-        case 41:
-          if (!cleanExit) {
-            _context15.next = 43;
-            break;
-          }
-
-          return _context15.abrupt("return");
-
-        case 43:
-          _context15.next = 10;
-          break;
-
-        case 45:
-        case "end":
-          return _context15.stop();
-      }
-    }
-  }, _marked14, null, [[13, 35, 38, 41]]);
-}
-/**
- * Returns an iterator that produces values over and over again.  Runs
- * indefinitely unless the times argument is specified.
- */
-
-
-function repeat(thing, times) {
-  var _iterator10, _step11, i;
-
-  return _regenerator["default"].wrap(function repeat$(_context16) {
-    while (1) {
-      switch (_context16.prev = _context16.next) {
-        case 0:
-          if (!(times === undefined)) {
-            _context16.next = 7;
-            break;
-          }
-
-        case 1:
-          _context16.next = 3;
-          return thing;
-
-        case 3:
-          _context16.next = 1;
-          break;
-
-        case 5:
-          _context16.next = 24;
-          break;
-
-        case 7:
-          // eslint-disable-next-line no-unused-vars
-          _iterator10 = _createForOfIteratorHelper((0, _builtins.range)(times));
-          _context16.prev = 8;
-
-          _iterator10.s();
-
-        case 10:
-          if ((_step11 = _iterator10.n()).done) {
-            _context16.next = 16;
-            break;
-          }
-
-          i = _step11.value;
-          _context16.next = 14;
-          return thing;
-
-        case 14:
-          _context16.next = 10;
-          break;
-
-        case 16:
-          _context16.next = 21;
-          break;
-
-        case 18:
-          _context16.prev = 18;
-          _context16.t0 = _context16["catch"](8);
-
-          _iterator10.e(_context16.t0);
-
-        case 21:
-          _context16.prev = 21;
-
-          _iterator10.f();
-
-          return _context16.finish(21);
-
-        case 24:
-        case "end":
-          return _context16.stop();
-      }
-    }
-  }, _marked15, null, [[8, 18, 21, 24]]);
-}
-/**
- * Returns an iterator that produces elements from the iterable as long as the
- * predicate is true.
- */
-
-
-function takewhile(iterable, predicate) {
-  var _iterator11, _step12, value;
-
-  return _regenerator["default"].wrap(function takewhile$(_context17) {
-    while (1) {
-      switch (_context17.prev = _context17.next) {
-        case 0:
-          _iterator11 = _createForOfIteratorHelper(iterable);
-          _context17.prev = 1;
-
-          _iterator11.s();
-
-        case 3:
-          if ((_step12 = _iterator11.n()).done) {
-            _context17.next = 11;
-            break;
-          }
-
-          value = _step12.value;
-
-          if (predicate(value)) {
-            _context17.next = 7;
-            break;
-          }
-
-          return _context17.abrupt("return");
-
-        case 7:
-          _context17.next = 9;
-          return value;
-
-        case 9:
-          _context17.next = 3;
-          break;
-
-        case 11:
-          _context17.next = 16;
-          break;
-
-        case 13:
-          _context17.prev = 13;
-          _context17.t0 = _context17["catch"](1);
-
-          _iterator11.e(_context17.t0);
-
-        case 16:
-          _context17.prev = 16;
-
-          _iterator11.f();
-
-          return _context17.finish(16);
-
-        case 19:
-        case "end":
-          return _context17.stop();
-      }
-    }
-  }, _marked16, null, [[1, 13, 16, 19]]);
-}
-
-function zipLongest2(xs, ys) {
-  var filler = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : undefined;
-  return Array.from(izipLongest2(xs, ys, filler));
-}
-
-function zipLongest3(xs, ys, zs) {
-  var filler = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : undefined;
-  return Array.from(izipLongest3(xs, ys, zs, filler));
-}
-
-var izipLongest = izipLongest2;
-exports.izipLongest = izipLongest;
-var zipLongest = zipLongest2;
-exports.zipLongest = zipLongest;
-
-function zipMany() {
-  return Array.from(izipMany.apply(void 0, arguments));
-}
-},{"./builtins":55,"./more-itertools":59,"./utils":60,"@babel/runtime/regenerator":54}],59:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.chunked = chunked;
-exports.flatten = flatten;
-exports.intersperse = intersperse;
-exports.itake = itake;
-exports.pairwise = pairwise;
-exports.partition = partition;
-exports.roundrobin = roundrobin;
-exports.heads = heads;
-exports.take = take;
-exports.uniqueEverseen = uniqueEverseen;
-exports.uniqueJustseen = uniqueJustseen;
-
-var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
-
-var _builtins = require("./builtins");
-
-var _itertools = require("./itertools");
-
-var _utils = require("./utils");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var _marked = /*#__PURE__*/_regenerator["default"].mark(chunked),
-    _marked2 = /*#__PURE__*/_regenerator["default"].mark(flatten),
-    _marked3 = /*#__PURE__*/_regenerator["default"].mark(itake),
-    _marked4 = /*#__PURE__*/_regenerator["default"].mark(pairwise),
-    _marked5 = /*#__PURE__*/_regenerator["default"].mark(roundrobin),
-    _marked6 = /*#__PURE__*/_regenerator["default"].mark(heads),
-    _marked7 = /*#__PURE__*/_regenerator["default"].mark(uniqueEverseen),
-    _marked8 = /*#__PURE__*/_regenerator["default"].mark(uniqueJustseen);
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-/**
- * Break iterable into lists of length `size`:
- *
- *     [...chunked([1, 2, 3, 4, 5, 6], 3)]
- *     // [[1, 2, 3], [4, 5, 6]]
- *
- * If the length of iterable is not evenly divisible by `size`, the last returned
- * list will be shorter:
- *
- *     [...chunked([1, 2, 3, 4, 5, 6, 7, 8], 3)]
- *     // [[1, 2, 3], [4, 5, 6], [7, 8]]
- */
-function chunked(iterable, size) {
-  var it, r1, chunk, _iterator, _step, item;
-
-  return _regenerator["default"].wrap(function chunked$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          it = (0, _builtins.iter)(iterable);
-          r1 = it.next();
-
-          if (!r1.done) {
-            _context.next = 4;
-            break;
-          }
-
-          return _context.abrupt("return");
-
-        case 4:
-          chunk = [r1.value];
-          _iterator = _createForOfIteratorHelper(it);
-          _context.prev = 6;
-
-          _iterator.s();
-
-        case 8:
-          if ((_step = _iterator.n()).done) {
-            _context.next = 17;
-            break;
-          }
-
-          item = _step.value;
-          chunk.push(item);
-
-          if (!(chunk.length === size)) {
-            _context.next = 15;
-            break;
-          }
-
-          _context.next = 14;
-          return chunk;
-
-        case 14:
-          chunk = [];
-
-        case 15:
-          _context.next = 8;
-          break;
-
-        case 17:
-          _context.next = 22;
-          break;
-
-        case 19:
-          _context.prev = 19;
-          _context.t0 = _context["catch"](6);
-
-          _iterator.e(_context.t0);
-
-        case 22:
-          _context.prev = 22;
-
-          _iterator.f();
-
-          return _context.finish(22);
-
-        case 25:
-          if (!(chunk.length > 0)) {
-            _context.next = 28;
-            break;
-          }
-
-          _context.next = 28;
-          return chunk;
-
-        case 28:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, _marked, null, [[6, 19, 22, 25]]);
-}
-/**
- * Return an iterator flattening one level of nesting in a list of lists:
- *
- *     [...flatten([[0, 1], [2, 3]])]
- *     // [0, 1, 2, 3]
- *
- */
-
-
-function flatten(iterableOfIterables) {
-  var _iterator2, _step2, iterable, _iterator3, _step3, item;
-
-  return _regenerator["default"].wrap(function flatten$(_context2) {
-    while (1) {
-      switch (_context2.prev = _context2.next) {
-        case 0:
-          _iterator2 = _createForOfIteratorHelper(iterableOfIterables);
-          _context2.prev = 1;
-
-          _iterator2.s();
-
-        case 3:
-          if ((_step2 = _iterator2.n()).done) {
-            _context2.next = 24;
-            break;
-          }
-
-          iterable = _step2.value;
-          _iterator3 = _createForOfIteratorHelper(iterable);
-          _context2.prev = 6;
-
-          _iterator3.s();
-
-        case 8:
-          if ((_step3 = _iterator3.n()).done) {
-            _context2.next = 14;
-            break;
-          }
-
-          item = _step3.value;
-          _context2.next = 12;
-          return item;
-
-        case 12:
-          _context2.next = 8;
-          break;
-
-        case 14:
-          _context2.next = 19;
-          break;
-
-        case 16:
-          _context2.prev = 16;
-          _context2.t0 = _context2["catch"](6);
-
-          _iterator3.e(_context2.t0);
-
-        case 19:
-          _context2.prev = 19;
-
-          _iterator3.f();
-
-          return _context2.finish(19);
-
-        case 22:
-          _context2.next = 3;
-          break;
-
-        case 24:
-          _context2.next = 29;
-          break;
-
-        case 26:
-          _context2.prev = 26;
-          _context2.t1 = _context2["catch"](1);
-
-          _iterator2.e(_context2.t1);
-
-        case 29:
-          _context2.prev = 29;
-
-          _iterator2.f();
-
-          return _context2.finish(29);
-
-        case 32:
-        case "end":
-          return _context2.stop();
-      }
-    }
-  }, _marked2, null, [[1, 26, 29, 32], [6, 16, 19, 22]]);
-}
-/**
- * Intersperse filler element `value` among the items in `iterable`.
- *
- *     >>> [...intersperse(-1, range(1, 5))]
- *     [1, -1, 2, -1, 3, -1, 4]
- *
- */
-
-
-function intersperse(value, iterable) {
-  var stream = flatten((0, _itertools.izip)((0, _itertools.repeat)(value), iterable));
-  take(1, stream); // eat away and discard the first value from the output
-
-  return stream;
-}
-/**
- * Returns an iterable containing only the first `n` elements of the given
- * iterable.
- */
-
-
-function itake(n, iterable) {
-  var it, count, s;
-  return _regenerator["default"].wrap(function itake$(_context3) {
-    while (1) {
-      switch (_context3.prev = _context3.next) {
-        case 0:
-          it = (0, _builtins.iter)(iterable);
-          count = n;
-
-        case 2:
-          if (!(count-- > 0)) {
-            _context3.next = 12;
-            break;
-          }
-
-          s = it.next();
-
-          if (s.done) {
-            _context3.next = 9;
-            break;
-          }
-
-          _context3.next = 7;
-          return s.value;
-
-        case 7:
-          _context3.next = 10;
-          break;
-
-        case 9:
-          return _context3.abrupt("return");
-
-        case 10:
-          _context3.next = 2;
-          break;
-
-        case 12:
-        case "end":
-          return _context3.stop();
-      }
-    }
-  }, _marked3);
-}
-/**
- * Returns an iterator of paired items, overlapping, from the original.  When
- * the input iterable has a finite number of items `n`, the outputted iterable
- * will have `n - 1` items.
- *
- *     >>> pairwise([8, 2, 0, 7])
- *     [(8, 2), (2, 0), (0, 7)]
- *
- */
-
-
-function pairwise(iterable) {
-  var it, r1, _iterator4, _step4, r2;
-
-  return _regenerator["default"].wrap(function pairwise$(_context4) {
-    while (1) {
-      switch (_context4.prev = _context4.next) {
-        case 0:
-          it = (0, _builtins.iter)(iterable);
-          r1 = it.next();
-
-          if (!r1.done) {
-            _context4.next = 4;
-            break;
-          }
-
-          return _context4.abrupt("return");
-
-        case 4:
-          r1 = r1.value;
-          _iterator4 = _createForOfIteratorHelper(it);
-          _context4.prev = 6;
-
-          _iterator4.s();
-
-        case 8:
-          if ((_step4 = _iterator4.n()).done) {
-            _context4.next = 15;
-            break;
-          }
-
-          r2 = _step4.value;
-          _context4.next = 12;
-          return [r1, r2];
-
-        case 12:
-          r1 = r2;
-
-        case 13:
-          _context4.next = 8;
-          break;
-
-        case 15:
-          _context4.next = 20;
-          break;
-
-        case 17:
-          _context4.prev = 17;
-          _context4.t0 = _context4["catch"](6);
-
-          _iterator4.e(_context4.t0);
-
-        case 20:
-          _context4.prev = 20;
-
-          _iterator4.f();
-
-          return _context4.finish(20);
-
-        case 23:
-        case "end":
-          return _context4.stop();
-      }
-    }
-  }, _marked4, null, [[6, 17, 20, 23]]);
-}
-/**
- * Returns a 2-tuple of arrays.  Splits the elements in the input iterable into
- * either of the two arrays.  Will fully exhaust the input iterable.  The first
- * array contains all items that match the predicate, the second the rest:
- *
- *     >>> const isOdd = x => x % 2 !== 0;
- *     >>> const iterable = range(10);
- *     >>> const [odds, evens] = partition(iterable, isOdd);
- *     >>> odds
- *     [1, 3, 5, 7, 9]
- *     >>> evens
- *     [0, 2, 4, 6, 8]
- *
- */
-
-
-function partition(iterable, predicate) {
-  var good = [];
-  var bad = [];
-
-  var _iterator5 = _createForOfIteratorHelper(iterable),
-      _step5;
-
-  try {
-    for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-      var item = _step5.value;
-
-      if (predicate(item)) {
-        good.push(item);
-      } else {
-        bad.push(item);
-      }
-    }
-  } catch (err) {
-    _iterator5.e(err);
-  } finally {
-    _iterator5.f();
-  }
-
-  return [good, bad];
-}
-/**
- * Yields the next item from each iterable in turn, alternating between them.
- * Continues until all items are exhausted.
- *
- *     >>> [...roundrobin([1, 2, 3], [4], [5, 6, 7, 8])]
- *     [1, 4, 5, 2, 6, 3, 7, 8]
- */
-
-
-function roundrobin() {
-  var _len,
-      iters,
-      _key,
-      iterables,
-      index,
-      it,
-      result,
-      _args5 = arguments;
-
-  return _regenerator["default"].wrap(function roundrobin$(_context5) {
-    while (1) {
-      switch (_context5.prev = _context5.next) {
-        case 0:
-          for (_len = _args5.length, iters = new Array(_len), _key = 0; _key < _len; _key++) {
-            iters[_key] = _args5[_key];
-          }
-
-          // We'll only keep lazy versions of the input iterables in here that we'll
-          // slowly going to exhaust.  Once an iterable is exhausted, it will be
-          // removed from this list.  Once the entire list is empty, this algorithm
-          // ends.
-          iterables = (0, _builtins.map)(iters, _builtins.iter);
-
-        case 2:
-          if (!(iterables.length > 0)) {
-            _context5.next = 18;
-            break;
-          }
-
-          index = 0;
-
-        case 4:
-          if (!(index < iterables.length)) {
-            _context5.next = 16;
-            break;
-          }
-
-          it = iterables[index];
-          result = it.next();
-
-          if (result.done) {
-            _context5.next = 13;
-            break;
-          }
-
-          _context5.next = 10;
-          return result.value;
-
-        case 10:
-          index++;
-          _context5.next = 14;
-          break;
-
-        case 13:
-          // This iterable is exhausted, make sure to remove it from the
-          // list of iterables.  We'll splice the array from under our
-          // feet, and NOT advancing the index counter.
-          iterables.splice(index, 1); // intentional side-effect!
-
-        case 14:
-          _context5.next = 4;
-          break;
-
-        case 16:
-          _context5.next = 2;
-          break;
-
-        case 18:
-        case "end":
-          return _context5.stop();
-      }
-    }
-  }, _marked5);
-}
-/**
- * Yields the heads of all of the given iterables.  This is almost like
- * `roundrobin()`, except that the yielded outputs are grouped in to the
- * "rounds":
- *
- *     >>> [...heads([1, 2, 3], [4], [5, 6, 7, 8])]
- *     [[1, 4, 5], [2, 6], [3, 7], [8]]
- *
- * This is also different from `zipLongest()`, since the number of items in
- * each round can decrease over time, rather than being filled with a filler.
- */
-
-
-function heads() {
-  var _len2,
-      iters,
-      _key2,
-      iterables,
-      index,
-      round,
-      it,
-      result,
-      _args6 = arguments;
-
-  return _regenerator["default"].wrap(function heads$(_context6) {
-    while (1) {
-      switch (_context6.prev = _context6.next) {
-        case 0:
-          for (_len2 = _args6.length, iters = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-            iters[_key2] = _args6[_key2];
-          }
-
-          // We'll only keep lazy versions of the input iterables in here that we'll
-          // slowly going to exhaust.  Once an iterable is exhausted, it will be
-          // removed from this list.  Once the entire list is empty, this algorithm
-          // ends.
-          iterables = (0, _builtins.map)(iters, _builtins.iter);
-
-        case 2:
-          if (!(iterables.length > 0)) {
-            _context6.next = 11;
-            break;
-          }
-
-          index = 0;
-          round = [];
-
-          while (index < iterables.length) {
-            it = iterables[index];
-            result = it.next();
-
-            if (!result.done) {
-              round.push(result.value);
-              index++;
-            } else {
-              // This iterable is exhausted, make sure to remove it from the
-              // list of iterables.  We'll splice the array from under our
-              // feet, and NOT advancing the index counter.
-              iterables.splice(index, 1); // intentional side-effect!
-            }
-          }
-
-          if (!(round.length > 0)) {
-            _context6.next = 9;
-            break;
-          }
-
-          _context6.next = 9;
-          return round;
-
-        case 9:
-          _context6.next = 2;
-          break;
-
-        case 11:
-        case "end":
-          return _context6.stop();
-      }
-    }
-  }, _marked6);
-}
-/**
- * Non-lazy version of itake().
- */
-
-
-function take(n, iterable) {
-  return Array.from(itake(n, iterable));
-}
-/**
- * Yield unique elements, preserving order.
- *
- *     >>> [...uniqueEverseen('AAAABBBCCDAABBB')]
- *     ['A', 'B', 'C', 'D']
- *     >>> [...uniqueEverseen('AbBCcAB', s => s.toLowerCase())]
- *     ['A', 'b', 'C']
- *
- */
-
-
-function uniqueEverseen(iterable) {
-  var keyFn,
-      seen,
-      _iterator6,
-      _step6,
-      item,
-      key,
-      _args7 = arguments;
-
-  return _regenerator["default"].wrap(function uniqueEverseen$(_context7) {
-    while (1) {
-      switch (_context7.prev = _context7.next) {
-        case 0:
-          keyFn = _args7.length > 1 && _args7[1] !== undefined ? _args7[1] : _utils.primitiveIdentity;
-          seen = new Set();
-          _iterator6 = _createForOfIteratorHelper(iterable);
-          _context7.prev = 3;
-
-          _iterator6.s();
-
-        case 5:
-          if ((_step6 = _iterator6.n()).done) {
-            _context7.next = 14;
-            break;
-          }
-
-          item = _step6.value;
-          key = keyFn(item);
-
-          if (seen.has(key)) {
-            _context7.next = 12;
-            break;
-          }
-
-          seen.add(key);
-          _context7.next = 12;
-          return item;
-
-        case 12:
-          _context7.next = 5;
-          break;
-
-        case 14:
-          _context7.next = 19;
-          break;
-
-        case 16:
-          _context7.prev = 16;
-          _context7.t0 = _context7["catch"](3);
-
-          _iterator6.e(_context7.t0);
-
-        case 19:
-          _context7.prev = 19;
-
-          _iterator6.f();
-
-          return _context7.finish(19);
-
-        case 22:
-        case "end":
-          return _context7.stop();
-      }
-    }
-  }, _marked7, null, [[3, 16, 19, 22]]);
-}
-/**
- * Yields elements in order, ignoring serial duplicates.
- *
- *     >>> [...uniqueJustseen('AAAABBBCCDAABBB')]
- *     ['A', 'B', 'C', 'D', 'A', 'B']
- *     >>> [...uniqueJustseen('AbBCcAB', s => s.toLowerCase())]
- *     ['A', 'b', 'C', 'A', 'B']
- *
- */
-
-
-function uniqueJustseen(iterable) {
-  var keyFn,
-      last,
-      _iterator7,
-      _step7,
-      item,
-      key,
-      _args8 = arguments;
-
-  return _regenerator["default"].wrap(function uniqueJustseen$(_context8) {
-    while (1) {
-      switch (_context8.prev = _context8.next) {
-        case 0:
-          keyFn = _args8.length > 1 && _args8[1] !== undefined ? _args8[1] : _utils.primitiveIdentity;
-          last = undefined;
-          _iterator7 = _createForOfIteratorHelper(iterable);
-          _context8.prev = 3;
-
-          _iterator7.s();
-
-        case 5:
-          if ((_step7 = _iterator7.n()).done) {
-            _context8.next = 14;
-            break;
-          }
-
-          item = _step7.value;
-          key = keyFn(item);
-
-          if (!(key !== last)) {
-            _context8.next = 12;
-            break;
-          }
-
-          _context8.next = 11;
-          return item;
-
-        case 11:
-          last = key;
-
-        case 12:
-          _context8.next = 5;
-          break;
-
-        case 14:
-          _context8.next = 19;
-          break;
-
-        case 16:
-          _context8.prev = 16;
-          _context8.t0 = _context8["catch"](3);
-
-          _iterator7.e(_context8.t0);
-
-        case 19:
-          _context8.prev = 19;
-
-          _iterator7.f();
-
-          return _context8.finish(19);
-
-        case 22:
-        case "end":
-          return _context8.stop();
-      }
-    }
-  }, _marked8, null, [[3, 16, 19, 22]]);
-}
-},{"./builtins":55,"./itertools":58,"./utils":60,"@babel/runtime/regenerator":54}],60:[function(require,module,exports){
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.keyToCmp = keyToCmp;
-exports.identityPredicate = identityPredicate;
-exports.numberIdentity = numberIdentity;
-exports.primitiveIdentity = primitiveIdentity;
-
-function keyToCmp(keyFn) {
-  return function (a, b) {
-    var ka = keyFn(a);
-    var kb = keyFn(b); // istanbul ignore else
-
-    if (typeof ka === 'boolean' && typeof kb === 'boolean') {
-      return ka === kb ? 0 : !ka && kb ? -1 : 1;
-    } else if (typeof ka === 'number' && typeof kb === 'number') {
-      return ka - kb;
-    } else if (typeof ka === 'string' && typeof kb === 'string') {
-      return ka === kb ? 0 : ka < kb ? -1 : 1;
-    } else {
-      return -1;
-    }
-  };
-}
-
-function identityPredicate(x) {
-  return !!x;
-}
-
-function numberIdentity(x) {
-  /* istanbul ignore if */
-  if (typeof x !== 'number') {
-    throw new Error('Inputs must be numbers');
-  }
-
-  return x;
-}
-
-function primitiveIdentity(x) {
-  /* istanbul ignore if */
-  if (typeof x !== 'string' && typeof x !== 'number' && typeof x !== 'boolean') {
-    throw new Error('Please provide a key function that can establish object identity');
-  }
-
-  return x;
-}
-},{}],61:[function(require,module,exports){
+},{"_process":102,"buffer":72,"bytes":8,"http-errors":14,"iconv-lite":33,"unpipe":60}],53:[function(require,module,exports){
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -20845,7 +19902,968 @@ try {
   Function("r", "regeneratorRuntime = r")(runtime);
 }
 
-},{}],62:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
+(function (process){(function (){
+/* eslint-disable node/no-deprecated-api */
+
+'use strict'
+
+var buffer = require('buffer')
+var Buffer = buffer.Buffer
+
+var safer = {}
+
+var key
+
+for (key in buffer) {
+  if (!buffer.hasOwnProperty(key)) continue
+  if (key === 'SlowBuffer' || key === 'Buffer') continue
+  safer[key] = buffer[key]
+}
+
+var Safer = safer.Buffer = {}
+for (key in Buffer) {
+  if (!Buffer.hasOwnProperty(key)) continue
+  if (key === 'allocUnsafe' || key === 'allocUnsafeSlow') continue
+  Safer[key] = Buffer[key]
+}
+
+safer.Buffer.prototype = Buffer.prototype
+
+if (!Safer.from || Safer.from === Uint8Array.from) {
+  Safer.from = function (value, encodingOrOffset, length) {
+    if (typeof value === 'number') {
+      throw new TypeError('The "value" argument must not be of type number. Received type ' + typeof value)
+    }
+    if (value && typeof value.length === 'undefined') {
+      throw new TypeError('The first argument must be one of type string, Buffer, ArrayBuffer, Array, or Array-like Object. Received type ' + typeof value)
+    }
+    return Buffer(value, encodingOrOffset, length)
+  }
+}
+
+if (!Safer.alloc) {
+  Safer.alloc = function (size, fill, encoding) {
+    if (typeof size !== 'number') {
+      throw new TypeError('The "size" argument must be of type number. Received type ' + typeof size)
+    }
+    if (size < 0 || size >= 2 * (1 << 30)) {
+      throw new RangeError('The value "' + size + '" is invalid for option "size"')
+    }
+    var buf = Buffer(size)
+    if (!fill || fill.length === 0) {
+      buf.fill(0)
+    } else if (typeof encoding === 'string') {
+      buf.fill(fill, encoding)
+    } else {
+      buf.fill(fill)
+    }
+    return buf
+  }
+}
+
+if (!safer.kStringMaxLength) {
+  try {
+    safer.kStringMaxLength = process.binding('buffer').kStringMaxLength
+  } catch (e) {
+    // we can't determine kStringMaxLength in environments where process.binding
+    // is unsupported, so let's not set it
+  }
+}
+
+if (!safer.constants) {
+  safer.constants = {
+    MAX_LENGTH: safer.kMaxLength
+  }
+  if (safer.kStringMaxLength) {
+    safer.constants.MAX_STRING_LENGTH = safer.kStringMaxLength
+  }
+}
+
+module.exports = safer
+
+}).call(this)}).call(this,require('_process'))
+},{"_process":102,"buffer":72}],55:[function(require,module,exports){
+'use strict'
+/* eslint no-proto: 0 */
+module.exports = Object.setPrototypeOf || ({ __proto__: [] } instanceof Array ? setProtoOf : mixinProperties)
+
+function setProtoOf (obj, proto) {
+  obj.__proto__ = proto
+  return obj
+}
+
+function mixinProperties (obj, proto) {
+  for (var prop in proto) {
+    if (!obj.hasOwnProperty(prop)) {
+      obj[prop] = proto[prop]
+    }
+  }
+  return obj
+}
+
+},{}],56:[function(require,module,exports){
+module.exports={
+  "100": "Continue",
+  "101": "Switching Protocols",
+  "102": "Processing",
+  "103": "Early Hints",
+  "200": "OK",
+  "201": "Created",
+  "202": "Accepted",
+  "203": "Non-Authoritative Information",
+  "204": "No Content",
+  "205": "Reset Content",
+  "206": "Partial Content",
+  "207": "Multi-Status",
+  "208": "Already Reported",
+  "226": "IM Used",
+  "300": "Multiple Choices",
+  "301": "Moved Permanently",
+  "302": "Found",
+  "303": "See Other",
+  "304": "Not Modified",
+  "305": "Use Proxy",
+  "306": "(Unused)",
+  "307": "Temporary Redirect",
+  "308": "Permanent Redirect",
+  "400": "Bad Request",
+  "401": "Unauthorized",
+  "402": "Payment Required",
+  "403": "Forbidden",
+  "404": "Not Found",
+  "405": "Method Not Allowed",
+  "406": "Not Acceptable",
+  "407": "Proxy Authentication Required",
+  "408": "Request Timeout",
+  "409": "Conflict",
+  "410": "Gone",
+  "411": "Length Required",
+  "412": "Precondition Failed",
+  "413": "Payload Too Large",
+  "414": "URI Too Long",
+  "415": "Unsupported Media Type",
+  "416": "Range Not Satisfiable",
+  "417": "Expectation Failed",
+  "418": "I'm a teapot",
+  "421": "Misdirected Request",
+  "422": "Unprocessable Entity",
+  "423": "Locked",
+  "424": "Failed Dependency",
+  "425": "Unordered Collection",
+  "426": "Upgrade Required",
+  "428": "Precondition Required",
+  "429": "Too Many Requests",
+  "431": "Request Header Fields Too Large",
+  "451": "Unavailable For Legal Reasons",
+  "500": "Internal Server Error",
+  "501": "Not Implemented",
+  "502": "Bad Gateway",
+  "503": "Service Unavailable",
+  "504": "Gateway Timeout",
+  "505": "HTTP Version Not Supported",
+  "506": "Variant Also Negotiates",
+  "507": "Insufficient Storage",
+  "508": "Loop Detected",
+  "509": "Bandwidth Limit Exceeded",
+  "510": "Not Extended",
+  "511": "Network Authentication Required"
+}
+
+},{}],57:[function(require,module,exports){
+/*!
+ * statuses
+ * Copyright(c) 2014 Jonathan Ong
+ * Copyright(c) 2016 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+'use strict'
+
+/**
+ * Module dependencies.
+ * @private
+ */
+
+var codes = require('./codes.json')
+
+/**
+ * Module exports.
+ * @public
+ */
+
+module.exports = status
+
+// status code to message map
+status.STATUS_CODES = codes
+
+// array of status codes
+status.codes = populateStatusesMap(status, codes)
+
+// status codes for redirects
+status.redirect = {
+  300: true,
+  301: true,
+  302: true,
+  303: true,
+  305: true,
+  307: true,
+  308: true
+}
+
+// status codes for empty bodies
+status.empty = {
+  204: true,
+  205: true,
+  304: true
+}
+
+// status codes for when you should retry the request
+status.retry = {
+  502: true,
+  503: true,
+  504: true
+}
+
+/**
+ * Populate the statuses map for given codes.
+ * @private
+ */
+
+function populateStatusesMap (statuses, codes) {
+  var arr = []
+
+  Object.keys(codes).forEach(function forEachCode (code) {
+    var message = codes[code]
+    var status = Number(code)
+
+    // Populate properties
+    statuses[status] = message
+    statuses[message] = status
+    statuses[message.toLowerCase()] = status
+
+    // Add to array
+    arr.push(status)
+  })
+
+  return arr
+}
+
+/**
+ * Get the status code.
+ *
+ * Given a number, this will throw if it is not a known status
+ * code, otherwise the code will be returned. Given a string,
+ * the string will be parsed for a number and return the code
+ * if valid, otherwise will lookup the code assuming this is
+ * the status message.
+ *
+ * @param {string|number} code
+ * @returns {number}
+ * @public
+ */
+
+function status (code) {
+  if (typeof code === 'number') {
+    if (!status[code]) throw new Error('invalid status code: ' + code)
+    return code
+  }
+
+  if (typeof code !== 'string') {
+    throw new TypeError('code must be a number or string')
+  }
+
+  // '403'
+  var n = parseInt(code, 10)
+  if (!isNaN(n)) {
+    if (!status[n]) throw new Error('invalid status code: ' + n)
+    return n
+  }
+
+  n = status[code.toLowerCase()]
+  if (!n) throw new Error('invalid status message: "' + code + '"')
+  return n
+}
+
+},{"./codes.json":56}],58:[function(require,module,exports){
+/*!
+ * toidentifier
+ * Copyright(c) 2016 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+/**
+ * Module exports.
+ * @public
+ */
+
+module.exports = toIdentifier
+
+/**
+ * Trasform the given string into a JavaScript identifier
+ *
+ * @param {string} str
+ * @returns {string}
+ * @public
+ */
+
+function toIdentifier (str) {
+  return str
+    .split(' ')
+    .map(function (token) {
+      return token.slice(0, 1).toUpperCase() + token.slice(1)
+    })
+    .join('')
+    .replace(/[^ _0-9a-z]/gi, '')
+}
+
+},{}],59:[function(require,module,exports){
+/*!
+ * type-is
+ * Copyright(c) 2014 Jonathan Ong
+ * Copyright(c) 2014-2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+'use strict'
+
+/**
+ * Module dependencies.
+ * @private
+ */
+
+var typer = require('media-typer')
+var mime = require('mime-types')
+
+/**
+ * Module exports.
+ * @public
+ */
+
+module.exports = typeofrequest
+module.exports.is = typeis
+module.exports.hasBody = hasbody
+module.exports.normalize = normalize
+module.exports.match = mimeMatch
+
+/**
+ * Compare a `value` content-type with `types`.
+ * Each `type` can be an extension like `html`,
+ * a special shortcut like `multipart` or `urlencoded`,
+ * or a mime type.
+ *
+ * If no types match, `false` is returned.
+ * Otherwise, the first `type` that matches is returned.
+ *
+ * @param {String} value
+ * @param {Array} types
+ * @public
+ */
+
+function typeis (value, types_) {
+  var i
+  var types = types_
+
+  // remove parameters and normalize
+  var val = tryNormalizeType(value)
+
+  // no type or invalid
+  if (!val) {
+    return false
+  }
+
+  // support flattened arguments
+  if (types && !Array.isArray(types)) {
+    types = new Array(arguments.length - 1)
+    for (i = 0; i < types.length; i++) {
+      types[i] = arguments[i + 1]
+    }
+  }
+
+  // no types, return the content type
+  if (!types || !types.length) {
+    return val
+  }
+
+  var type
+  for (i = 0; i < types.length; i++) {
+    if (mimeMatch(normalize(type = types[i]), val)) {
+      return type[0] === '+' || type.indexOf('*') !== -1
+        ? val
+        : type
+    }
+  }
+
+  // no matches
+  return false
+}
+
+/**
+ * Check if a request has a request body.
+ * A request with a body __must__ either have `transfer-encoding`
+ * or `content-length` headers set.
+ * http://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.3
+ *
+ * @param {Object} request
+ * @return {Boolean}
+ * @public
+ */
+
+function hasbody (req) {
+  return req.headers['transfer-encoding'] !== undefined ||
+    !isNaN(req.headers['content-length'])
+}
+
+/**
+ * Check if the incoming request contains the "Content-Type"
+ * header field, and it contains any of the give mime `type`s.
+ * If there is no request body, `null` is returned.
+ * If there is no content type, `false` is returned.
+ * Otherwise, it returns the first `type` that matches.
+ *
+ * Examples:
+ *
+ *     // With Content-Type: text/html; charset=utf-8
+ *     this.is('html'); // => 'html'
+ *     this.is('text/html'); // => 'text/html'
+ *     this.is('text/*', 'application/json'); // => 'text/html'
+ *
+ *     // When Content-Type is application/json
+ *     this.is('json', 'urlencoded'); // => 'json'
+ *     this.is('application/json'); // => 'application/json'
+ *     this.is('html', 'application/*'); // => 'application/json'
+ *
+ *     this.is('html'); // => false
+ *
+ * @param {String|Array} types...
+ * @return {String|false|null}
+ * @public
+ */
+
+function typeofrequest (req, types_) {
+  var types = types_
+
+  // no body
+  if (!hasbody(req)) {
+    return null
+  }
+
+  // support flattened arguments
+  if (arguments.length > 2) {
+    types = new Array(arguments.length - 1)
+    for (var i = 0; i < types.length; i++) {
+      types[i] = arguments[i + 1]
+    }
+  }
+
+  // request content type
+  var value = req.headers['content-type']
+
+  return typeis(value, types)
+}
+
+/**
+ * Normalize a mime type.
+ * If it's a shorthand, expand it to a valid mime type.
+ *
+ * In general, you probably want:
+ *
+ *   var type = is(req, ['urlencoded', 'json', 'multipart']);
+ *
+ * Then use the appropriate body parsers.
+ * These three are the most common request body types
+ * and are thus ensured to work.
+ *
+ * @param {String} type
+ * @private
+ */
+
+function normalize (type) {
+  if (typeof type !== 'string') {
+    // invalid type
+    return false
+  }
+
+  switch (type) {
+    case 'urlencoded':
+      return 'application/x-www-form-urlencoded'
+    case 'multipart':
+      return 'multipart/*'
+  }
+
+  if (type[0] === '+') {
+    // "+json" -> "*/*+json" expando
+    return '*/*' + type
+  }
+
+  return type.indexOf('/') === -1
+    ? mime.lookup(type)
+    : type
+}
+
+/**
+ * Check if `expected` mime type
+ * matches `actual` mime type with
+ * wildcard and +suffix support.
+ *
+ * @param {String} expected
+ * @param {String} actual
+ * @return {Boolean}
+ * @private
+ */
+
+function mimeMatch (expected, actual) {
+  // invalid type
+  if (expected === false) {
+    return false
+  }
+
+  // split types
+  var actualParts = actual.split('/')
+  var expectedParts = expected.split('/')
+
+  // invalid format
+  if (actualParts.length !== 2 || expectedParts.length !== 2) {
+    return false
+  }
+
+  // validate type
+  if (expectedParts[0] !== '*' && expectedParts[0] !== actualParts[0]) {
+    return false
+  }
+
+  // validate suffix wildcard
+  if (expectedParts[1].substr(0, 2) === '*+') {
+    return expectedParts[1].length <= actualParts[1].length + 1 &&
+      expectedParts[1].substr(1) === actualParts[1].substr(1 - expectedParts[1].length)
+  }
+
+  // validate subtype
+  if (expectedParts[1] !== '*' && expectedParts[1] !== actualParts[1]) {
+    return false
+  }
+
+  return true
+}
+
+/**
+ * Normalize a type and remove parameters.
+ *
+ * @param {string} value
+ * @return {string}
+ * @private
+ */
+
+function normalizeType (value) {
+  // parse the type
+  var type = typer.parse(value)
+
+  // remove the parameters
+  type.parameters = undefined
+
+  // reformat it
+  return typer.format(type)
+}
+
+/**
+ * Try to normalize a type and remove parameters.
+ *
+ * @param {string} value
+ * @return {string}
+ * @private
+ */
+
+function tryNormalizeType (value) {
+  if (!value) {
+    return null
+  }
+
+  try {
+    return normalizeType(value)
+  } catch (err) {
+    return null
+  }
+}
+
+},{"media-typer":41,"mime-types":44}],60:[function(require,module,exports){
+/*!
+ * unpipe
+ * Copyright(c) 2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */
+
+'use strict'
+
+/**
+ * Module exports.
+ * @public
+ */
+
+module.exports = unpipe
+
+/**
+ * Determine if there are Node.js pipe-like data listeners.
+ * @private
+ */
+
+function hasPipeDataListeners(stream) {
+  var listeners = stream.listeners('data')
+
+  for (var i = 0; i < listeners.length; i++) {
+    if (listeners[i].name === 'ondata') {
+      return true
+    }
+  }
+
+  return false
+}
+
+/**
+ * Unpipe a stream from all destinations.
+ *
+ * @param {object} stream
+ * @public
+ */
+
+function unpipe(stream) {
+  if (!stream) {
+    throw new TypeError('argument stream is required')
+  }
+
+  if (typeof stream.unpipe === 'function') {
+    // new-style
+    stream.unpipe()
+    return
+  }
+
+  // Node.js 0.8 hack
+  if (!hasPipeDataListeners(stream)) {
+    return
+  }
+
+  var listener
+  var listeners = stream.listeners('close')
+
+  for (var i = 0; i < listeners.length; i++) {
+    listener = listeners[i]
+
+    if (listener.name !== 'cleanup' && listener.name !== 'onclose') {
+      continue
+    }
+
+    // invoke the listener
+    listener.call(stream)
+  }
+}
+
+},{}],61:[function(require,module,exports){
+const bodyParser = require('body-parser');
+const itertools = require('itertools');
+
+//import {permutations} from '../node_modules/itertools/itertools.js';
+
+const sub_button = document.getElementById("24submit");
+
+const cards = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+// corresponds to cards [2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A]
+
+let add = function(a, b) {
+    return a+b;
+}
+let sub = function(a, b) {
+    return a-b;
+}
+let mul = function(a, b) {
+    return a*b;
+}
+let div = function(a, b) {
+    return a/b;
+}
+
+
+const operators = [add, sub, mul, div];
+const symbols = ["+", "-", "*", "/"];
+const mapping = {"+": add, "-": sub, "*": mul, "/": div};
+const mapping1 = {add: "+", sub: "-", mul: "*", div: "/"};
+const result_ul = document.getElementById("result_ul");
+const less_than_four_msg = document.getElementById("less-than-four-cards-msg");
+const target_num_el = document.getElementById("target_num");
+const solution_row = document.getElementById("solution_row");
+const reset = document.getElementById("reset-button");
+let target_num = 24;
+
+reset.addEventListener('click', function() {
+    clearHand();
+});
+
+document.getElementById("click2").addEventListener('click', function() {
+    updateCards(0);
+});
+document.getElementById("click3").addEventListener('click', function() {
+    updateCards(1);
+});
+document.getElementById("click4").addEventListener('click', function() {
+    updateCards(2);
+});
+document.getElementById("click5").addEventListener('click', function() {
+    updateCards(3);
+});
+document.getElementById("click6").addEventListener('click', function() {
+    updateCards(4);
+});
+document.getElementById("click7").addEventListener('click', function() {
+    updateCards(5);
+});
+document.getElementById("click8").addEventListener('click', function() {
+    updateCards(6);
+});
+document.getElementById("click9").addEventListener('click', function() {
+    updateCards(7);
+});
+document.getElementById("click10").addEventListener('click', function() {
+    updateCards(8);
+});
+document.getElementById("clickjack").addEventListener('click', function() {
+    updateCards(9);
+});
+document.getElementById("clickqueen").addEventListener('click', function() {
+    updateCards(10);
+});
+document.getElementById("clickking").addEventListener('click', function() {
+    updateCards(11);
+});
+document.getElementById("clickace").addEventListener('click', function() {
+    updateCards(12);
+});
+
+
+function updateCards(index) {
+
+    if (solution_row.childElementCount >= 4) {
+        return;
+    }
+
+    let card = document.createElement('div');
+    card.className = 'col-3 col-md-3 col-lg-2';
+    card.alt = `${index + 2}`
+
+    let card_img = document.createElement('img');
+    card_img.className = "img-fluid mx-0 my-0 cursor";
+    card_img.alt = `${index + 2}`;
+    card_img.src = `../imgs/${index + 2}_of_hearts.svg`;
+
+    cards[index]++;
+
+    card.appendChild(card_img);
+    solution_row.appendChild(card);
+
+    card.addEventListener('click', function() {
+        let index_remove = parseInt(this.alt) - 2;
+        cards[index_remove]--;
+        this.remove();
+
+        while (result_ul.firstChild) {
+            result_ul.removeChild(result_ul.lastChild);
+        }
+        less_than_four_msg.innerHTML = "Choose 4 cards above.";
+    });
+
+    if (solution_row.childElementCount == 4) {
+
+        less_than_four_msg.innerHTML = "Solutions:";
+        let four_cards = [];
+        for (let i = 0; i < cards.length; i++) {
+            let temp_num = cards[i];
+            while (temp_num > 0) {
+                if (i == cards.length - 1) { // ace
+                    four_cards.push(1);
+                } else { four_cards.push(i+2); }
+                temp_num --;
+
+            }
+        }
+        calculate(four_cards);
+    }
+    
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const card1 = urlParams.get('n1');
+const card2 = urlParams.get('n2');
+const card3 = urlParams.get('n3');
+const card4 = urlParams.get('n4');
+
+
+function calculate(c) {
+    for (let i = 0; i < c.length; i++) {
+        if (c[i] == "J") {
+            c[i] = 11;
+        } else if (c[i] == "Q") {
+            c[i] = 12;
+        } else if (c[i] == "K") {
+            c[i] = 13;
+        } else if (c[i] == "A") {
+            c[i] = 1;
+        }
+        else {
+            c[i] = parseInt(c[i]);
+        }
+    }
+
+    if (target_num_el.value == "") {
+        target_num = 24;
+    } else {
+        target_num = parseInt(target_num_el.value);
+    }
+
+    let result_set = solutions(c);
+
+    while (result_ul.firstChild) {
+        result_ul.removeChild(result_ul.lastChild);
+    }
+
+    if (result_set.size == 0) {
+        let li = document.createElement('li');
+        result_ul.appendChild(li);
+
+        li.innerHTML += "NO SOLUTIONS FOR THIS HAND!";
+        return;
+    }
+
+    for (let member of result_set) {
+        let li = document.createElement('li');
+        result_ul.appendChild(li);
+
+        li.innerHTML += member;
+    }
+}
+
+function clearHand() {
+    while (result_ul.firstChild) {
+        result_ul.removeChild(result_ul.lastChild);
+    }
+    while (solution_row.firstChild) {
+        solution_row.removeChild(solution_row.lastChild);
+    }
+    for (let i = 0; i < cards.length; i++) {
+        cards[i] = 0;
+    }
+    less_than_four_msg.innerHTML = "Choose 4 cards above.";
+}
+
+function ans(so_far, next_index, lst, op_order, op, s, component_set) {
+    if (op_order == null){
+        op_order = [];
+    }
+    if (op == "+") {
+        so_far = add(so_far, lst[next_index]);
+    } else if (op == "-") {
+        so_far = sub(so_far, lst[next_index]);
+    } else if (op == "*") {
+        so_far = mul(so_far, lst[next_index]);
+    } else {
+        so_far = div(so_far, lst[next_index]);
+    }
+    op_order.push(op);
+    if (next_index == 3 && so_far == target_num) {
+        format_helper(lst, op_order, s, component_set);
+        return true;
+    }
+    else if (next_index == 3) {
+        return false;
+    }
+    if (lst[next_index + 1] > so_far) {
+        //no subtraction or div
+        return ans(so_far, next_index + 1, lst, [...op_order], symbols[0], s, component_set) ||
+               ans(so_far, next_index + 1, lst, [...op_order], symbols[2], s, component_set);
+    }
+    // all 4 operators valid
+    return ans(so_far, next_index + 1, lst, [...op_order], symbols[0], s, component_set) ||
+           ans(so_far, next_index + 1, lst, [...op_order], symbols[1], s, component_set) ||
+           ans(so_far, next_index + 1, lst, [...op_order], symbols[2], s, component_set) ||
+           ans(so_far, next_index + 1, lst, [...op_order], symbols[3], s, component_set);
+}
+
+function format_helper(lst, op_order, s, component_set) {
+
+    result = ""
+    arr_components = [];
+    arr_components.push(...lst);
+    arr_components.push(...op_order);
+
+    // (1 + 2) * 3 + 4 format
+    if ((op_order[2] == "+" || op_order[2] == "-") && ((op_order[1] == "*" || op_order[1] == "/") &&
+                                                       (op_order[0] == "+" || op_order[0] == "-"))){
+
+        //sort lst items 0 and 1
+        arr_components.push("(");
+        arr_components.push(")");
+           result += "(" + lst[0] + " " + op_order[0] + " " + lst[1] + ")" + " " +
+                  op_order[1] + " " + lst[2] + " " + op_order[2] + " " + lst[3];                                            
+    }
+        
+    // other formats
+    else if ((op_order[2] == "/" || op_order[2] == "*") && ((op_order[1] != "*" && op_order[1] != "/") ||
+        (op_order[0] != "*" && op_order[0] != "/"))){
+
+        // (1 + 2) * 3 * 4 format
+        if (op_order[1] == "*" || op_order[1] == "/") {
+            arr_components.push("(");
+            arr_components.push(")");
+            result += "(" + lst[0] + " " + op_order[0] + " " + lst[1] + ")" + " " + op_order[1] + " " + lst[2] + " " + op_order[2] + " " + lst[3];
+        }
+        // (1 * 2 + 3) * 4 OR (1 + 2 + 3) * 4 format
+        else {
+            arr_components.push("(");
+            arr_components.push(")");
+            result += "(" + lst[0] + " " + op_order[0] + " " + lst[1] + " " + op_order[1] + " " + lst[2] + ")" + " " + op_order[2] + " " + lst[3];
+        }
+    }
+
+    // 1 + 2 + 3 + 4 format
+    else {
+
+        // sort lst and op_order
+        /*op_order.unshift("+");
+        let sorted_arrs = custom_sort(lst, op_order);
+
+        op_order = sorted_arrs[1].slice(1);
+        lst = sorted_arrs[0];*/
+
+        result += lst[0] + " " + op_order[0] + " " + lst[1] + " " + op_order[1] + " " + lst[2] + 
+        " " + op_order[2] + " " + lst[3];
+    }
+
+    arr_components.sort();
+    let arr_str = arr_components.join();
+    if (!component_set.has(arr_str)) {
+        s.add(result + ` = ${target_num}`);
+        component_set.add(arr_str);
+    }
+
+}
+
+function solutions(cards) {
+    let perms = itertools.permutations(cards);
+    let inner_count = 0;
+    let has24 = false;
+    let s = new Set();
+    let component_set = new Set();
+    for (let p of perms) {
+        for (let op of symbols) {
+            if ( ans(p[0], 1, p, null, op, s, component_set)) {
+                has24 = true;
+            }
+        }
+    }
+    if (has24) {
+        /*for (let member of s) {
+            console.log(member);
+        }*/
+    }
+    return s;
+}
+},{"body-parser":2,"itertools":37}],62:[function(require,module,exports){
 
 /**
  * Array#filter.
@@ -21383,8 +21401,8 @@ var objectKeys = Object.keys || function (obj) {
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"object-assign":89,"util/":66}],64:[function(require,module,exports){
-arguments[4][33][0].apply(exports,arguments)
-},{"dup":33}],65:[function(require,module,exports){
+arguments[4][34][0].apply(exports,arguments)
+},{"dup":34}],65:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
@@ -37868,4 +37886,4 @@ module.exports = function whichTypedArray(value) {
 };
 
 }).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"available-typed-arrays":67,"call-bind/callBound":73,"es-abstract/helpers/getOwnPropertyDescriptor":75,"foreach":77,"has-symbols":81,"is-typed-array":88}]},{},[53]);
+},{"available-typed-arrays":67,"call-bind/callBound":73,"es-abstract/helpers/getOwnPropertyDescriptor":75,"foreach":77,"has-symbols":81,"is-typed-array":88}]},{},[61]);

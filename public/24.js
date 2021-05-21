@@ -29,7 +29,13 @@ const mapping1 = {add: "+", sub: "-", mul: "*", div: "/"};
 const result_ul = document.getElementById("result_ul");
 const less_than_four_msg = document.getElementById("less-than-four-cards-msg");
 const target_num_el = document.getElementById("target_num");
+const solution_row = document.getElementById("solution_row");
+const reset = document.getElementById("reset-button");
 let target_num = 24;
+
+reset.addEventListener('click', function() {
+    clearHand();
+});
 
 document.getElementById("click2").addEventListener('click', function() {
     updateCards(0);
@@ -71,7 +77,6 @@ document.getElementById("clickace").addEventListener('click', function() {
     updateCards(12);
 });
 
-const solution_row = document.getElementById("solution_row");
 
 function updateCards(index) {
 
@@ -172,6 +177,19 @@ function calculate(c) {
 
         li.innerHTML += member;
     }
+}
+
+function clearHand() {
+    while (result_ul.firstChild) {
+        result_ul.removeChild(result_ul.lastChild);
+    }
+    while (solution_row.firstChild) {
+        solution_row.removeChild(solution_row.lastChild);
+    }
+    for (let i = 0; i < cards.length; i++) {
+        cards[i] = 0;
+    }
+    less_than_four_msg.innerHTML = "Choose 4 cards above.";
 }
 
 function ans(so_far, next_index, lst, op_order, op, s, component_set) {

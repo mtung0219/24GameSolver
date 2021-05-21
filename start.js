@@ -5,7 +5,9 @@ const app = express();
 const path = require('path');
 
 const bodyParser = require('body-parser');
-app.use(helmet());
+app.use(helmet( {
+    contentSecurityPolicy: false,
+}));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')))

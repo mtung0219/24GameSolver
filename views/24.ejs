@@ -12,74 +12,74 @@
                 <div class="col-md-7 col-lg-8">
                     <h4 class="text-center">Choose 4 cards:</h4>
                     <div class="row no-gutters justify-content-center">
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/14_of_hearts.svg" alt="ace of hearts" id="clickace"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/2_of_hearts.svg" alt="2 of hearts" id="click2"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/3_of_hearts.svg" alt="3 of hearts" id="click3"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/4_of_hearts.svg" alt="4 of hearts" id="click4"
                                 class="img-fluid mx-0 my-0  cursor">
                         </div>
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/5_of_hearts.svg" alt="5 of hearts" id="click5"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
                         <!-- Force next columns to break to new line at md breakpoint and up -->
-                        <div class="w-100 d-none d-md-block d-lg-none"></div>
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="w-100 d-block d-lg-none"></div>
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/6_of_hearts.svg" alt="6 of hearts" id="click6"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
 
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/7_of_hearts.svg" alt="7 of hearts" id="click7"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
                         <!-- Force next columns to break to new line at md breakpoint and up -->
                         <div class="w-100 d-none d-lg-block"></div>
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/8_of_hearts.svg" alt="8 of hearts" id="click8"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
 
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/9_of_hearts.svg" alt="9 of hearts" id="click9"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/10_of_hearts.svg" alt="10 of hearts" id="click10"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
                         <!-- Force next columns to break to new line at md breakpoint and up -->
-                        <div class="w-100 d-none d-md-block d-lg-none"></div>
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="w-100 d-block d-lg-none"></div>
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/11_of_hearts.svg" alt="jack of hearts" id="clickjack"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/12_of_hearts.svg" alt="queen of hearts" id="clickqueen"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
 
-                        <div class="col-3 col-md-2 col-lg-1">
+                        <div class="col-2 col-md-2 col-lg-1">
                             <img src="../imgs/13_of_hearts.svg" alt="king of hearts" id="clickking"
                                 class="img-fluid mx-0 my-0 cursor">
                         </div>
@@ -88,7 +88,10 @@
                 </div>
 
                 <div class="col-md-5 col-lg-4">
-                    <h4>Your Cards:</h4>
+                    <div class="row my-3 align-items-start">
+                        <h4 class="col-auto">Your Cards:</h4>
+                        <button type="button" class="btn btn-outline-secondary col-auto py-1 px-2 my-2" id="reset-button">Reset Hand</button>
+                    </div>
                     <div class="row solutions no-gutters" id="solution_row">
                     </div>
 
@@ -116,12 +119,16 @@
 
         <section class="text-padding">
             <h4>Directions:</h4>
-            <p>This is a solver for the math game 24, giving all mathematically distinct solutions for manipulating four numbers to equal 24.
+            <p>This is a solver for the math game 24, giving all mathematically distinct solutions for manipulating four
+                numbers to equal 24.
             </p>
-            <p>Click on four cards corresponding to your four numbers. Repeats are allowed. Your hand will be shown to the right.
-                To replace a chosen card with a different one, click on any of your chosen cards to delete them from your hand. Upon choosing
+            <p>Click on four cards corresponding to your four numbers. Repeats are allowed. Your hand will be shown to
+                the right.
+                To replace a chosen card with a different one, click on any of your chosen cards to delete them from
+                your hand. Upon choosing
                 four cards, any valid solutions will be automatically shown.</p>
-            <p>This solver also covers variations of the game, where four cards total up to a number other than 24. Adjust this using the input above.
+            <p>This solver also covers variations of the game, where four cards total up to a number other than 24.
+                Adjust this using the input above.
                 If left blank, this will default to 24.
             </p>
 
@@ -129,8 +136,6 @@
 
         <%- include('partials/footer') %>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-                type="text/javascript"></script>
-            <script src="http://benalman.com/code/projects/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"
                 type="text/javascript"></script>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
